@@ -53,7 +53,7 @@ export default function HeroSection({
   highlightText1 = "the world's",
   highlightText2 = "most creative",
   showWatchReelButton = false,
-  backgroundImageUrl = "https://crxuhqqswealopkmdpxq.supabase.co/storage/v1/object/sign/assets/hero-image.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InN0b3JhZ2UtdXJsLXNpZ25pbmcta2V5XzFiOTNmNWIzLWMwNTUtNGY4Yy1hMDgwLTdjYzM4MmE1NGNmMyJ9.eyJ1cmwiOiJhc3NldHMvaGVyby1pbWFnZS5wbmciLCJpYXQiOjE3NDYxMjY2OTAsImV4cCI6MjA2MTQ4NjY5MH0.HC1uepZVK9iA9tQE3Tu5JCo5h5H7JeMMUTaYDMhHZ10",
+  backgroundImageUrl = "https://crxuhqqswealopkmdpxq.supabase.co/storage/v1/object/sign/assets/hero-image.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9kZWU0NTJlNy0xYThkLTQ5M2UtODEzZi05NTc0MmM1Y2Q0YWIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhc3NldHMvaGVyby1pbWFnZS5wbmciLCJpYXQiOjE3NDkwNzc2OTIsImV4cCI6MjA2NDQzNzY5Mn0.N9CKEHt8Ey871V0ASRdj1zYSiMoYuA8jXn49Hn4Uuyc",
   className = "",
 }: HeroSectionProps) {
   return (
