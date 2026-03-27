@@ -66,8 +66,8 @@ Plans:
   6. A runtime error in any page renders a recovery UI instead of a white screen
 **Plans**: 3 plans
 Plans:
-- [ ] 06-01-PLAN.md — SEO infrastructure (sitemap, robots, OG image, root metadata) and error pages (404, error boundary)
-- [ ] 06-02-PLAN.md — Convert simple pages (home, contact, project detail) to Server Components with metadata
+- [x] 06-01-PLAN.md — SEO infrastructure (sitemap, robots, OG image, root metadata) and error pages (404, error boundary)
+- [x] 06-02-PLAN.md — Convert simple pages (home, contact, project detail) to Server Components with metadata
 - [ ] 06-03-PLAN.md — Convert complex pages (about, services, portfolio) to Server Components with client wrappers
 **UI hint**: yes
 
@@ -80,4 +80,4 @@ Plans:
 | 3. Continuity Verification | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete   | 2026-03-27 |
 | 5. Infrastructure & Image Optimization | v1.1 | 2/2 | Complete   | 2026-03-27 |
-| 6. Server Components, SEO & Error Pages | v1.1 | 0/3 | Planned    |  |
+| 6. Server Components, SEO & Error Pages | v1.1 | 2/3 | In Progress|  |
