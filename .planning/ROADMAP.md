@@ -47,7 +47,9 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. All project images (thumbnails, heroes) render via next/image — no raw `<img>` tags remain in project-related components
   2. `next.config.ts` uses `remotePatterns` instead of `domains` — no deprecation warning appears during `next build`
-**Plans**: TBD
+**Plans**: 1 plan
+Plans:
+- [ ] 05-01-PLAN.md — Replace raw img tags with next/image and add missing sizes props
 
 ### Phase 6: Server Components, SEO & Error Pages
 **Goal**: Search engines can index all pages, social sharing works, and broken/missing routes show branded error pages
@@ -71,5 +73,5 @@ Plans:
 | 2. Supabase Removal | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 3. Continuity Verification | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete   | 2026-03-27 |
-| 5. Infrastructure & Image Optimization | v1.1 | 0/? | Not started | - |
+| 5. Infrastructure & Image Optimization | v1.1 | 0/1 | Not started | - |
 | 6. Server Components, SEO & Error Pages | v1.1 | 0/? | Not started | - |
