@@ -8,11 +8,19 @@ A personal portfolio website for Lorenzo Pardell, a sound professional (sound de
 
 The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
 
-## Current State
+## Current Milestone: v1.1 Production Readiness & Code Quality
 
-**Shipped:** v1.0 — Supabase to Local Data Migration (2026-03-27)
+**Goal:** Make the portfolio production-grade — SEO-visible, bug-free, and maintainable.
 
-All project data lives in `lib/data/projects.ts` with full type safety. Supabase has been completely removed. All 6 routes and interactive features verified working. Placeholder images in use — user will replace with real images.
+**Target features:**
+- Server Components conversion for SEO and performance
+- SEO infrastructure (sitemap, robots.txt, Open Graph metadata)
+- Error/404 pages
+- Remove production console.logs
+- Centralize duplicated code (animations, sorting, contact info)
+- Fix known bugs (CTA background, iframe onError, IntersectionObserver)
+- Replace `<img>` with `next/image`
+- Clean up dead code and deprecated config
 
 ## Requirements
 
@@ -34,13 +42,27 @@ All project data lives in `lib/data/projects.ts` with full type safety. Supabase
 
 ### Active
 
-(None — ready for next milestone)
+- [ ] Server Components conversion for pages with static content
+- [ ] Sitemap.xml and robots.txt generation
+- [ ] Open Graph and social sharing metadata per page
+- [ ] Error boundary (error.tsx) and custom 404 page (not-found.tsx)
+- [ ] Remove all console.log/warn statements from production code
+- [ ] Centralize animation variants into shared module
+- [ ] Extract shared project sorting utility
+- [ ] Centralize hardcoded contact information
+- [ ] Fix CTA section background overlay bug
+- [ ] Fix iframe onError handler in ProjectVideoCard
+- [ ] Fix IntersectionObserver cleanup stale ref
+- [ ] Replace raw `<img>` tags with next/image
+- [ ] Remove unused variables and dead code
+- [ ] Fix deprecated images.domains config
 
 ### Out of Scope
 
 - CMS integration — content lives in code for now
 - Image sourcing — user will download and replace placeholders
-- Server components migration — not needed for current architecture
+- Dark mode toggle — CSS vars and dark: classes exist but wiring deferred
+- Analytics/visitor tracking — deferred to future milestone
 
 ## Context
 
@@ -63,4 +85,4 @@ All project data lives in `lib/data/projects.ts` with full type safety. Supabase
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.0 milestone*
+*Last updated: 2026-03-27 after v1.1 milestone start*
