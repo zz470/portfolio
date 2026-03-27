@@ -1,5 +1,20 @@
 # Milestones
 
+## v1.1 Production Readiness & Code Quality (Shipped: 2026-03-27)
+
+**Phases completed:** 3 phases, 7 plans, 4 tasks
+
+**Key accomplishments:**
+
+- One-liner:
+- One-liner:
+- One-liner:
+- Replaced 3 remaining raw `<img>` tags with next/image in PortfolioDetail.tsx (mobile + desktop hero) and PortfolioCard.tsx (thumbnail with preserved loading callbacks), closing the INFRA-01 image optimization requirement
+- 1. [Rule 1 - Bug] Fixed missing "use client" on SelectedWorks.tsx
+- 1. [Rule 3 - Blocking] Homepage and remaining pages still used Supabase hooks
+
+---
+
 ## v1.0 Supabase to Local Data Migration (Shipped: 2026-03-27)
 
 **Phases completed:** 3 phases, 6 plans
@@ -16,6 +31,7 @@
 - Verified all 6 routes and interactive features (automated script + visual browser testing)
 
 **Archives:**
+
 - `.planning/milestones/v1.0-ROADMAP.md`
 - `.planning/milestones/v1.0-REQUIREMENTS.md`
 

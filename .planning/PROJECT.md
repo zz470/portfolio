@@ -2,25 +2,23 @@
 
 ## What This Is
 
-A personal portfolio website for Lorenzo Pardell, a sound professional (sound designer, mixer, boom operator, dialogue editor, re-recording mixer) working in film, TV series, documentaries, and advertisements. Built with Next.js 15, showcasing 19 projects across multiple categories with local TypeScript data.
+A production-ready personal portfolio website for Lorenzo Pardell, a sound professional (sound designer, mixer, boom operator, dialogue editor, re-recording mixer) working in film, TV series, documentaries, and advertisements. Built with Next.js 15 using Server Components for SEO, showcasing 19 projects across multiple categories with local TypeScript data. Fully indexed by search engines with Open Graph social sharing support.
 
 ## Core Value
 
 The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
 
-## Current Milestone: v1.1 Production Readiness & Code Quality
+## Current State
 
-**Goal:** Make the portfolio production-grade — SEO-visible, bug-free, and maintainable.
+**Shipped:** v1.1 Production Readiness & Code Quality (2026-03-27)
 
-**Target features:**
-- Server Components conversion for SEO and performance
-- SEO infrastructure (sitemap, robots.txt, Open Graph metadata)
-- Error/404 pages
-- Remove production console.logs
-- Centralize duplicated code (animations, sorting, contact info)
-- Fix known bugs (CTA background, iframe onError, IntersectionObserver)
-- Replace `<img>` with `next/image`
-- Clean up dead code and deprecated config
+The portfolio is production-grade:
+- All pages render as Server Components (SEO-indexable HTML)
+- Sitemap with 24 routes, robots.txt, Open Graph metadata on every page
+- Branded 404 and error recovery pages
+- Clean codebase — no console.logs, no dead code, no deprecated APIs
+- All images optimized via next/image
+- Framer Motion animations preserved via client wrappers
 
 ## Requirements
 
@@ -39,42 +37,37 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - ✓ Local TypeScript data file with 19 project records — v1.0
 - ✓ Supabase fully removed (client, hooks, env vars, config) — v1.0
 - ✓ All routes and interactive features verified working — v1.0
-- ✓ Animation variants centralized in shared module — v1.1 Phase 4
-- ✓ Project sorting utility extracted to shared function — v1.1 Phase 4
-- ✓ Contact information centralized in single source file — v1.1 Phase 4
-- ✓ Console.log/warn statements removed from production code — v1.1 Phase 4
-- ✓ Dead code and unused variables removed — v1.1 Phase 4
-- ✓ iframe onError handler fixed with state-based approach — v1.1 Phase 4
-- ✓ IntersectionObserver dead code removed — v1.1 Phase 4
-- ✓ All project images use next/image with fill mode and sizes props — v1.1 Phase 5
-- ✓ No deprecated images.domains config (confirmed clean) — v1.1 Phase 5
-
-- ✓ All pages converted to Server Components with client wrappers for animations — v1.1 Phase 6
-- ✓ Sitemap.xml with all 24 routes (5 static + 19 projects) — v1.1 Phase 6
-- ✓ Robots.txt allowing all crawlers — v1.1 Phase 6
-- ✓ Open Graph metadata on every page with static placeholder image — v1.1 Phase 6
-- ✓ Project detail pages have unique OG title/description per project — v1.1 Phase 6
-- ✓ Branded 404 page with navigation back to home — v1.1 Phase 6
-- ✓ Error boundary with retry and go-home recovery — v1.1 Phase 6
+- ✓ Animation variants centralized in shared module — v1.1
+- ✓ Project sorting utility extracted to shared function — v1.1
+- ✓ Contact information centralized in single source file — v1.1
+- ✓ Console.log/warn statements removed from production code — v1.1
+- ✓ Dead code and unused variables removed — v1.1
+- ✓ Bug fixes (CTA background, iframe onError, IntersectionObserver) — v1.1
+- ✓ All project images use next/image with fill mode — v1.1
+- ✓ Server Components conversion with client animation wrappers — v1.1
+- ✓ Sitemap.xml, robots.txt, Open Graph metadata — v1.1
+- ✓ Branded 404 page and error boundary — v1.1
 
 ### Active
 
-None — all v1.1 requirements complete
+None — planning next milestone
 
 ### Out of Scope
 
 - CMS integration — content lives in code for now
-- Image sourcing — user will download and replace placeholders
 - Dark mode toggle — CSS vars and dark: classes exist but wiring deferred
 - Analytics/visitor tracking — deferred to future milestone
+- Site internationalization — English only for now, translation planned later
 
 ## Context
 
 - **Architecture**: Next.js 15 App Router, Server Components with client wrappers for Framer Motion animations, direct imports from `lib/data/projects.ts`
 - **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`)
-- **Images**: Placeholder SVGs in `public/images/projects/` — user will replace with real images. All project images use next/image with fill mode for automatic optimization and lazy loading
+- **SEO**: Sitemap (24 routes), robots.txt, OG metadata per page, unique OG title/description per project
+- **Images**: Placeholder SVGs in `public/images/projects/` — user will replace with real images. All use next/image with fill mode
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion
 - **No external dependencies**: No database, no API, no environment variables needed
+- **Deploy target**: Vercel (canonical URL: lorenzopardell.com)
 
 ## Key Decisions
 
@@ -83,10 +76,17 @@ None — all v1.1 requirements complete
 | TypeScript data file over MDX | Content is structured fields (not prose); TS gives type safety with zero tooling | ✓ v1.0 |
 | Local images in public/ over CDN | Never depend on external service for core assets again | ✓ v1.0 |
 | Direct imports over API layer | No need for fetch/hooks pattern when data is local and static | ✓ v1.0 |
+| Hybrid RSC + client wrappers | Preserves all Framer Motion animations while enabling SSR for SEO | ✓ v1.1 |
+| Static OG image over dynamic | Simple and reliable; upgrade to per-project images when real images are available | ✓ v1.1 |
+| next/image fill mode with sizes | Consistent pattern across all components; proper responsive image optimization | ✓ v1.1 |
+
+## Known Issues
+
+- `AboutPageClient.tsx` hardcodes contact info instead of importing from `lib/contact-info.ts` (QUAL-03 minor regression from Phase 6)
 
 ## Evolution
 
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.1 Phase 6 completion (milestone complete)*
+*Last updated: 2026-03-27 after v1.1 milestone completion*
