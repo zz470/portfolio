@@ -1,16 +1,25 @@
-"use client";
-
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { getVisibleSocialLinks } from "@/lib/social-links";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Lorenzo Pardell. Sound design, mixing, and audio post-production services.",
+  openGraph: {
+    title: "Contact | Lorenzo Pardell",
+    description: "Get in touch with Lorenzo Pardell for sound design and audio post-production.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function ContactPage() {
   // WhatsApp configuration
   const phoneNumber = "+5511917619699";
   const message = encodeURIComponent("Hello! I'd like to chat.");
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-  
+
   // Get visible social links
   const socialLinks = getVisibleSocialLinks();
 
@@ -31,7 +40,7 @@ export default function ContactPage() {
           <p className="text-gray-600 dark:text-gray-300 mb-8">
             I'm always excited to discuss new opportunities, answer questions, or just have a friendly chat.
           </p>
-          
+
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">Email</h3>
@@ -49,15 +58,15 @@ export default function ContactPage() {
               <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">Location</h3>
               <p className="text-gray-600 dark:text-gray-400">São Paulo, Brazil</p>
             </div>
-            
+
             <div className="pt-4">
               <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-4">Connect</h3>
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (
-                  <Link 
+                  <Link
                     key={link.name}
                     href={link.href}
-                    target="_blank" 
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="group"
                   >
@@ -78,7 +87,7 @@ export default function ContactPage() {
           <p className="text-gray-600 dark:text-gray-300 mb-8">
             Click the button below to start a WhatsApp conversation. I typically respond within a few hours.
           </p>
-          
+
           <a
             href={whatsappLink}
             target="_blank"
@@ -100,7 +109,7 @@ export default function ContactPage() {
 
           <div className="mt-8 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              💡 <strong>Pro tip:</strong> WhatsApp is the fastest way to reach me. I'm usually available during business hours (GMT-3).
+              Pro tip: WhatsApp is the fastest way to reach me. I'm usually available during business hours (GMT-3).
             </p>
           </div>
         </div>
