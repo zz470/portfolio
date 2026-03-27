@@ -19,7 +19,7 @@
 ### v1.1 Production Readiness & Code Quality
 
 - [x] **Phase 4: Code Quality & Bug Fixes** - Clean up duplicated code, remove debug noise, and fix known rendering bugs (completed 2026-03-27)
-- [ ] **Phase 5: Infrastructure & Image Optimization** - Migrate to next/image and fix deprecated config
+- [x] **Phase 5: Infrastructure & Image Optimization** - Migrate to next/image and fix deprecated config (completed 2026-03-27)
 - [ ] **Phase 6: Server Components, SEO & Error Pages** - Convert to Server Components, add SEO infrastructure, and add error/404 pages
 
 ## Phase Details
@@ -49,7 +49,7 @@ Plans:
   2. `next.config.ts` uses `remotePatterns` instead of `domains` — no deprecation warning appears during `next build`
 **Plans**: 1 plan
 Plans:
-- [ ] 05-01-PLAN.md — Replace raw img tags with next/image and add missing sizes props
+- [x] 05-01-PLAN.md — Replace raw img tags with next/image and add missing sizes props
 
 ### Phase 6: Server Components, SEO & Error Pages
 **Goal**: Search engines can index all pages, social sharing works, and broken/missing routes show branded error pages
@@ -73,5 +73,5 @@ Plans:
 | 2. Supabase Removal | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 3. Continuity Verification | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete   | 2026-03-27 |
-| 5. Infrastructure & Image Optimization | v1.1 | 0/1 | Not started | - |
+| 5. Infrastructure & Image Optimization | v1.1 | 1/1 | Complete   | 2026-03-27 |
 | 6. Server Components, SEO & Error Pages | v1.1 | 0/? | Not started | - |

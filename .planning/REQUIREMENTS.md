@@ -36,8 +36,8 @@ Requirements for production readiness and code quality. Each maps to roadmap pha
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: Project images use next/image component with proper width/height or fill
-- [ ] **INFRA-02**: next.config.ts uses `images.remotePatterns` instead of deprecated `images.domains`
+- [x] **INFRA-01**: Project images use next/image component with proper width/height or fill
+- [x] **INFRA-02**: next.config.ts uses `images.remotePatterns` instead of deprecated `images.domains`
 
 ## Future Requirements
 
@@ -81,8 +81,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FIX-01 | Phase 4 | Complete (04-01) |
 | FIX-02 | Phase 4 | Complete (04-01) |
 | FIX-03 | Phase 4 | Complete (04-01) |
-| INFRA-01 | Phase 5 | Pending |
-| INFRA-02 | Phase 5 | Pending |
+| INFRA-01 | Phase 5 | Complete |
+| INFRA-02 | Phase 5 | Complete |
 
 **Coverage:**
 - v1.1 requirements: 17 total
