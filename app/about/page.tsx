@@ -4,17 +4,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { getVisibleSocialLinks } from "@/lib/social-links";
-
-// Animation variants - simplified for elegance
-const fadeIn = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5 } }
-};
-
-const slideUp = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-};
+import { fadeIn, slideUp } from "@/lib/animations";
+import { contactInfo } from "@/lib/contact-info";
 
 export default function AboutPage() {
   // Get visible social links
@@ -22,10 +13,10 @@ export default function AboutPage() {
   
   return (
     <main className="container mx-auto px-4 py-16 max-w-6xl">
-      <motion.section 
+      <motion.section
         className="mb-20 text-center"
-        initial="hidden"
-        animate="visible"
+        initial="initial"
+        animate="animate"
         variants={fadeIn}
       >
         <h1 className="text-5xl font-bold mb-6">About</h1>
@@ -33,11 +24,11 @@ export default function AboutPage() {
        
       </motion.section>
       
-      <motion.section 
+      <motion.section
         className="mb-20"
         variants={slideUp}
-        initial="hidden"
-        animate="visible"
+        initial="initial"
+        animate="animate"
       >
         <h2 className="text-3xl font-bold mb-4">Lorenzo Pardell</h2>
         <div className="w-12 h-1 bg-orange-500 mb-6"></div>
@@ -82,8 +73,8 @@ export default function AboutPage() {
       <motion.section 
         className="mb-20"
         variants={slideUp}
-        initial="hidden"
-        animate="visible"
+        initial="initial"
+        animate="animate"
         transition={{ delay: 0.1 }}
       >
         <h2 className="text-3xl font-bold mb-4">My Mission</h2>
@@ -112,14 +103,14 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-8">
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Email me at</p>
-              <a href="mailto:lorenzopardell@gmail.com" className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
-                lorenzopardell@gmail.com
+              <a href={contactInfo.emailLink} className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
+                {contactInfo.email}
               </a>
             </div>
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Call me</p>
-              <a href="tel:+5511917619699" className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
-                +55 11 91761-9699
+              <a href={contactInfo.phoneLink} className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
+                {contactInfo.phone}
               </a>
             </div>
           </div>

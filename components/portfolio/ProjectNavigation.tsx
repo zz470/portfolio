@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { fadeIn } from "@/lib/animations";
+import { sortProjectsByDate } from "@/lib/data/projects";
 
 interface ProjectNavigationProps {
   currentProject: Project;
@@ -17,17 +19,8 @@ export default function ProjectNavigation({
   className = "" 
 }: ProjectNavigationProps) {
   // Sort projects by release_date in descending order (newest first)
-  const sortedProjects = [...allProjects].sort((a, b) => {
-    if (a.release_date && b.release_date) {
-      return b.release_date - a.release_date;
-    }
-    // If only one has a release date, prioritize the one with a date
-    if (a.release_date) return -1;
-    if (b.release_date) return 1;
-    // If neither has a release date, maintain original order
-    return 0;
-  });
-  
+  const sortedProjects = sortProjectsByDate(allProjects);
+
   // Find the index of the current project in the sorted array
   const currentIndex = sortedProjects.findIndex(p => p.slug === currentProject.slug);
   
@@ -39,12 +32,6 @@ export default function ProjectNavigation({
   // Get the next and previous projects
   const prevProject = sortedProjects[prevIndex];
   const nextProject = sortedProjects[nextIndex];
-
-  // Animation variants
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.2 } }
-  };
 
   return (
     <motion.div 

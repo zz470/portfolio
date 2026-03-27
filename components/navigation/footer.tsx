@@ -4,6 +4,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { getVisibleSocialLinks } from "@/lib/social-links"
+import { contactInfo } from "@/lib/contact-info"
 
 export default function Footer() {
   const pathname = usePathname()
@@ -110,21 +111,21 @@ export default function Footer() {
             >
               <h3 className="font-medium text-sm uppercase tracking-wider text-gray-900 mb-4">Get in Touch</h3>
               <div className="space-y-2.5 text-sm text-gray-600">
-                <motion.a 
-                  href="mailto:lorenzopardell@gmail.com"
+                <motion.a
+                  href={contactInfo.emailLink}
                   className="block hover:text-orange-500 transition-colors"
                   whileHover={{ x: 2 }}
                   transition={{ duration: 0.2 }}
                 >
-                  lorenzopardell@gmail.com
+                  {contactInfo.email}
                 </motion.a>
                 <motion.a
-                  href="tel:+5511917619699"
+                  href={contactInfo.phoneLink}
                   className="block hover:text-orange-500 transition-colors"
                   whileHover={{ x: 2 }}
                   transition={{ duration: 0.2 }}
                 >
-                  +55 11 91761-9699
+                  {contactInfo.phone}
                 </motion.a>
                 <motion.p
                   className="block"

@@ -1,0 +1,374 @@
+export interface Project {
+  id: number;
+  title: string;
+  slug: string;
+  description: string;
+  thumbnail_url: string;
+  video_url: string;
+  category: string;
+  roles: string[];
+  imdb_url?: string;
+  production_company?: string;
+  media_platform?: string;
+  release_date?: number;
+  hero_url?: string;
+  design_version?: string;
+}
+
+export const projects: Project[] = [
+  // 2025 releases
+  {
+    id: 1,
+    title: "Operação Transplante - Season 1",
+    slug: "operacao-transplante",
+    description:
+      "Operação Transplante documenta com exclusividade a jornada de equipes médicas e pacientes envolvidos com transplantes de órgãos em São Paulo.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=ogksrORk3TE&ab_channel=MaxBrasil",
+    category: "Series",
+    roles: ["Sound Effects Editor"],
+    imdb_url:
+      "https://www.imdb.com/pt/title/tt36334618/",
+    production_company: "Mixer Films",
+    media_platform: "Discovery H&H - HBO Max",
+    release_date: 2025,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 2,
+    title: "Minha Mãe Com Seu Pai - Season 1",
+    slug: "minha-mae-com-seu-pai",
+    description:
+      "Pais e mães solteiros participam de dinâmicas e dates em busca de um novo amor. O que eles não suspeitam é que estão sendo observados e controlados por seus próprios filhos.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=fgvSE1eWZNI&ab_channel=FilmesAtorClodoaldoGomes",
+    category: "Reality",
+    roles: ["Sound Designer", "Re-Recording Mixer"],
+    imdb_url: "https://www.imdb.com/title/tt36751856/",
+    production_company: "Formata",
+    media_platform: "Globoplay",
+    release_date: 2025,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 3,
+    title: "LOL: SE RIR JÁ ERA! - Season 4",
+    slug: "lol-brasil-s4",
+    description:
+      "A quarta temporada de 'LOL: SE RIR, JÁ ERA!' traz o Porta dos Fundos, o grupo de comédia mais famoso do Brasil, em uma batalha insana. As regras: um riso, cartão amarelo. Se rir de novo, eliminação. Em jogo, o prêmio de R$ 350 mil.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=VplAhJe6dHc&ab_channel=PrimeVideoBrasil",
+    category: "Reality",
+    roles: ["Re-recording Mixer"],
+    imdb_url: "https://www.imdb.com/title/tt15573636/",
+    production_company: "Formata",
+    media_platform: "Prime Video",
+    release_date: 2025,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  // 2024 releases
+  {
+    id: 4,
+    title: "No Corre - Season 2",
+    slug: "no-corre",
+    description:
+      "No Corre é uma série humorística que acompanha a rotina e as situações hilárias de um grupo de motoboys no bairro da Mooca, com destaque para Jackson Faive (Marco Luque), um entregador excêntrico que se faz de durão.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=WT0iPADc7AY&ab_channel=Multishow",
+    category: "Series",
+    roles: ["Dialogue Editor", "Re-recording mixer"],
+    imdb_url: "https://www.imdb.com/title/tt29871813/",
+    production_company: "Formata",
+    media_platform: "Globoplay - Multishow",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 5,
+    title: "Maniaco Do Parque - A História Nunca Contada",
+    slug: "maniaco-do-parque",
+    description:
+      "Os crimes de Francisco de Assis Pereira são revisitados pela perspectiva das vítimas, novos relatos de investigadores e áudios inéditos do assassino em série conhecido nacionalmente como Maníaco do Parque.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=T_7CA8tdL1I&ab_channel=PrimeVideoBrasil",
+    category: "Documentary",
+    roles: ["Sound Designer", "Re-recording Mixer"],
+    imdb_url: "https://www.imdb.com/pt/title/tt33394662/",
+    production_company: "Santa Rita Filmes",
+    media_platform: "Prime Video",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 6,
+    title: "Helipa - Um Autorretrato",
+    slug: "helipa",
+    description:
+      "Cinco artistas independentes se reúnem para um projeto inédito: a Cypher Helipa. Com o objetivo de falar sobre as suas histórias de vida atreladas à favela de Heliópolis, os MCs contam suas vivências através da música e do auto registro.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=MSGQEy2Bhww&ab_channel=MTVBrasil",
+    category: "Documentary",
+    roles: ["Dialogue Editor", "Sound Designer", "Re-recording Mixer"],
+    production_company: "MTV",
+    media_platform: "Paramount+",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 7,
+    title: "Luva de Pedreiro - O Rei Da Jogada",
+    slug: "luva-de-pedreiro",
+    description:
+      "Uma docssérie que retrata a impactante transformação do brasileiro Iran Ferreira, um adolescente de uma cidade do interior que se tornou um popular influencer. Cada episódio acompanha os triunfos e desafios desse jovem que atreveu sonhar grande.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=TDi4yirmR00&ab_channel=MaxBrasil",
+    category: "Documentary",
+    roles: ["Dialogue Editor", "Sound Designer", "Re-recording Mixer"],
+    imdb_url: "https://www.imdb.com/pt/title/tt34530164/",
+    production_company: "Beyond Films",
+    media_platform: "HBO Max",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 8,
+    title: "Dra. Darci - Season 4",
+    slug: "dra-darci-4",
+    description:
+      "Dra. Darci agora tem um podcast, atende em um coworking e lida com as figuras de lá com a ajuda de Grazi, sua empresária. Já o Darci quer atuar, ele mesmo, como terapeuta.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=d046UU2ZeuM&ab_channel=Multishow",
+    category: "Series",
+    roles: ["Dialogue Editor", "Sound Designer", "Re-recording Mixer"],
+    production_company: "Formata",
+    media_platform: "Globoplay - Multishow",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 9,
+    title: "Quem Não Pode Se Sacode",
+    slug: "quem-nao-pode-se-sacode",
+    description:
+      "Quem Não Pode, Se Sacode é um programa onde as pessoas vão se sacudir, se mexer e se divertir. Giovanna Ewbank e Fê Paes Leme fazem dinâmicas divertidas com convidados e plateia.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=ovX3u1IzcDE&ab_channel=CanalGNT",
+    category: "Reality",
+    roles: ["Dialogue Editor", "Re-recording Mixer"],
+    production_company: "Formata",
+    media_platform: "Globoplay - GNT",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 10,
+    title: "Surreal Portugal",
+    slug: "surreal-portugal",
+    description:
+      "Portugal's guide to the absurd. A comedy sketch show that oscillates between Nonsense and Satire. A kind of journey to parallel realities dominated by Absurdity and Surrealism, which, however, are not so far from the world we live in, more specifically, from the country we are from, a Surreal Portugal.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=-pbqcE1EfL0&ab_channel=FredFabrik",
+    category: "Series",
+    roles: ["Boom Operator", "Sound Mixer"],
+    imdb_url: "https://www.imdb.com/title/tt33015035/",
+    production_company: "Fabrik",
+    release_date: 2024,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  // 2023 releases
+  {
+    id: 11,
+    title: "Run For Europe",
+    slug: "run-for-europe",
+    description:
+      "\"Run for Europe\" tells the inspiring story of Raphael's remarkable journey to run a marathon in every European Union country. This documentary project is a poignant reminder of the significance of preserving and celebrating the unique qualities that unite Europe while emphasizing the profound power of connecting people through a shared experience.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url: "",
+    category: "Advertisement",
+    roles: ["Recording Engineer"],
+    media_platform: "Youtube",
+    release_date: 2023,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "secondary",
+  },
+  // 2022 releases
+  {
+    id: 12,
+    title: "48H Film Festival - O Segredo Dos Pássaros",
+    slug: "o-segredo-dos-passaros",
+    description:
+      "An unsuccessful coup raises suspicions of betrayal between the gang members, only to discover that the leader is the victim of a greater plan.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url: "https://filmfreeway.com/osegredodospassaros",
+    category: "Film",
+    roles: ["Boom Operator", "Sound Mixer"],
+    imdb_url: "https://www.imdb.com/title/tt19894422/",
+    production_company: "O11ZE.UM",
+    media_platform: "Theatric",
+    release_date: 2022,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 13,
+    title: "Bimbo - Receitas da Tia Cátia",
+    slug: "bimbo",
+    description:
+      "A series of commercials for the Portuguese brand, Bimbo, featuring the talented Portuguese chef Cátia Goarmon, affectionately known as Tia Catia. Bimbo is a prominent brand in Portugal, known for its delicious bakery products. The commercials aimed to showcase the brand's products while highlighting the culinary expertise and charm of Tia Catia, a beloved figure in Portuguese cuisine.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=gjSU0BPhCMs&ab_channel=RECORDTV",
+    category: "Advertisement",
+    roles: ["Boom Operator", "Sound Mixer"],
+    production_company: "Blablabla Media",
+    media_platform: "Youtube",
+    release_date: 2022,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "secondary",
+  },
+  // 2021 releases
+  {
+    id: 14,
+    title: "Gronda - José Avillez Masterclass",
+    slug: "gronda-avillez",
+    description:
+      "New masterclass by José Avillez on Gronda: \"7 must-see techniques applied to the Portuguese cuisine\". The Portuguese superstar chef José Avillez teaches you highly useful techniques to embellish your dishes and fill them with color & flavor.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=Hr3Z_0v4Ct4&ab_channel=Gronda",
+    category: "Advertisement",
+    roles: ["Boom Operator", "Sound Mixer"],
+    production_company: "Gronda",
+    media_platform: "Online Course",
+    release_date: 2021,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 15,
+    title: "Gronda - Henrique Sá Pessoa Masterclass",
+    slug: "gronda-sa-pessoa",
+    description:
+      "7 Genius Salted Codfish Recipes | Masterclass with two-MICHELIN-starred chef, Henrique Sá Pessoa on Gronda.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=87fRnstlqj0&ab_channel=Gronda",
+    category: "Advertisement",
+    roles: ["Boom Operator", "Sound Mixer"],
+    production_company: "Gronda",
+    media_platform: "Online Course",
+    release_date: 2021,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "primary",
+  },
+  {
+    id: 16,
+    title: "G.O.T.S - From Field to Fashion",
+    slug: "gots",
+    description:
+      "A series of commercials titled \"Faces From Field to Fashion,\" which offered a captivating behind-the-scenes journey into the heart of the Global Organic Textile Standard, showcasing the people, processes, and positive impact of G.O.T.S.-certified products. The project provided a compelling insight into the lives of individuals from one of the G.O.T.S.-certified facilities, Empresa Têxtil De Peugas, a Portuguese company producing 2.5 million socks annually, deeply committed to community, care, and environmental consciousness.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=1tFgoqtlmHs&ab_channel=GlobalOrganicTextileStandard",
+    category: "Advertisement",
+    roles: ["Boom Operator", "Sound Mixer"],
+    production_company: "Global Organic Textile Standard",
+    media_platform: "Social Media",
+    release_date: 2021,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "secondary",
+  },
+  {
+    id: 17,
+    title: "Gnosis - Vitamin K2 & Women's Health",
+    slug: "gnosis-vitamin-k2-womens-health",
+    description:
+      "Gnosis is a leading nutraceuticals company. As part of a video series, we developed a motion graphics style that makes use of negative spaces and smart transitions to help convey the importance of supplementation for health and wellbeing.",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://vimeo.com/733933182",
+    category: "Advertisement",
+    roles: ["Sound Designer"],
+    production_company: "Moonbow Studios",
+    release_date: 2021,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "tertiary",
+  },
+  // 2020 releases
+  {
+    id: 18,
+    title: "Ropes For Building Blocks",
+    slug: "ropes-for-building-blocks",
+    description: "",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url: "",
+    category: "Film",
+    roles: ["Original Score"],
+    production_company: "New York Film Academy",
+    media_platform: "NYFA",
+    release_date: 2020,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "secondary",
+  },
+  // 2018 releases
+  {
+    id: 19,
+    title: "Piracanjuba - Dia Das Crianças",
+    slug: "piracanjuba",
+    description:
+      "Quando o assunto é ser criança, não importa a idade: o importante é ter o espírito leve e divertido sempre presente! E você, já brincou com quem você ama hoje? Feliz Dia das Crianças para todos que mantém sua criança interior sempre viva!",
+    thumbnail_url: "/images/projects/placeholder-thumb.svg",
+    video_url:
+      "https://www.youtube.com/watch?v=APvzATtNQ1s&ab_channel=OficinaDeImagens",
+    category: "Advertisement",
+    roles: ["Original Score"],
+    production_company: "Caraballo",
+    media_platform: "Broadcast",
+    release_date: 2018,
+    hero_url: "/images/projects/placeholder-hero.svg",
+    design_version: "secondary",
+  },
+];
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find((p) => p.slug === slug);
+}
+
+export function getProjectsByCategory(category: string): Project[] {
+  return projects.filter((p) => p.category === category);
+}
+
+export function getFeaturedProjects(count: number = 3): Project[] {
+  return projects.slice(0, count);
+}
+
+export function sortProjectsByDate(projectList: Project[]): Project[] {
+  return [...projectList].sort((a, b) => {
+    if (a.release_date && b.release_date) {
+      return b.release_date - a.release_date;
+    }
+    if (a.release_date) return -1;
+    if (b.release_date) return 1;
+    return 0;
+  });
+}
