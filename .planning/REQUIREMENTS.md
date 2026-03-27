@@ -20,8 +20,8 @@
 
 ### Image Handling
 
-- [ ] **IMG-01**: Placeholder images are generated for all projects (thumbnail + hero)
-- [ ] **IMG-02**: Image URLs in project data point to local public/ directory paths
+- [x] **IMG-01**: Placeholder images are generated for all projects (thumbnail + hero)
+- [x] **IMG-02**: Image URLs in project data point to local public/ directory paths
 
 ### Continuity
 
@@ -54,8 +54,8 @@
 | DATA-01 | Phase 1 | Complete |
 | DATA-02 | Phase 1 | Complete |
 | DATA-03 | Phase 1 | Complete |
-| IMG-01 | Phase 1 | Pending |
-| IMG-02 | Phase 1 | Pending |
+| IMG-01 | Phase 1 | Complete |
+| IMG-02 | Phase 1 | Complete |
 | SUPA-01 | Phase 2 | Pending |
 | SUPA-02 | Phase 2 | Pending |
 | SUPA-03 | Phase 2 | Pending |
