@@ -18,7 +18,7 @@
 
 ### v1.1 Production Readiness & Code Quality
 
-- [ ] **Phase 4: Code Quality & Bug Fixes** - Clean up duplicated code, remove debug noise, and fix known rendering bugs
+- [x] **Phase 4: Code Quality & Bug Fixes** - Clean up duplicated code, remove debug noise, and fix known rendering bugs (completed 2026-03-27)
 - [ ] **Phase 5: Infrastructure & Image Optimization** - Migrate to next/image and fix deprecated config
 - [ ] **Phase 6: Server Components, SEO & Error Pages** - Convert to Server Components, add SEO infrastructure, and add error/404 pages
 
@@ -37,7 +37,7 @@
 **Plans**: 2 plans
 Plans:
 - [x] 04-01-PLAN.md — Create shared modules, fix bugs, remove console.logs and dead code
-- [ ] 04-02-PLAN.md — Rewire all consumers to shared modules and visual verification
+- [x] 04-02-PLAN.md — Rewire all consumers to shared modules and visual verification
 **UI hint**: yes
 
 ### Phase 5: Infrastructure & Image Optimization
@@ -70,6 +70,6 @@ Plans:
 | 1. Local Data Layer | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 2. Supabase Removal | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 3. Continuity Verification | v1.0 | 2/2 | Complete | 2026-03-27 |
-| 4. Code Quality & Bug Fixes | v1.1 | 1/2 | In progress | - |
+| 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete   | 2026-03-27 |
 | 5. Infrastructure & Image Optimization | v1.1 | 0/? | Not started | - |
 | 6. Server Components, SEO & Error Pages | v1.1 | 0/? | Not started | - |

@@ -22,9 +22,9 @@ Requirements for production readiness and code quality. Each maps to roadmap pha
 
 ### Code Quality
 
-- [ ] **QUAL-01**: Animation variants centralized in shared module, imported by all consuming files
-- [ ] **QUAL-02**: Project sorting logic extracted into single shared utility function
-- [ ] **QUAL-03**: Contact information (phone, email, WhatsApp) centralized in one source file
+- [x] **QUAL-01**: Animation variants centralized in shared module, imported by all consuming files
+- [x] **QUAL-02**: Project sorting logic extracted into single shared utility function
+- [x] **QUAL-03**: Contact information (phone, email, WhatsApp) centralized in one source file
 - [x] **QUAL-04**: All console.log/warn statements removed from production code
 - [x] **QUAL-05**: Unused variables, imports, and dead code removed
 
@@ -73,9 +73,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SEO-05 | Phase 6 | Pending |
 | ERR-01 | Phase 6 | Pending |
 | ERR-02 | Phase 6 | Pending |
-| QUAL-01 | Phase 4 | Pending |
-| QUAL-02 | Phase 4 | Pending |
-| QUAL-03 | Phase 4 | Pending |
+| QUAL-01 | Phase 4 | Complete |
+| QUAL-02 | Phase 4 | Complete |
+| QUAL-03 | Phase 4 | Complete |
 | QUAL-04 | Phase 4 | Complete (04-01) |
 | QUAL-05 | Phase 4 | Complete (04-01) |
 | FIX-01 | Phase 4 | Complete (04-01) |
