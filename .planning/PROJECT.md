@@ -50,7 +50,20 @@ The portfolio is production-grade:
 
 ### Active
 
-None — planning next milestone
+- [ ] Replace placeholder thumbnail and hero image URLs with real project images
+- [ ] Map each project slug to its image directory and select _thumb_1 / _hero_1 files
+- [ ] Handle projects with non-standard naming conventions
+- [ ] Remove unused placeholder SVGs
+
+## Current Milestone: v1.2 Real Project Images
+
+**Goal:** Replace all placeholder SVG images with real project photos across the portfolio.
+
+**Target features:**
+- Update `thumbnail_url` and `hero_url` in `lib/data/projects.ts` to point to real images
+- Use `_thumb_1` and `_hero_1` naming convention per project
+- Handle any projects with non-standard naming
+- Remove old placeholder SVGs once no longer referenced
 
 ### Out of Scope
 
@@ -89,4 +102,4 @@ None — planning next milestone
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.1 milestone completion*
+*Last updated: 2026-03-27 after v1.2 milestone start*
