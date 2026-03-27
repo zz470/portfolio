@@ -24,10 +24,14 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Requirements**: DATA-01, DATA-02, DATA-03, IMG-01, IMG-02
 **Success Criteria** (what must be TRUE):
   1. A TypeScript file exports all 19 projects with every required field populated
-  2. Projects are ordered by created_at descending, matching the previous Supabase query order
+  2. Projects are ordered by release_date descending (per D-07), with null release_date at end (per D-08)
   3. Placeholder images exist in public/ for every project (thumbnail + hero)
   4. All image paths in the data file resolve to local public/ directory paths
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Create TypeScript data file with Project interface, 19 records, and helper functions
+- [ ] 01-02-PLAN.md — Generate 38 placeholder SVG images and verify path integrity
 
 ### Phase 2: Supabase Removal
 **Goal**: Supabase is gone — no client, no hooks, no env vars, no config references
@@ -59,6 +63,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Local Data Layer | 0/TBD | Not started | - |
+| 1. Local Data Layer | 0/2 | Planning complete | - |
 | 2. Supabase Removal | 0/TBD | Not started | - |
 | 3. Continuity Verification | 0/TBD | Not started | - |
