@@ -49,12 +49,17 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - ✓ All project images use next/image with fill mode and sizes props — v1.1 Phase 5
 - ✓ No deprecated images.domains config (confirmed clean) — v1.1 Phase 5
 
+- ✓ All pages converted to Server Components with client wrappers for animations — v1.1 Phase 6
+- ✓ Sitemap.xml with all 24 routes (5 static + 19 projects) — v1.1 Phase 6
+- ✓ Robots.txt allowing all crawlers — v1.1 Phase 6
+- ✓ Open Graph metadata on every page with static placeholder image — v1.1 Phase 6
+- ✓ Project detail pages have unique OG title/description per project — v1.1 Phase 6
+- ✓ Branded 404 page with navigation back to home — v1.1 Phase 6
+- ✓ Error boundary with retry and go-home recovery — v1.1 Phase 6
+
 ### Active
 
-- [ ] Server Components conversion for pages with static content
-- [ ] Sitemap.xml and robots.txt generation
-- [ ] Open Graph and social sharing metadata per page
-- [ ] Error boundary (error.tsx) and custom 404 page (not-found.tsx)
+None — all v1.1 requirements complete
 
 ### Out of Scope
 
@@ -65,7 +70,7 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ## Context
 
-- **Architecture**: Next.js 15 App Router, all client components, direct imports from `lib/data/projects.ts`
+- **Architecture**: Next.js 15 App Router, Server Components with client wrappers for Framer Motion animations, direct imports from `lib/data/projects.ts`
 - **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`)
 - **Images**: Placeholder SVGs in `public/images/projects/` — user will replace with real images. All project images use next/image with fill mode for automatic optimization and lazy loading
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion
@@ -84,4 +89,4 @@ The portfolio must display Lorenzo's professional work with project details, rol
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.1 Phase 5 completion*
+*Last updated: 2026-03-27 after v1.1 Phase 6 completion (milestone complete)*
