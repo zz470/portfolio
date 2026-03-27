@@ -10,15 +10,15 @@ Requirements for production readiness and code quality. Each maps to roadmap pha
 ### SEO & Discoverability
 
 - [ ] **SEO-01**: Pages with static content render as Server Components with SEO-indexable HTML
-- [ ] **SEO-02**: Site generates sitemap.xml with all routes via `app/sitemap.ts`
-- [ ] **SEO-03**: Site serves robots.txt via `app/robots.ts`
-- [ ] **SEO-04**: Each page has Open Graph metadata (title, description, image) for social sharing
+- [x] **SEO-02**: Site generates sitemap.xml with all routes via `app/sitemap.ts`
+- [x] **SEO-03**: Site serves robots.txt via `app/robots.ts`
+- [x] **SEO-04**: Each page has Open Graph metadata (title, description, image) for social sharing
 - [ ] **SEO-05**: Portfolio project pages have unique OG metadata per project
 
 ### Error Handling
 
-- [ ] **ERR-01**: Custom 404 page (not-found.tsx) with branding and navigation back to site
-- [ ] **ERR-02**: Global error boundary (error.tsx) catches runtime errors with recovery option
+- [x] **ERR-01**: Custom 404 page (not-found.tsx) with branding and navigation back to site
+- [x] **ERR-02**: Global error boundary (error.tsx) catches runtime errors with recovery option
 
 ### Code Quality
 
@@ -67,12 +67,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | SEO-01 | Phase 6 | Pending |
-| SEO-02 | Phase 6 | Pending |
-| SEO-03 | Phase 6 | Pending |
-| SEO-04 | Phase 6 | Pending |
+| SEO-02 | Phase 6 | Complete |
+| SEO-03 | Phase 6 | Complete |
+| SEO-04 | Phase 6 | Complete |
 | SEO-05 | Phase 6 | Pending |
-| ERR-01 | Phase 6 | Pending |
-| ERR-02 | Phase 6 | Pending |
+| ERR-01 | Phase 6 | Complete |
+| ERR-02 | Phase 6 | Complete |
 | QUAL-01 | Phase 4 | Complete |
 | QUAL-02 | Phase 4 | Complete |
 | QUAL-03 | Phase 4 | Complete |
