@@ -361,3 +361,14 @@ export function getProjectsByCategory(category: string): Project[] {
 export function getFeaturedProjects(count: number = 3): Project[] {
   return projects.slice(0, count);
 }
+
+export function sortProjectsByDate(projectList: Project[]): Project[] {
+  return [...projectList].sort((a, b) => {
+    if (a.release_date && b.release_date) {
+      return b.release_date - a.release_date;
+    }
+    if (a.release_date) return -1;
+    if (b.release_date) return 1;
+    return 0;
+  });
+}
