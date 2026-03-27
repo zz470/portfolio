@@ -46,6 +46,8 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - ✓ Dead code and unused variables removed — v1.1 Phase 4
 - ✓ iframe onError handler fixed with state-based approach — v1.1 Phase 4
 - ✓ IntersectionObserver dead code removed — v1.1 Phase 4
+- ✓ All project images use next/image with fill mode and sizes props — v1.1 Phase 5
+- ✓ No deprecated images.domains config (confirmed clean) — v1.1 Phase 5
 
 ### Active
 
@@ -53,12 +55,6 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - [ ] Sitemap.xml and robots.txt generation
 - [ ] Open Graph and social sharing metadata per page
 - [ ] Error boundary (error.tsx) and custom 404 page (not-found.tsx)
-- [ ] Remove all console.log/warn statements from production code
-- [ ] Centralize animation variants into shared module
-- [ ] Extract shared project sorting utility
-- [ ] Centralize hardcoded contact information
-- [ ] Replace raw `<img>` tags with next/image
-- [ ] Fix deprecated images.domains config
 
 ### Out of Scope
 
@@ -71,7 +67,7 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 - **Architecture**: Next.js 15 App Router, all client components, direct imports from `lib/data/projects.ts`
 - **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`)
-- **Images**: Placeholder SVGs in `public/images/projects/` — user will replace with real images
+- **Images**: Placeholder SVGs in `public/images/projects/` — user will replace with real images. All project images use next/image with fill mode for automatic optimization and lazy loading
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion
 - **No external dependencies**: No database, no API, no environment variables needed
 
@@ -88,4 +84,4 @@ The portfolio must display Lorenzo's professional work with project details, rol
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.1 Phase 4 completion*
+*Last updated: 2026-03-27 after v1.1 Phase 5 completion*
