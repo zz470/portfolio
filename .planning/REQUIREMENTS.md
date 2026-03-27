@@ -25,10 +25,10 @@
 
 ### Continuity
 
-- [ ] **CONT-01**: All existing routes work unchanged (/, /portfolio, /portfolio/[slug], /services, /about, /contact)
-- [ ] **CONT-02**: Category filtering on portfolio page works with local data
-- [ ] **CONT-03**: Design version routing (primary/secondary/tertiary layouts) works on detail pages
-- [ ] **CONT-04**: Project navigation (prev/next) works on detail pages
+- [x] **CONT-01**: All existing routes work unchanged (/, /portfolio, /portfolio/[slug], /services, /about, /contact)
+- [x] **CONT-02**: Category filtering on portfolio page works with local data
+- [x] **CONT-03**: Design version routing (primary/secondary/tertiary layouts) works on detail pages
+- [x] **CONT-04**: Project navigation (prev/next) works on detail pages
 
 ## v2 Requirements
 
@@ -60,10 +60,10 @@
 | SUPA-02 | Phase 2 | Pending |
 | SUPA-03 | Phase 2 | Complete |
 | SUPA-04 | Phase 2 | Complete |
-| CONT-01 | Phase 3 | Pending |
-| CONT-02 | Phase 3 | Pending |
-| CONT-03 | Phase 3 | Pending |
-| CONT-04 | Phase 3 | Pending |
+| CONT-01 | Phase 3 | Complete |
+| CONT-02 | Phase 3 | Complete |
+| CONT-03 | Phase 3 | Complete |
+| CONT-04 | Phase 3 | Complete |
 
 **Coverage:**
 - v1 requirements: 13 total
