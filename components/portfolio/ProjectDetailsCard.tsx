@@ -1,4 +1,4 @@
-import { Project } from "@/hooks/useProjects";
+import { type Project } from "@/lib/data/projects";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
