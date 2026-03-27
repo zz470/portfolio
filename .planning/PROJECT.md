@@ -10,9 +10,10 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ## Current State
 
-**Shipped:** v1.1 Production Readiness & Code Quality (2026-03-27)
+**Shipped:** v1.2 Real Project Images (2026-03-27)
 
-The portfolio is production-grade:
+The portfolio is production-grade with real project images:
+- All 19 projects display real thumbnail and hero photos
 - All pages render as Server Components (SEO-indexable HTML)
 - Sitemap with 24 routes, robots.txt, Open Graph metadata on every page
 - Branded 404 and error recovery pages
@@ -47,13 +48,12 @@ The portfolio is production-grade:
 - ✓ Server Components conversion with client animation wrappers — v1.1
 - ✓ Sitemap.xml, robots.txt, Open Graph metadata — v1.1
 - ✓ Branded 404 page and error boundary — v1.1
+- ✓ Real thumbnail and hero images for all 19 projects — v1.2
+- ✓ Placeholder SVGs removed — v1.2
 
 ### Active
 
-- [ ] Replace placeholder thumbnail and hero image URLs with real project images
-- [ ] Map each project slug to its image directory and select _thumb_1 / _hero_1 files
-- [ ] Handle projects with non-standard naming conventions
-- [ ] Remove unused placeholder SVGs
+None — planning next milestone
 
 ## Current Milestone: v1.2 Real Project Images
 
@@ -77,7 +77,7 @@ The portfolio is production-grade:
 - **Architecture**: Next.js 15 App Router, Server Components with client wrappers for Framer Motion animations, direct imports from `lib/data/projects.ts`
 - **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`)
 - **SEO**: Sitemap (24 routes), robots.txt, OG metadata per page, unique OG title/description per project
-- **Images**: Placeholder SVGs in `public/images/projects/` — user will replace with real images. All use next/image with fill mode
+- **Images**: Real project photos in `public/images/projects/{project_dir}/` — thumbnails and heroes for all 19 projects. All use next/image with fill mode
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion
 - **No external dependencies**: No database, no API, no environment variables needed
 - **Deploy target**: Vercel (canonical URL: lorenzopardell.com)
@@ -102,4 +102,4 @@ The portfolio is production-grade:
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.2 milestone start*
+*Last updated: 2026-03-27 after v1.2 Phase 7 completion*
