@@ -25,7 +25,11 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ### Active
 
-- [ ] Ensure all existing pages continue working with local data (visual verification pending)
+(None — all milestone v1.0 requirements complete)
+
+### Completed in Phase 3
+
+- ✓ Ensure all existing pages continue working with local data — Phase 3 (automated + visual verification)
 
 ### Completed in Phase 2
 
@@ -86,4 +90,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-26 after Phase 2 completion*
+*Last updated: 2026-03-26 after Phase 3 completion — all milestone v1.0 phases complete*
