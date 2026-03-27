@@ -7,21 +7,21 @@
 
 ### Data Migration
 
-- [x] **DATA-01**: All 19 project records are stored in a local TypeScript data file with full type safety
-- [x] **DATA-02**: Project data includes all fields: title, slug, description, category, roles, video_url, imdb_url, production_company, media_platform, release_date, design_version
-- [x] **DATA-03**: Projects are ordered by created_at descending (matching current Supabase query)
+- [ ] **DATA-01**: All 19 project records are stored in a local TypeScript data file with full type safety
+- [ ] **DATA-02**: Project data includes all fields: title, slug, description, category, roles, video_url, imdb_url, production_company, media_platform, release_date, design_version
+- [ ] **DATA-03**: Projects are ordered by created_at descending (matching current Supabase query)
 
 ### Supabase Removal
 
-- [ ] **SUPA-01**: Supabase client library and all imports are removed
-- [x] **SUPA-02**: useProjects and useProject hooks are replaced with direct data imports
-- [ ] **SUPA-03**: Environment variables (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY) are removed
-- [ ] **SUPA-04**: Supabase image domain removed from next.config.ts
+- [x] **SUPA-01**: Supabase client library and all imports are removed
+- [ ] **SUPA-02**: useProjects and useProject hooks are replaced with direct data imports
+- [x] **SUPA-03**: Environment variables (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY) are removed
+- [x] **SUPA-04**: Supabase image domain removed from next.config.ts
 
 ### Image Handling
 
-- [x] **IMG-01**: Placeholder images are generated for all projects (thumbnail + hero)
-- [x] **IMG-02**: Image URLs in project data point to local public/ directory paths
+- [ ] **IMG-01**: Placeholder images are generated for all projects (thumbnail + hero)
+- [ ] **IMG-02**: Image URLs in project data point to local public/ directory paths
 
 ### Continuity
 
@@ -51,15 +51,15 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | Phase 1 | Complete |
-| DATA-02 | Phase 1 | Complete |
-| DATA-03 | Phase 1 | Complete |
-| IMG-01 | Phase 1 | Complete |
-| IMG-02 | Phase 1 | Complete |
-| SUPA-01 | Phase 2 | Pending |
-| SUPA-02 | Phase 2 | Complete |
-| SUPA-03 | Phase 2 | Pending |
-| SUPA-04 | Phase 2 | Pending |
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| IMG-01 | Phase 1 | Pending |
+| IMG-02 | Phase 1 | Pending |
+| SUPA-01 | Phase 2 | Complete |
+| SUPA-02 | Phase 2 | Pending |
+| SUPA-03 | Phase 2 | Complete |
+| SUPA-04 | Phase 2 | Complete |
 | CONT-01 | Phase 3 | Pending |
 | CONT-02 | Phase 3 | Pending |
 | CONT-03 | Phase 3 | Pending |
