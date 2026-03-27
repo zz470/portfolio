@@ -51,25 +51,25 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | — | Pending |
-| DATA-02 | — | Pending |
-| DATA-03 | — | Pending |
-| SUPA-01 | — | Pending |
-| SUPA-02 | — | Pending |
-| SUPA-03 | — | Pending |
-| SUPA-04 | — | Pending |
-| IMG-01 | — | Pending |
-| IMG-02 | — | Pending |
-| CONT-01 | — | Pending |
-| CONT-02 | — | Pending |
-| CONT-03 | — | Pending |
-| CONT-04 | — | Pending |
+| DATA-01 | Phase 1 | Pending |
+| DATA-02 | Phase 1 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| IMG-01 | Phase 1 | Pending |
+| IMG-02 | Phase 1 | Pending |
+| SUPA-01 | Phase 2 | Pending |
+| SUPA-02 | Phase 2 | Pending |
+| SUPA-03 | Phase 2 | Pending |
+| SUPA-04 | Phase 2 | Pending |
+| CONT-01 | Phase 3 | Pending |
+| CONT-02 | Phase 3 | Pending |
+| CONT-03 | Phase 3 | Pending |
+| CONT-04 | Phase 3 | Pending |
 
 **Coverage:**
 - v1 requirements: 13 total
-- Mapped to phases: 0
-- Unmapped: 13 (pending roadmap creation)
+- Mapped to phases: 13
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-26*
-*Last updated: 2026-03-26 after initial definition*
+*Last updated: 2026-03-26 after roadmap creation*
