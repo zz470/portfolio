@@ -41,8 +41,10 @@
   2. Each project detail page displays a real hero image at the top
   3. `placeholder-thumb.svg` and `placeholder-hero.svg` files are removed from `public/images/projects/`
   4. No broken image fallbacks appear when browsing the portfolio or any project detail page
-**Plans**: TBD
-**UI hint**: yes
+**Plans**: 1 plan
+
+Plans:
+- [ ] 07-01-PLAN.md — Update all 19 thumbnail_url and hero_url values in projects.ts; delete placeholder SVGs
 
 ## Progress
 
@@ -54,4 +56,4 @@
 | 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete | 2026-03-27 |
 | 5. Infrastructure & Image Optimization | v1.1 | 2/2 | Complete | 2026-03-27 |
 | 6. Server Components, SEO & Error Pages | v1.1 | 3/3 | Complete | 2026-03-27 |
-| 7. Real Project Images | v1.2 | 0/? | Not started | - |
+| 7. Real Project Images | v1.2 | 0/1 | Not started | - |
