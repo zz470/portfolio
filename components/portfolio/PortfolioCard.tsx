@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { type Project } from "@/lib/data/projects";
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
@@ -56,10 +57,12 @@ export default function PortfolioCard({ project, index }: PortfolioCardProps) {
           <div className="relative w-full pb-[50%] bg-gray-200">
             {/* Image */}
             {!imageError && (
-              <img
+              <Image
                 src={project.thumbnail_url}
                 alt={project.title}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={`object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                 onLoad={() => setImageLoaded(true)}
                 onError={() => setImageError(true)}
               />
