@@ -1,4 +1,4 @@
-import { Project } from "@/hooks/useProjects";
+import { type Project } from "@/lib/data/projects";
 import { motion } from "framer-motion";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Project } from "@/hooks/useProjects";
+import { type Project } from "@/lib/data/projects";
 import { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 

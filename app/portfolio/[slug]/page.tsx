@@ -1,7 +1,6 @@
 "use client"
 
-import { useProject } from "@/hooks/useProject";
-import { useProjects } from "@/hooks/useProjects";
+import { getProjectBySlug, projects } from "@/lib/data/projects";
 import { useParams } from "next/navigation";
 import PortfolioDetail from "@/components/portfolio/PortfolioDetail";
 import PortfolioDetailSecondary from "@/components/portfolio/PortfolioDetailSecondary";
@@ -12,39 +11,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function ProjectPage() {
   const { slug } = useParams();
-  const { project, loading: projectLoading, error: projectError } = useProject(slug as string);
-  const { projects, loading: projectsLoading, error: projectsError } = useProjects();
+  const project = getProjectBySlug(slug as string);
 
-  const loading = projectLoading || projectsLoading;
-  const error = projectError || projectsError;
-
-  console.log("ProjectPage rendering with:", { 
-    slug, 
-    project, 
-    projectLoading, 
-    projectError,
-    projectDesignVersion: project?.design_version
-  });
-
-  if (loading) {
-    console.log("ProjectPage: Loading state");
-    return (
-      <div className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-950">
-        <Card className="w-full max-w-md border-0 shadow-lg bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm">
-          <CardContent className="flex flex-col items-center justify-center p-12">
-            <div className="animate-pulse flex flex-col items-center">
-              <div className="h-32 w-32 bg-gray-200 dark:bg-gray-700 rounded-full mb-6"></div>
-              <div className="h-6 w-48 bg-gray-200 dark:bg-gray-700 rounded-md mb-4"></div>
-              <div className="h-4 w-32 bg-gray-200 dark:bg-gray-700 rounded-md"></div>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    );
-  }
-
-  if (error || !project) {
-    console.log("ProjectPage: Error or project not found", { error, project });
+  if (!project) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gray-50 dark:bg-gray-950">
         <Card className="w-full max-w-md border-0 shadow-lg bg-white dark:bg-gray-900">
@@ -63,17 +32,12 @@ export default function ProjectPage() {
   }
 
   // Render the appropriate design based on the project's design_version field
-  console.log("ProjectPage: Rendering design version:", project.design_version);
-  
   if (project.design_version === 'secondary') {
-    console.log("ProjectPage: Rendering secondary design");
-    return <PortfolioDetailSecondary project={project} allProjects={projects || []} />;
+    return <PortfolioDetailSecondary project={project} allProjects={projects} />;
   } else if (project.design_version === 'tertiary') {
-    console.log("ProjectPage: Rendering tertiary design");
-    return <PortfolioDetailTertiary project={project} allProjects={projects || []} />;
+    return <PortfolioDetailTertiary project={project} allProjects={projects} />;
   }
 
   // Default to primary design
-  console.log("ProjectPage: Rendering primary design");
-  return <PortfolioDetail project={project} allProjects={projects || []} />;
+  return <PortfolioDetail project={project} allProjects={projects} />;
 }

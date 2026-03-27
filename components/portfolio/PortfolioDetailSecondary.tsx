@@ -1,4 +1,4 @@
-import { Project } from "@/hooks/useProjects";
+import { type Project } from "@/lib/data/projects";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";

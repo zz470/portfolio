@@ -1,6 +1,6 @@
 // components/PortfolioDetail.tsx
 
-import { Project } from "@/hooks/useProjects"; // Assuming your project type is exported from the hook file
+import { type Project } from "@/lib/data/projects";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";

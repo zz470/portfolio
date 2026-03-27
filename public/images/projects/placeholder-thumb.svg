@@ -1,0 +1,6 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#1a1a1a"/>
+  <line x1="0" y1="396" x2="600" y2="396" stroke="#f97316" stroke-width="4"/>
+  <text x="300" y="200" font-family="system-ui, sans-serif" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">Lorenzo Pardell</text>
+  <text x="300" y="240" font-family="system-ui, sans-serif" font-size="14" fill="#a3a3a3" text-anchor="middle" dominant-baseline="middle">Sound Professional</text>
+</svg>

@@ -1,5 +1,5 @@
 import PortfolioCard from "@/components/portfolio/PortfolioCard";
-import { Project } from "@/hooks/useProjects";
+import { type Project } from "@/lib/data/projects";
 
 export default function PortfolioGrid({ projects }: { projects: Project[] }) {
   // Sort projects by release_date in descending order (newest first)
