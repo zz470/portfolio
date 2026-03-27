@@ -25,14 +25,14 @@ Requirements for production readiness and code quality. Each maps to roadmap pha
 - [ ] **QUAL-01**: Animation variants centralized in shared module, imported by all consuming files
 - [ ] **QUAL-02**: Project sorting logic extracted into single shared utility function
 - [ ] **QUAL-03**: Contact information (phone, email, WhatsApp) centralized in one source file
-- [ ] **QUAL-04**: All console.log/warn statements removed from production code
-- [ ] **QUAL-05**: Unused variables, imports, and dead code removed
+- [x] **QUAL-04**: All console.log/warn statements removed from production code
+- [x] **QUAL-05**: Unused variables, imports, and dead code removed
 
 ### Bug Fixes
 
-- [ ] **FIX-01**: CTA section renders with correct dark background (remove white overlay)
-- [ ] **FIX-02**: ProjectVideoCard iframe error updates component state instead of returning JSX
-- [ ] **FIX-03**: IntersectionObserver cleanup captures ref in local variable before unmount
+- [x] **FIX-01**: CTA section renders with correct dark background (remove white overlay)
+- [x] **FIX-02**: ProjectVideoCard iframe error updates component state instead of returning JSX
+- [x] **FIX-03**: IntersectionObserver cleanup captures ref in local variable before unmount
 
 ### Infrastructure
 
@@ -76,11 +76,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | QUAL-01 | Phase 4 | Pending |
 | QUAL-02 | Phase 4 | Pending |
 | QUAL-03 | Phase 4 | Pending |
-| QUAL-04 | Phase 4 | Pending |
-| QUAL-05 | Phase 4 | Pending |
-| FIX-01 | Phase 4 | Pending |
-| FIX-02 | Phase 4 | Pending |
-| FIX-03 | Phase 4 | Pending |
+| QUAL-04 | Phase 4 | Complete (04-01) |
+| QUAL-05 | Phase 4 | Complete (04-01) |
+| FIX-01 | Phase 4 | Complete (04-01) |
+| FIX-02 | Phase 4 | Complete (04-01) |
+| FIX-03 | Phase 4 | Complete (04-01) |
 | INFRA-01 | Phase 5 | Pending |
 | INFRA-02 | Phase 5 | Pending |
 
