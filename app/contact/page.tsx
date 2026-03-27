@@ -1,6 +1,15 @@
-"use client";
-
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Get in touch with Lorenzo Pardell. Sound design, mixing, and audio post-production services.",
+  openGraph: {
+    title: "Contact | Lorenzo Pardell",
+    description: "Get in touch with Lorenzo Pardell for sound design and audio post-production.",
+    images: ["/og-image.png"],
+  },
+};
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { getVisibleSocialLinks } from "@/lib/social-links";

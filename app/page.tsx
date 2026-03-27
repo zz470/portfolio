@@ -1,10 +1,18 @@
-"use client";
-
+import type { Metadata } from "next";
 import { getFeaturedProjects } from "@/lib/data/projects";
 import SelectedWorks from "@/components/home/SelectedWorks";
 import ServicesSection from "@/components/home/ServicesSection";
 import CTASection from "@/components/home/CTASection";
 import HeroSection from "@/components/home/HeroSection";
+
+export const metadata: Metadata = {
+  // No title -- root layout default "Lorenzo Pardell | Sound Designer" applies
+  openGraph: {
+    title: "Lorenzo Pardell | Sound Designer",
+    description: "Sound designer specializing in film, series, and documentaries based in Sao Paulo, Brazil.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function Home() {
   // Take the first 3 featured projects
