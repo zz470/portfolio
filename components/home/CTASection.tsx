@@ -27,8 +27,7 @@ export default function CTASection({
 }: CTASectionProps) {
   return (
     <section className={`w-full py-24 bg-black text-white relative overflow-hidden ${className}`}>
-      <div className="absolute inset-0 bg-gradient-to-b bg-white"></div>
-      <div className="max-w-screen-xl mx-auto px-6 md:px-10 relative z-10">
+<div className="max-w-screen-xl mx-auto px-6 md:px-10 relative z-10">
         <div className="flex justify-between items-center">
           <motion.div 
             className="max-w-xl"

@@ -10,13 +10,14 @@ interface ProjectVideoCardProps {
 
 export default function ProjectVideoCard({ project, className = "" }: ProjectVideoCardProps) {
   const [videoError, setVideoError] = useState(false);
+  const [iframeError, setIframeError] = useState(false);
   const hasValidVideoUrl = project.video_url && project.video_url.trim() !== "";
-  
+
   // Don't render anything if there's no valid video URL
   if (!hasValidVideoUrl) {
     return null;
   }
-  
+
   // Animation variants
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
@@ -42,7 +43,7 @@ export default function ProjectVideoCard({ project, className = "" }: ProjectVid
                 Click here to watch the video
               </a>
             </video>
-          ) : (
+          ) : !iframeError ? (
             <iframe
               src={getEmbedUrl(project.video_url)}
               title={project.title}
@@ -50,16 +51,14 @@ export default function ProjectVideoCard({ project, className = "" }: ProjectVid
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              onError={() => {
-                return (
-                  <div className="flex items-center justify-center h-full bg-gray-100 dark:bg-gray-800 rounded-xl">
-                    <a href={project.video_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300">
-                      Click here to watch the video
-                    </a>
-                  </div>
-                );
-              }}
+              onError={() => setIframeError(true)}
             ></iframe>
+          ) : (
+            <div className="flex items-center justify-center h-full bg-gray-100 dark:bg-gray-800 rounded-xl">
+              <a href={project.video_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300">
+                Click here to watch the video
+              </a>
+            </div>
           )}
         </AspectRatio>
       </div>
@@ -79,13 +78,13 @@ function getEmbedUrl(url: string): string {
     }
     return `https://www.youtube.com/embed/${videoId}`;
   }
-  
+
   // Vimeo
   if (url.includes('vimeo.com')) {
     const vimeoId = url.split('vimeo.com/')[1].split('?')[0];
     return `https://player.vimeo.com/video/${vimeoId}`;
   }
-  
+
   // Return original URL if not YouTube or Vimeo
   return url;
-} 
+}
