@@ -71,6 +71,7 @@ export function PartnerLogos({ className }: PartnerLogosProps) {
                   src={partner.image}
                   alt={`${partner.name} logo`}
                   fill
+                  sizes="150px"
                   className="object-contain"
                 />
               </div>

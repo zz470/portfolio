@@ -1,5 +1,6 @@
 import { type Project } from "@/lib/data/projects";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -46,10 +47,12 @@ export default function ProjectNavigation({
         {/* Previous Project Card */}
         <Link href={`/portfolio/${prevProject.slug}`} className="group block h-full">
           <div className="relative w-full h-60 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-100 dark:bg-gray-800">
-            <img 
-              src={prevProject.thumbnail_url} 
+            <Image
+              src={prevProject.thumbnail_url}
               alt={prevProject.title}
-              className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
               <div className="p-4 w-full">
@@ -69,10 +72,12 @@ export default function ProjectNavigation({
         {/* Next Project Card */}
         <Link href={`/portfolio/${nextProject.slug}`} className="group block h-full">
           <div className="relative w-full h-60 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-100 dark:bg-gray-800">
-            <img 
-              src={nextProject.thumbnail_url} 
+            <Image
+              src={nextProject.thumbnail_url}
               alt={nextProject.title}
-              className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
               <div className="p-4 w-full">
