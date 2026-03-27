@@ -27,10 +27,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Projects are ordered by release_date descending (per D-07), with null release_date at end (per D-08)
   3. Placeholder images exist in public/ for every project (thumbnail + hero)
   4. All image paths in the data file resolve to local public/ directory paths
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 01-01-PLAN.md — Create TypeScript data file with Project interface, 19 records, and helper functions
+- [x] 01-01-PLAN.md — Create TypeScript data file with Project interface, 19 records, and helper functions
 - [ ] 01-02-PLAN.md — Generate 38 placeholder SVG images and verify path integrity
 
 ### Phase 2: Supabase Removal
@@ -63,6 +63,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Local Data Layer | 0/2 | Planning complete | - |
+| 1. Local Data Layer | 1/2 | In Progress|  |
 | 2. Supabase Removal | 0/TBD | Not started | - |
 | 3. Continuity Verification | 0/TBD | Not started | - |
