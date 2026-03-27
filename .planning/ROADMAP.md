@@ -34,7 +34,10 @@
   3. The CTA section renders with a visible dark background — no white overlay obscuring the content
   4. ProjectVideoCard iframe error is handled via state update — no JSX returned from an event handler
   5. Browser console shows zero console.log/warn outputs and zero TypeScript/lint warnings on any page
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 04-01-PLAN.md — Create shared modules, fix bugs, remove console.logs and dead code
+- [ ] 04-02-PLAN.md — Rewire all consumers to shared modules and visual verification
 **UI hint**: yes
 
 ### Phase 5: Infrastructure & Image Optimization
@@ -67,6 +70,6 @@
 | 1. Local Data Layer | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 2. Supabase Removal | v1.0 | 2/2 | Complete | 2026-03-27 |
 | 3. Continuity Verification | v1.0 | 2/2 | Complete | 2026-03-27 |
-| 4. Code Quality & Bug Fixes | v1.1 | 0/? | Not started | - |
+| 4. Code Quality & Bug Fixes | v1.1 | 0/2 | In progress | - |
 | 5. Infrastructure & Image Optimization | v1.1 | 0/? | Not started | - |
 | 6. Server Components, SEO & Error Pages | v1.1 | 0/? | Not started | - |
