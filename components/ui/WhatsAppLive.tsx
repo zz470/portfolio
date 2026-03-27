@@ -2,15 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { contactInfo } from "@/lib/contact-info";
 
 export const WhatsAppLive = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-
-  // WhatsApp configuration
-  const phoneNumber = "+5511917619699"; // Replace with your number
-  const message = encodeURIComponent("Hello! I'd like to chat.");
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +47,7 @@ export const WhatsAppLive = () => {
           className="fixed bottom-20 right-10 z-50 md:bottom-10 md:right-10"
         >
           <a
-            href={whatsappLink}
+            href={contactInfo.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="block relative group"

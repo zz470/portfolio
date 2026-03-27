@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { forwardRef } from "react";
+import { fadeIn, staggerContainer } from "@/lib/animations";
 
 interface SelectedWorksProps {
   projects: Project[];
@@ -23,22 +24,6 @@ const SelectedWorks = forwardRef<HTMLElement, SelectedWorksProps>(({
   showViewAllLink = true,
   isLoading = false
 }, ref) => {
-  // Animation variants
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
-
-  const container = {
-    initial: { opacity: 0 },
-    animate: { 
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
-
   return (
     <section ref={ref} className={`w-full py-24 bg-white ${className}`}>
       <div className="max-w-screen-xl mx-auto px-6 md:px-10">
@@ -83,7 +68,7 @@ const SelectedWorks = forwardRef<HTMLElement, SelectedWorksProps>(({
           </div>
         ) : projects.length > 0 ? (
           <motion.div
-            variants={container}
+            variants={staggerContainer}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true, amount: 0.2 }}

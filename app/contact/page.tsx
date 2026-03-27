@@ -4,13 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
 import { getVisibleSocialLinks } from "@/lib/social-links";
+import { contactInfo } from "@/lib/contact-info";
 
 export default function ContactPage() {
-  // WhatsApp configuration
-  const phoneNumber = "+5511917619699";
-  const message = encodeURIComponent("Hello! I'd like to chat.");
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
-  
   // Get visible social links
   const socialLinks = getVisibleSocialLinks();
 
@@ -35,14 +31,14 @@ export default function ContactPage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">Email</h3>
-              <a href="mailto:lorenzopardell@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-orange-500">
-                lorenzopardell@gmail.com
+              <a href={contactInfo.emailLink} className="text-gray-600 dark:text-gray-400 hover:text-orange-500">
+                {contactInfo.email}
               </a>
             </div>
             <div>
               <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mb-2">Phone</h3>
-              <a href="tel:+5511917619699" className="text-gray-600 dark:text-gray-400 hover:text-orange-500">
-                +55 11 91761-9699
+              <a href={contactInfo.phoneLink} className="text-gray-600 dark:text-gray-400 hover:text-orange-500">
+                {contactInfo.phone}
               </a>
             </div>
             <div>
@@ -80,7 +76,7 @@ export default function ContactPage() {
           </p>
           
           <a
-            href={whatsappLink}
+            href={contactInfo.whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center w-full gap-2 px-6 py-3 text-lg font-medium text-white transition-colors bg-green-500 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"

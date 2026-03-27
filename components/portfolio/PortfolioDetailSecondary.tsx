@@ -1,6 +1,7 @@
 import { type Project } from "@/lib/data/projects";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/animations";
 import { Badge } from "@/components/ui/badge";
 import React from "react";
 import ProjectDetailsCard from "./ProjectDetailsCard";
@@ -15,12 +16,6 @@ interface PortfolioDetailSecondaryProps {
 }
 
 export default function PortfolioDetailSecondary({ project, allProjects = [] }: PortfolioDetailSecondaryProps) {
-  // Animation variants
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
-
   const slideIn = {
     initial: { opacity: 0, x: -20 },
     animate: { opacity: 1, x: 0, transition: { duration: 0.5 } }

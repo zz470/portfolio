@@ -1,5 +1,6 @@
 import { type Project } from "@/lib/data/projects";
 import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/animations";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import ProjectDetailsCard from "./ProjectDetailsCard";
@@ -14,12 +15,6 @@ interface PortfolioDetailTertiaryProps {
 
 export default function PortfolioDetailTertiary({ project, allProjects = [] }: PortfolioDetailTertiaryProps) {
   const releaseYear = project.release_date || null;
-
-  // Animation variants
-  const fadeIn = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
 
   const slideIn = {
     initial: { opacity: 0, x: -20 },

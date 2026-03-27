@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/animations";
 
 const services = [
   {
@@ -49,12 +50,6 @@ const services = [
 ];
 
 export function ServicesSection() {
-  // Animation variants
-  const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
-
   return (
     <section className="w-full py-14">
       <div className="max-w-screen-xl mx-auto px-6 md:px-10">
@@ -77,8 +72,8 @@ export function ServicesSection() {
               key={service.title}
               className="bg-white p-6 rounded-md border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300"
               variants={fadeIn}
-              initial="hidden"
-              animate="visible"
+              initial="initial"
+              animate="animate"
               transition={{ delay: index * 0.1 }}
             >
               <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center mb-4">
