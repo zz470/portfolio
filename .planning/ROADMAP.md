@@ -44,7 +44,7 @@
 **Plans**: 1 plan
 
 Plans:
-- [ ] 07-01-PLAN.md — Update all 19 thumbnail_url and hero_url values in projects.ts; delete placeholder SVGs
+- [x] 07-01-PLAN.md — Update all 19 thumbnail_url and hero_url values in projects.ts; delete placeholder SVGs
 
 ## Progress
 
@@ -56,4 +56,4 @@ Plans:
 | 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete | 2026-03-27 |
 | 5. Infrastructure & Image Optimization | v1.1 | 2/2 | Complete | 2026-03-27 |
 | 6. Server Components, SEO & Error Pages | v1.1 | 3/3 | Complete | 2026-03-27 |
-| 7. Real Project Images | v1.2 | 0/1 | Not started | - |
+| 7. Real Project Images | v1.2 | 1/1 | Complete   | 2026-03-27 |

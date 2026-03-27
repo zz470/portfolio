@@ -9,11 +9,11 @@ Requirements for real project images milestone. Each maps to roadmap phases.
 
 ### Image Data
 
-- [ ] **IMG-01**: Each of the 19 projects' `thumbnail_url` points to a real image from its directory
-- [ ] **IMG-02**: Each of the 19 projects' `hero_url` points to a real image from its directory
-- [ ] **IMG-03**: Portfolio grid displays real thumbnails for all projects
-- [ ] **IMG-04**: Project detail pages display real hero images for all projects
-- [ ] **IMG-05**: Unused placeholder SVGs (`placeholder-thumb.svg`, `placeholder-hero.svg`) removed
+- [x] **IMG-01**: Each of the 19 projects' `thumbnail_url` points to a real image from its directory
+- [x] **IMG-02**: Each of the 19 projects' `hero_url` points to a real image from its directory
+- [x] **IMG-03**: Portfolio grid displays real thumbnails for all projects
+- [x] **IMG-04**: Project detail pages display real hero images for all projects
+- [x] **IMG-05**: Unused placeholder SVGs (`placeholder-thumb.svg`, `placeholder-hero.svg`) removed
 
 ## Future Requirements
 
@@ -40,11 +40,11 @@ Requirements for real project images milestone. Each maps to roadmap phases.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| IMG-01 | Phase 7 | Pending |
-| IMG-02 | Phase 7 | Pending |
-| IMG-03 | Phase 7 | Pending |
-| IMG-04 | Phase 7 | Pending |
-| IMG-05 | Phase 7 | Pending |
+| IMG-01 | Phase 7 | Complete |
+| IMG-02 | Phase 7 | Complete |
+| IMG-03 | Phase 7 | Complete |
+| IMG-04 | Phase 7 | Complete |
+| IMG-05 | Phase 7 | Complete |
 
 **Coverage:**
 - v1.2 requirements: 5 total
