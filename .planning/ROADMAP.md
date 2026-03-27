@@ -68,7 +68,7 @@ Plans:
 Plans:
 - [x] 06-01-PLAN.md — SEO infrastructure (sitemap, robots, OG image, root metadata) and error pages (404, error boundary)
 - [x] 06-02-PLAN.md — Convert simple pages (home, contact, project detail) to Server Components with metadata
-- [ ] 06-03-PLAN.md — Convert complex pages (about, services, portfolio) to Server Components with client wrappers
+- [x] 06-03-PLAN.md — Convert complex pages (about, services, portfolio) to Server Components with client wrappers
 **UI hint**: yes
 
 ## Progress

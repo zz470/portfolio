@@ -9,11 +9,11 @@ Requirements for production readiness and code quality. Each maps to roadmap pha
 
 ### SEO & Discoverability
 
-- [ ] **SEO-01**: Pages with static content render as Server Components with SEO-indexable HTML
+- [x] **SEO-01**: Pages with static content render as Server Components with SEO-indexable HTML
 - [x] **SEO-02**: Site generates sitemap.xml with all routes via `app/sitemap.ts`
 - [x] **SEO-03**: Site serves robots.txt via `app/robots.ts`
 - [x] **SEO-04**: Each page has Open Graph metadata (title, description, image) for social sharing
-- [ ] **SEO-05**: Portfolio project pages have unique OG metadata per project
+- [x] **SEO-05**: Portfolio project pages have unique OG metadata per project
 
 ### Error Handling
 
@@ -66,11 +66,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SEO-01 | Phase 6 | Pending |
+| SEO-01 | Phase 6 | Complete |
 | SEO-02 | Phase 6 | Complete |
 | SEO-03 | Phase 6 | Complete |
 | SEO-04 | Phase 6 | Complete |
-| SEO-05 | Phase 6 | Pending |
+| SEO-05 | Phase 6 | Complete |
 | ERR-01 | Phase 6 | Complete |
 | ERR-02 | Phase 6 | Complete |
 | QUAL-01 | Phase 4 | Complete |
