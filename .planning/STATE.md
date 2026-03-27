@@ -2,12 +2,12 @@
 gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Production Readiness & Code Quality
-status: defining-requirements
+status: ready-to-plan
 stopped_at: null
 last_updated: "2026-03-27"
 last_activity: 2026-03-27
 progress:
-  total_phases: 0
+  total_phases: 3
   completed_phases: 0
   total_plans: 0
   completed_plans: 0
@@ -21,14 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-27)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Defining requirements for v1.1
+**Current focus:** Phase 4 — Code Quality & Bug Fixes (ready to plan)
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: 4 — Code Quality & Bug Fixes
 Plan: —
-Status: Defining requirements
-Last activity: 2026-03-27 — Milestone v1.1 started
+Status: Ready to plan
+Last activity: 2026-03-27 — Roadmap created for v1.1
+
+Progress: [----------] 0% (0/3 phases complete)
 
 ## Performance Metrics
 
@@ -42,7 +44,9 @@ Last activity: 2026-03-27 — Milestone v1.1 started
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 4 - Code Quality & Bug Fixes | - | - | - |
+| 5 - Infrastructure & Image Optimization | - | - | - |
+| 6 - Server Components, SEO & Error Pages | - | - | - |
 
 **Recent Trend:**
 
@@ -50,9 +54,6 @@ Last activity: 2026-03-27 — Milestone v1.1 started
 - Trend: —
 
 *Updated after each plan completion*
-| Phase 02 P02 | 3m | 2 tasks | 20 files |
-| Phase 03 P01 | 4m | 1 tasks | 1 files |
-| Phase 03 P02 | 5min | 2 tasks | 0 files |
 
 ## Accumulated Context
 
@@ -64,10 +65,10 @@ Recent decisions affecting current work:
 - TypeScript data file over MDX (content is structured fields, TS gives type safety with zero tooling)
 - Local images in public/ over CDN (never depend on external service for core assets again)
 - Direct imports over API layer (no need for fetch/hooks pattern when data is local and static)
-- [Phase 02]: Copied lib/data/projects.ts and consumer rewiring from main repo to resolve parallel worktree isolation — Plan 01 changes were not present in this worktree
-- [Phase 03]: Used tsx for script execution since it resolves @/* path aliases via tsconfig automatically
-- [Phase 03]: Embedded next build inside verify-continuity.ts so verification is a single command proving everything end-to-end
-- [Phase 03]: Visual verification delegated to user — automated tests (Plan 01) cover data integrity; human eyes cover layout correctness
+- [v1.0 Phase 02]: Copied lib/data/projects.ts and consumer rewiring from main repo to resolve parallel worktree isolation — Plan 01 changes were not present in this worktree
+- [v1.0 Phase 03]: Used tsx for script execution since it resolves @/* path aliases via tsconfig automatically
+- [v1.0 Phase 03]: Embedded next build inside verify-continuity.ts so verification is a single command proving everything end-to-end
+- [v1.0 Phase 03]: Visual verification delegated to user — automated tests (Plan 01) cover data integrity; human eyes cover layout correctness
 
 ### Pending Todos
 
@@ -79,6 +80,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T03:28:36.386Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-03-27
+Stopped at: Roadmap created for v1.1 (Phases 4-6)
 Resume file: None
