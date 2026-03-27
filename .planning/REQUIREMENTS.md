@@ -14,7 +14,7 @@
 ### Supabase Removal
 
 - [ ] **SUPA-01**: Supabase client library and all imports are removed
-- [ ] **SUPA-02**: useProjects and useProject hooks are replaced with direct data imports
+- [x] **SUPA-02**: useProjects and useProject hooks are replaced with direct data imports
 - [ ] **SUPA-03**: Environment variables (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY) are removed
 - [ ] **SUPA-04**: Supabase image domain removed from next.config.ts
 
@@ -57,7 +57,7 @@
 | IMG-01 | Phase 1 | Complete |
 | IMG-02 | Phase 1 | Complete |
 | SUPA-01 | Phase 2 | Pending |
-| SUPA-02 | Phase 2 | Pending |
+| SUPA-02 | Phase 2 | Complete |
 | SUPA-03 | Phase 2 | Pending |
 | SUPA-04 | Phase 2 | Pending |
 | CONT-01 | Phase 3 | Pending |

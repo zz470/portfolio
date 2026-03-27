@@ -42,10 +42,10 @@ Plans:
   2. useProjects and useProject hooks are replaced with direct imports from the local data file
   3. No Supabase environment variables appear in .env files or next.config.ts
   4. The app builds without errors (next build passes)
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 02-01-PLAN.md — Rewire all page and component imports from Supabase hooks to local data file
+- [x] 02-01-PLAN.md — Rewire all page and component imports from Supabase hooks to local data file
 - [ ] 02-02-PLAN.md — Remove Supabase artifacts (files, package, config, env vars) and verify build
 
 ### Phase 3: Continuity Verification
@@ -68,5 +68,5 @@ Phases execute in numeric order: 1 -> 2 -> 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Local Data Layer | 2/2 | Complete   | 2026-03-27 |
-| 2. Supabase Removal | 0/2 | Not started | - |
+| 2. Supabase Removal | 1/2 | In Progress|  |
 | 3. Continuity Verification | 0/TBD | Not started | - |
