@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.1
 milestone_name: Production Readiness & Code Quality
 status: verifying
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-27T04:51:45.341Z"
+stopped_at: Completed 05-02-PLAN.md
+last_updated: "2026-03-27T05:06:22.187Z"
 last_activity: 2026-03-27
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 4
+  completed_plans: 4
   percent: 17
 ---
 
@@ -56,6 +56,7 @@ Progress: [----------] 17% (1/6 plans complete across all phases)
 *Updated after each plan completion*
 | Phase 04 P02 | 5 | 1 tasks | 15 files |
 | Phase 05 P01 | 3 | 2 tasks | 3 files |
+| Phase 05 P02 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -76,6 +77,8 @@ Recent decisions affecting current work:
 - [Phase 04]: Retained slideIn local variant in PortfolioDetail/Secondary/Tertiary — x-axis animation not covered by shared modules
 - [Phase 04]: Updated hidden/visible keys to initial/animate in ServicesSection and about page to align with shared fadeIn convention
 - [Phase 05]: Used fill mode with absolute-positioned parent container for hero and nav thumbnails in next/image migration
+- [Phase 05]: Used fill mode for PortfolioDetail mobile hero inside AspectRatio — container is relative-positioned, so fill works directly
+- [Phase 05]: Preserved onLoad/onError callbacks in PortfolioCard when migrating to next/image — Image component supports both directly
 
 ### Pending Todos
 
@@ -87,6 +90,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-27T04:51:45.339Z
-Stopped at: Completed 05-01-PLAN.md
+Last session: 2026-03-27T05:06:22.184Z
+Stopped at: Completed 05-02-PLAN.md
 Resume file: None
