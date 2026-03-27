@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import React from "react";
+import Image from "next/image";
 import ProjectDetailsCard from "./ProjectDetailsCard";
 import ProjectAboutCard from "./ProjectAboutCard";
 import ProjectVideoCard from "./ProjectVideoCard";
@@ -40,10 +41,13 @@ export default function PortfolioDetailSecondary({ project, allProjects = [] }: 
             className="relative w-full h-[38vh] sm:h-[42vh] md:h-[50vh] rounded-xl overflow-hidden shadow-xl"
           >
             <div className="absolute inset-0 bg-gray-100 dark:bg-gray-800">
-              <img 
-                src={project.hero_url || project.thumbnail_url} 
-                alt={project.title} 
-                className="w-full h-full object-cover object-center"
+              <Image
+                src={project.hero_url || project.thumbnail_url}
+                alt={project.title}
+                fill
+                sizes="100vw"
+                priority
+                className="object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             </div>
