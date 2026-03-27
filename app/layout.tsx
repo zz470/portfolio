@@ -17,8 +17,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lorenzo Pardell | Sound Designer",
-  description: "Sound designer specializing in film, series, and documentaries based in São Paulo, Brazil. Delivering high-quality audio solutions for creative projects worldwide.",
+  metadataBase: new URL("https://lorenzopardell.com"),
+  title: {
+    template: "%s | Lorenzo Pardell",
+    default: "Lorenzo Pardell | Sound Designer",
+  },
+  description: "Sound designer specializing in film, series, and documentaries based in Sao Paulo, Brazil. Delivering high-quality audio solutions for creative projects worldwide.",
   keywords: ["sound design", "audio production", "sound mixer", "mix engineer", "foley", "audio editor", "post-production", "São Paulo", "sound designer", "film sound", "portfolio", "design de som", "loudness", "dialogue editor", "sound effects", "efeitos sonoros", "produtora de áudio", "produção de áudio", "mixador de som", "engenheiro de mixagem", "editor de áudio", "editor de diálogos", "pós-produção", "designer de som", "audiovisual", "portfólio"],
   robots: {
     index: true,
@@ -28,8 +32,14 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   alternates: {
-    canonical: "https://lorenzopardell.com"
-  }
+    canonical: "https://lorenzopardell.com",
+  },
+  openGraph: {
+    siteName: "Lorenzo Pardell",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_US",
+    type: "website",
+  },
 }
 
 export default function RootLayout({
