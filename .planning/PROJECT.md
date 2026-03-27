@@ -39,6 +39,13 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - ✓ Local TypeScript data file with 19 project records — v1.0
 - ✓ Supabase fully removed (client, hooks, env vars, config) — v1.0
 - ✓ All routes and interactive features verified working — v1.0
+- ✓ Animation variants centralized in shared module — v1.1 Phase 4
+- ✓ Project sorting utility extracted to shared function — v1.1 Phase 4
+- ✓ Contact information centralized in single source file — v1.1 Phase 4
+- ✓ Console.log/warn statements removed from production code — v1.1 Phase 4
+- ✓ Dead code and unused variables removed — v1.1 Phase 4
+- ✓ iframe onError handler fixed with state-based approach — v1.1 Phase 4
+- ✓ IntersectionObserver dead code removed — v1.1 Phase 4
 
 ### Active
 
@@ -50,11 +57,7 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - [ ] Centralize animation variants into shared module
 - [ ] Extract shared project sorting utility
 - [ ] Centralize hardcoded contact information
-- [ ] Fix CTA section background overlay bug
-- [ ] Fix iframe onError handler in ProjectVideoCard
-- [ ] Fix IntersectionObserver cleanup stale ref
 - [ ] Replace raw `<img>` tags with next/image
-- [ ] Remove unused variables and dead code
 - [ ] Fix deprecated images.domains config
 
 ### Out of Scope
@@ -85,4 +88,4 @@ The portfolio must display Lorenzo's professional work with project details, rol
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.1 milestone start*
+*Last updated: 2026-03-27 after v1.1 Phase 4 completion*
