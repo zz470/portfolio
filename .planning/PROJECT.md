@@ -25,9 +25,12 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ### Active
 
-- [ ] Remove Supabase dependency entirely (client, hooks, env vars, config)
-- [ ] Convert client-side data fetching hooks to direct imports
-- [ ] Ensure all existing pages continue working with local data
+- [ ] Ensure all existing pages continue working with local data (visual verification pending)
+
+### Completed in Phase 2
+
+- ✓ Remove Supabase dependency entirely (client, hooks, env vars, config) — Phase 2
+- ✓ Convert client-side data fetching hooks to direct imports — Phase 2
 
 ### Completed in Phase 1
 
@@ -47,7 +50,7 @@ The portfolio must display Lorenzo's professional work with project details, rol
 - **Supabase project paused**: Free tier project paused >90 days, cannot be unpaused. Database backup available but Storage (S3) files are lost
 - **Data recovered**: All 19 project records extracted from Postgres backup (titles, descriptions, slugs, categories, roles, video URLs, IMDB links, production companies, release dates, design versions)
 - **Images not recoverable**: Thumbnail and hero images were in Supabase Storage (S3), not included in database backup. Using placeholders until user re-downloads originals
-- **Current architecture**: All pages are client components using React hooks (useProjects, useProject) that fetch from Supabase at runtime. No server components beyond root layout
+- **Current architecture**: All pages are client components using direct imports from `lib/data/projects.ts`. Supabase fully removed. No server components beyond root layout
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion
 
 ## Constraints
@@ -61,9 +64,9 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| TypeScript data file over MDX | Content is structured fields (not prose); TS gives type safety with zero tooling | — Pending |
-| Local images in public/ over CDN | Never depend on external service for core assets again | — Pending |
-| Direct imports over API layer | No need for fetch/hooks pattern when data is local and static | — Pending |
+| TypeScript data file over MDX | Content is structured fields (not prose); TS gives type safety with zero tooling | ✓ Phase 1 |
+| Local images in public/ over CDN | Never depend on external service for core assets again | ✓ Phase 1 |
+| Direct imports over API layer | No need for fetch/hooks pattern when data is local and static | ✓ Phase 2 |
 
 ## Evolution
 
@@ -83,4 +86,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-27 after Phase 1 completion*
+*Last updated: 2026-03-26 after Phase 2 completion*
