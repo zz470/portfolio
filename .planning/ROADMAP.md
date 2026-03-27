@@ -4,6 +4,7 @@
 
 - ✅ **v1.0 Supabase to Local Data Migration** — Phases 1-3 (shipped 2026-03-27)
 - ✅ **v1.1 Production Readiness & Code Quality** — Phases 4-6 (shipped 2026-03-27)
+- 🚧 **v1.2 Real Project Images** — Phase 7 (in progress)
 
 ## Phases
 
@@ -25,6 +26,24 @@
 
 </details>
 
+### 🚧 v1.2 Real Project Images (In Progress)
+
+**Milestone Goal:** Replace all placeholder SVG images with real project photos across the portfolio.
+
+## Phase Details
+
+### Phase 7: Real Project Images
+**Goal**: All 19 projects display real photos instead of placeholder SVGs
+**Depends on**: Phase 6
+**Requirements**: IMG-01, IMG-02, IMG-03, IMG-04, IMG-05
+**Success Criteria** (what must be TRUE):
+  1. Portfolio grid shows real thumbnail photos for all 19 projects — no placeholder SVGs
+  2. Each project detail page displays a real hero image at the top
+  3. `placeholder-thumb.svg` and `placeholder-hero.svg` files are removed from `public/images/projects/`
+  4. No broken image fallbacks appear when browsing the portfolio or any project detail page
+**Plans**: TBD
+**UI hint**: yes
+
 ## Progress
 
 | Phase | Milestone | Plans Complete | Status | Completed |
@@ -35,3 +54,4 @@
 | 4. Code Quality & Bug Fixes | v1.1 | 2/2 | Complete | 2026-03-27 |
 | 5. Infrastructure & Image Optimization | v1.1 | 2/2 | Complete | 2026-03-27 |
 | 6. Server Components, SEO & Error Pages | v1.1 | 3/3 | Complete | 2026-03-27 |
+| 7. Real Project Images | v1.2 | 0/? | Not started | - |

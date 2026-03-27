@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Real Project Images
-status: defining-requirements
+status: roadmap-ready
 stopped_at: —
 last_updated: "2026-03-27T06:08:13.278Z"
 last_activity: 2026-03-27
 progress:
-  total_phases: 3
-  completed_phases: 3
-  total_plans: 7
-  completed_plans: 7
-  percent: 17
+  total_phases: 1
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-27)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Phase 06 — server-components-seo-error-pages
+**Current focus:** Phase 07 — real-project-images
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: 7 — Real Project Images
 Plan: —
-Status: Defining requirements
-Last activity: 2026-03-27 — Milestone v1.2 started
+Status: Roadmap defined, awaiting plan-phase
+Last activity: 2026-03-27 — Milestone v1.2 roadmap created
 
 ## Performance Metrics
 
@@ -42,21 +42,14 @@ Last activity: 2026-03-27 — Milestone v1.2 started
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 4 - Code Quality & Bug Fixes | 1/2 | ~4 min | ~4 min |
-| 5 - Infrastructure & Image Optimization | - | - | - |
-| 6 - Server Components, SEO & Error Pages | - | - | - |
+| 7 - Real Project Images | 0/? | — | — |
 
 **Recent Trend:**
 
-- Last 5 plans: 04-01 (~4 min)
+- Last 5 plans (from v1.1): 04-01 (~4 min), 04-02 (~5 min), 05-01 (~3 min), 05-02 (~2 min), 06-03 (~10 min)
 - Trend: on track
 
 *Updated after each plan completion*
-| Phase 04 P02 | 5 | 1 tasks | 15 files |
-| Phase 05 P01 | 3 | 2 tasks | 3 files |
-| Phase 05 P02 | 2 | 2 tasks | 2 files |
-| Phase 06 P02 | 10 min | 2 tasks | 7 files |
-| Phase 06 P03 | 10 min | 3 tasks | 13 files |
 
 ## Accumulated Context
 
@@ -86,14 +79,14 @@ Recent decisions affecting current work:
 
 ### Pending Todos
 
-None yet.
+- Minor: AboutPageClient.tsx hardcodes contact info instead of importing from lib/contact-info.ts (QUAL-03 regression from Phase 6 — address in a future quick fix)
 
 ### Blockers/Concerns
 
-- Supabase Storage (S3) files are not recoverable — placeholder images will be used until user re-downloads originals. This is expected and accepted.
+- Image directories are present in public/images/projects/ (added as untracked files) — need to inspect actual filenames before updating projects.ts
 
 ## Session Continuity
 
-Last session: 2026-03-27T05:57:17.018Z
-Stopped at: Completed 06-03-PLAN.md
+Last session: 2026-03-27T06:08:13.278Z
+Stopped at: v1.2 roadmap created
 Resume file: None
