@@ -1,3 +1,5 @@
+"use client";
+
 import { type Project } from "@/lib/data/projects";
 import Link from "next/link";
 import { motion } from "framer-motion";
