@@ -7,6 +7,7 @@ import { fadeIn } from "@/lib/animations";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import Image from "next/image";
 import ProjectDetailsCard from "./ProjectDetailsCard";
 import ProjectAboutCard from "./ProjectAboutCard";
 import ProjectVideoCard from "./ProjectVideoCard";
@@ -63,10 +64,13 @@ export default function PortfolioDetail({ project, allProjects = [] }: Portfolio
               >
                 <div className="rounded-xl overflow-hidden shadow-lg">
                   <AspectRatio ratio={2/3}>
-                    <img
+                    <Image
                       src={project.hero_url || project.thumbnail_url}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 40vw"
+                      className="object-cover"
+                      priority
                     />
                   </AspectRatio>
                 </div>
@@ -91,10 +95,13 @@ export default function PortfolioDetail({ project, allProjects = [] }: Portfolio
           >
             <div className="rounded-xl overflow-hidden shadow-lg w-full h-full flex">
               <div className="w-full relative">
-                <img
+                <Image
                   src={project.hero_url || project.thumbnail_url}
                   alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  fill
+                  sizes="100vw"
+                  className="object-cover"
+                  priority
                 />
               </div>
             </div>
