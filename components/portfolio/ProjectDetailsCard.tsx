@@ -54,17 +54,30 @@ export default function ProjectDetailsCard({ project, className = "" }: ProjectD
             )}
           
             {/* External Links Section */}
-            {project.imdb_url && (
-              <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800">
-                <a
-                  href={project.imdb_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-white"
-                >
-                  <span>View on IMDb</span>
-                  <span aria-hidden="true">→</span>
-                </a>
+            {(project.imdb_url || project.filmfreeway_url) && (
+              <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800 space-y-2">
+                {project.imdb_url && (
+                  <a
+                    href={project.imdb_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-white"
+                  >
+                    <span>View on IMDb</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                )}
+                {project.filmfreeway_url && (
+                  <a
+                    href={project.filmfreeway_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-white"
+                  >
+                    <span>Watch on FilmFreeway</span>
+                    <span aria-hidden="true">→</span>
+                  </a>
+                )}
               </div>
             )}
           </div>
