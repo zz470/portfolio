@@ -130,6 +130,7 @@ export const projects: Project[] = [
     release_date: 2024,
     hero_url: "/images/projects/helipa/helipa_hero_1.jpg",
     design_version: "primary",
+    featured: true,
   },
   {
     id: 7,

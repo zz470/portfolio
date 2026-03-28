@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   // Take the first 3 featured projects
-  const featuredProjects = getFeaturedProjects(3);
+  const featuredProjects = getFeaturedProjects(6);
 
   return (
     <main className="flex min-h-screen flex-col items-center">
