@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Professional Polish & SEO
-status: verifying
-stopped_at: Phase 9 context gathered
-last_updated: "2026-03-28T22:53:51.886Z"
+status: executing
+stopped_at: Completed 09-01-PLAN.md
+last_updated: "2026-03-28T23:21:36.873Z"
 last_activity: 2026-03-28
 progress:
   total_phases: 3
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 4
+  completed_plans: 3
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Phase 08 — copy-backup-rewrite
+**Current focus:** Phase 09 — technical-seo-ui-fix
 
 ## Current Position
 
-Phase: 9
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 09 (technical-seo-ui-fix) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-03-28
 
 Progress: [░░░░░░░░░░] 0%
@@ -54,6 +54,7 @@ Progress: [░░░░░░░░░░] 0%
 *Updated after each plan completion*
 | Phase 08-copy-backup-rewrite P01 | 3 | 2 tasks | 2 files |
 | Phase 08-copy-backup-rewrite P02 | 8min | 2 tasks | 10 files |
+| Phase 09-technical-seo-ui-fix P01 | 8min | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,8 @@ Recent decisions affecting current work:
 - [Phase 08-copy-backup-rewrite]: All Services references renamed to Expertise in copy (nav labels, section titles, meta titles) per D-10
 - [Phase 08-copy-backup-rewrite]: Centralized all page copy in lib/copy.ts as typed const for Plan 02 wiring
 - [Phase 08-copy-backup-rewrite]: ServicesPageClient uses const pageContent = copy.servicesPage alias for readability
+- [Phase 09-technical-seo-ui-fix]: Page-level titles must not include '| Lorenzo Pardell' — root layout template appends it automatically
+- [Phase 09-technical-seo-ui-fix]: JSON-LD scripts placed in body of root Server Component layout before Header for static structured data injection
 
 ### Pending Todos
 
@@ -79,6 +82,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-28T22:53:51.883Z
-Stopped at: Phase 9 context gathered
-Resume file: .planning/phases/09-technical-seo-ui-fix/09-CONTEXT.md
+Last session: 2026-03-28T23:21:36.870Z
+Stopped at: Completed 09-01-PLAN.md
+Resume file: None

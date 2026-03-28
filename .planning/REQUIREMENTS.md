@@ -12,18 +12,18 @@
 
 ## SEO
 
-- [ ] **SEO-01**: JSON-LD structured data added to all pages (Person, CreativeWork, LocalBusiness schemas)
-- [ ] **SEO-02**: Page titles optimized with keywords ("Sound Design Portfolio" not just "Portfolio")
-- [ ] **SEO-03**: Meta descriptions optimized with service keywords and location
+- [x] **SEO-01**: JSON-LD structured data added to all pages (Person, CreativeWork, LocalBusiness schemas)
+- [x] **SEO-02**: Page titles optimized with keywords ("Sound Design Portfolio" not just "Portfolio")
+- [x] **SEO-03**: Meta descriptions optimized with service keywords and location
 - [ ] **SEO-04**: Image alt text updated with descriptive, keyword-rich text across all components
 - [ ] **SEO-05**: Per-project OG images using project hero photos instead of generic og-image.png
-- [ ] **SEO-06**: Twitter card metadata added to all pages
+- [x] **SEO-06**: Twitter card metadata added to all pages
 - [ ] **SEO-07**: Category archive pages created (/portfolio/documentary, /portfolio/series, etc.)
 - [ ] **SEO-08**: FAQ section added targeting common search queries about sound design services
 
 ## UI Fixes
 
-- [ ] **UI-01**: Footer social links have adequate touch targets on mobile (min 44x44px)
+- [x] **UI-01**: Footer social links have adequate touch targets on mobile (min 44x44px)
 
 ## Features
 
