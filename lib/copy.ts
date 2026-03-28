@@ -16,7 +16,7 @@ export const copy = {
   hero: {
     title: "Shaping the sound of",
     highlightText1: "the world's most ambitious",
-    highlightWords: ["filmmakers.", "brands.", "studios.", "agencies."],
+    highlightWords: ["productions.", "series.", "documentaries.", "commercials."],
     subtitle: "Re-recording mixer and sound designer with 30+ credits across Europe and the Americas.",
   },
 
