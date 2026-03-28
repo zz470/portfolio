@@ -26,9 +26,9 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ## Current State
 
-**Shipped:** v1.2 Real Project Images (2026-03-28)
+**Shipped:** Phase 8 — Copy Backup & Rewrite (2026-03-28)
 
-The portfolio is production-grade with 28 projects and real images:
+The portfolio is production-grade with 28 projects, real images, and professional B2B copy:
 - 28 projects with real thumbnail and hero photos, descriptions, roles, and metadata
 - All pages render as Server Components (SEO-indexable HTML)
 - Sitemap with 24+ routes, robots.txt, Open Graph metadata on every page
@@ -36,6 +36,8 @@ The portfolio is production-grade with 28 projects and real images:
 - Clean codebase — no console.logs, no dead code, no deprecated APIs
 - All images optimized via next/image
 - Framer Motion animations preserved via client wrappers
+- All page copy centralized in lib/copy.ts with professional B2B voice
+- "Services" renamed to "Expertise" across navigation
 
 ## Requirements
 
@@ -71,9 +73,11 @@ The portfolio is production-grade with 28 projects and real images:
 - ✓ Auto-scrolling carousel for Selected Works when >3 featured projects — v1.2
 - ✓ 28 total projects with real images (9 new projects added, details TBD) — v1.2
 
-### Active
+- ✓ Copy rewrite for all pages (backup originals first) — v1.3 (Phase 8)
+- ✓ Centralized copy in lib/copy.ts with typed constants — v1.3 (Phase 8)
+- ✓ "Services" renamed to "Expertise" across navigation and headings — v1.3 (Phase 8)
 
-- Copy rewrite for all pages (backup originals first) — v1.3
+### Active
 - JSON-LD structured data (Person, CreativeWork, LocalBusiness) — v1.3
 - SEO page titles, meta descriptions, image alt text optimization — v1.3
 - Per-project OG images and Twitter card metadata — v1.3
@@ -126,4 +130,4 @@ The portfolio is production-grade with 28 projects and real images:
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-28 — v1.3 milestone started*
+*Last updated: 2026-03-28 — Phase 8 complete (Copy Backup & Rewrite)*
