@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { copy } from "@/lib/copy";
 
 interface CTASectionProps {
   title?: string;
@@ -16,13 +17,13 @@ interface CTASectionProps {
 }
 
 export default function CTASection({
-  title = "Amplify Your Story",
-  subtitle = "Ready to cut through the noise?",
-  description = "Whether you're in the final stages of post or planning ahead, I'm here to help you shape a sound experience that elevates your project. Reach out and let's talk about how we can make it happen.",
-  buttonText = "Start Your Project",
+  title = copy.cta.title,
+  subtitle = copy.cta.subtitle,
+  description = copy.cta.description,
+  buttonText = copy.cta.buttonText,
   buttonLink = "/contact",
-  responseTimeText = "Quick Response Time",
-  responseTimeDescription = "Usually within 24 hours",
+  responseTimeText = copy.cta.responseTimeText,
+  responseTimeDescription = copy.cta.responseTimeDescription,
   className = "",
 }: CTASectionProps) {
   return (

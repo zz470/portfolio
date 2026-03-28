@@ -5,18 +5,13 @@ import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { getVisibleSocialLinks } from "@/lib/social-links"
 import { contactInfo } from "@/lib/contact-info"
+import { copy } from "@/lib/copy"
 
 export default function Footer() {
   const pathname = usePathname()
   const currentYear = new Date().getFullYear()
-  
-  const navItems = [
-    { name: "Home", path: "/" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Services", path: "/services" },
-    { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" }
-  ]
+
+  const navItems = copy.footer.navItems
   
   // Use the centralized social links configuration
   const socialLinks = getVisibleSocialLinks()
@@ -36,8 +31,8 @@ export default function Footer() {
               <Link href="/" className="inline-block font-light text-2xl text-gray-900 hover:text-orange-500 transition-colors">
                 LORENZO PARDELL
               </Link>
-              <p className="text-sm text-gray-600 max-w-xs mt-3 leading-relaxed italic">
-              "I partner with creators and brands to create immersive and meaningful audio experiences."
+              <p className="text-sm text-gray-600 max-w-xs mt-3 leading-relaxed">
+                {copy.footer.tagline}
               </p>
             </motion.div>
           </div>

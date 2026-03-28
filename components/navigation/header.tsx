@@ -4,18 +4,14 @@ import Link from "next/link"
 import { useState } from "react"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
+import { copy } from "@/lib/copy"
 
 export default function Header() {
     const pathname = usePathname()
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
     const isHomePage = pathname === "/"
 
-    const navItems = [
-        { name: "Portfolio", path: "/portfolio" },
-        { name: "Services", path: "/services" },
-        { name: "About", path: "/about" },
-        { name: "Contact", path: "/contact" }
-    ]
+    const navItems = copy.header.navItems
 
     return (
         <header className={`w-full z-50 ${
