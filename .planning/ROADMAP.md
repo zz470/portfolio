@@ -50,10 +50,10 @@ See `.planning/milestones/v1.2-ROADMAP.md`
   3. Services descriptions name concrete deliverables (5.1 mix, dialogue edit, ADR supervision) rather than abstract promises
   4. About page reads as a professional track record (credits, roles, years) not a personal blog bio
   5. CTA, contact page, and footer use direct B2B language appropriate for production companies
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 08-01-PLAN.md — Back up original copy + create centralized lib/copy.ts with rewritten professional text
+- [x] 08-01-PLAN.md — Back up original copy + create centralized lib/copy.ts with rewritten professional text
 - [ ] 08-02-PLAN.md — Wire all components to import from lib/copy.ts + rename Services to Expertise
 
 ### Phase 9: Technical SEO & UI Fix
@@ -96,6 +96,6 @@ Phases execute in numeric order: 8 → 9 → 10
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
-| 8. Copy Backup & Rewrite | v1.3 | 0/2 | Not started | - |
+| 8. Copy Backup & Rewrite | v1.3 | 1/2 | In Progress|  |
 | 9. Technical SEO & UI Fix | v1.3 | 0/? | Not started | - |
 | 10. New Pages & Credibility Features | v1.3 | 0/? | Not started | - |

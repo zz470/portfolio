@@ -2,13 +2,13 @@
 
 ## Copy & Content
 
-- [ ] **COPY-01**: All original page copy backed up to reference file before any changes
-- [ ] **COPY-02**: Hero section rewritten with professional, specific messaging
-- [ ] **COPY-03**: CTA section rewritten without cliches — focus on availability and deliverables
-- [ ] **COPY-04**: Services section descriptions rewritten to be concrete and deliverable-focused
-- [ ] **COPY-05**: About page bio rewritten for professional credibility (roles, track record, not feelings)
-- [ ] **COPY-06**: Contact page copy rewritten for B2B tone (no "friendly chat", no emojis)
-- [ ] **COPY-07**: Footer tagline rewritten with specificity about what you do and who for
+- [x] **COPY-01**: All original page copy backed up to reference file before any changes
+- [x] **COPY-02**: Hero section rewritten with professional, specific messaging
+- [x] **COPY-03**: CTA section rewritten without cliches — focus on availability and deliverables
+- [x] **COPY-04**: Services section descriptions rewritten to be concrete and deliverable-focused
+- [x] **COPY-05**: About page bio rewritten for professional credibility (roles, track record, not feelings)
+- [x] **COPY-06**: Contact page copy rewritten for B2B tone (no "friendly chat", no emojis)
+- [x] **COPY-07**: Footer tagline rewritten with specificity about what you do and who for
 
 ## SEO
 
