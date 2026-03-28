@@ -4,7 +4,7 @@
 
 - [ ] **COPY-01**: All original page copy backed up to reference file before any changes
 - [ ] **COPY-02**: Hero section rewritten with professional, specific messaging
-- [ ] **COPY-03**: CTA section rewritten without clichés — focus on availability and deliverables
+- [ ] **COPY-03**: CTA section rewritten without cliches — focus on availability and deliverables
 - [ ] **COPY-04**: Services section descriptions rewritten to be concrete and deliverable-focused
 - [ ] **COPY-05**: About page bio rewritten for professional credibility (roles, track record, not feelings)
 - [ ] **COPY-06**: Contact page copy rewritten for B2B tone (no "friendly chat", no emojis)
@@ -56,22 +56,22 @@
 
 | Requirement | Phase | Plan | Status |
 |-------------|-------|------|--------|
-| COPY-01 | — | — | pending |
-| COPY-02 | — | — | pending |
-| COPY-03 | — | — | pending |
-| COPY-04 | — | — | pending |
-| COPY-05 | — | — | pending |
-| COPY-06 | — | — | pending |
-| COPY-07 | — | — | pending |
-| SEO-01 | — | — | pending |
-| SEO-02 | — | — | pending |
-| SEO-03 | — | — | pending |
-| SEO-04 | — | — | pending |
-| SEO-05 | — | — | pending |
-| SEO-06 | — | — | pending |
-| SEO-07 | — | — | pending |
-| SEO-08 | — | — | pending |
-| UI-01 | — | — | pending |
-| FEAT-01 | — | — | pending |
-| FEAT-02 | — | — | pending |
-| FEAT-03 | — | — | pending |
+| COPY-01 | Phase 8 | — | pending |
+| COPY-02 | Phase 8 | — | pending |
+| COPY-03 | Phase 8 | — | pending |
+| COPY-04 | Phase 8 | — | pending |
+| COPY-05 | Phase 8 | — | pending |
+| COPY-06 | Phase 8 | — | pending |
+| COPY-07 | Phase 8 | — | pending |
+| SEO-01 | Phase 9 | — | pending |
+| SEO-02 | Phase 9 | — | pending |
+| SEO-03 | Phase 9 | — | pending |
+| SEO-04 | Phase 9 | — | pending |
+| SEO-05 | Phase 9 | — | pending |
+| SEO-06 | Phase 9 | — | pending |
+| SEO-07 | Phase 10 | — | pending |
+| SEO-08 | Phase 10 | — | pending |
+| UI-01 | Phase 9 | — | pending |
+| FEAT-01 | Phase 10 | — | pending |
+| FEAT-02 | Phase 10 | — | pending |
+| FEAT-03 | Phase 10 | — | pending |

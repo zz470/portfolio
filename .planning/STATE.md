@@ -4,10 +4,10 @@ milestone: v1.3
 milestone_name: Professional Polish & SEO
 status: active
 stopped_at: null
-last_updated: "2026-03-28T18:30:00.000Z"
+last_updated: "2026-03-28T19:00:00.000Z"
 last_activity: 2026-03-28
 progress:
-  total_phases: 0
+  total_phases: 3
   completed_phases: 0
   total_plans: 0
   completed_plans: 0
@@ -20,20 +20,22 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** v1.3 Professional Polish & SEO — defining requirements
+**Current focus:** v1.3 Phase 8 — Copy Backup & Rewrite
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: 8 of 10 (Copy Backup & Rewrite) — first phase of v1.3
 Plan: —
-Status: Defining requirements for v1.3
-Last activity: 2026-03-28 — Milestone v1.3 started
+Status: Ready to plan
+Last activity: 2026-03-28 — Roadmap created for v1.3 (3 phases, 19 requirements)
+
+Progress: [░░░░░░░░░░] 0%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 0
+- Total plans completed: 0 (v1.3)
 - Average duration: —
 - Total execution time: —
 
@@ -41,7 +43,7 @@ Last activity: 2026-03-28 — Milestone v1.3 started
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 7 - Real Project Images | 0/? | — | — |
+| — | — | — | — |
 
 **Recent Trend:**
 
@@ -49,7 +51,6 @@ Last activity: 2026-03-28 — Milestone v1.3 started
 - Trend: on track
 
 *Updated after each plan completion*
-| Phase 07 P01 | 3 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -58,37 +59,13 @@ Last activity: 2026-03-28 — Milestone v1.3 started
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- TypeScript data file over MDX (content is structured fields, TS gives type safety with zero tooling)
-- Local images in public/ over CDN (never depend on external service for core assets again)
-- Direct imports over API layer (no need for fetch/hooks pattern when data is local and static)
-- [v1.0 Phase 02]: Copied lib/data/projects.ts and consumer rewiring from main repo to resolve parallel worktree isolation — Plan 01 changes were not present in this worktree
-- [v1.0 Phase 03]: Used tsx for script execution since it resolves @/* path aliases via tsconfig automatically
-- [v1.0 Phase 03]: Embedded next build inside verify-continuity.ts so verification is a single command proving everything end-to-end
-- [v1.0 Phase 03]: Visual verification delegated to user — automated tests (Plan 01) cover data integrity; human eyes cover layout correctness
-- [v1.1 Phase 04 Plan 01]: Use initial/animate keys in animations.ts (not hidden/visible) per CONVENTIONS.md for new component consistency
-- [v1.1 Phase 04 Plan 01]: Remove ref from SelectedWorks call site in page.tsx — sectionRef was unused dead code, SelectedWorks forwardRef signature is preserved for future use
-- [Phase 04]: Retained slideIn local variant in PortfolioDetail/Secondary/Tertiary — x-axis animation not covered by shared modules
-- [Phase 04]: Updated hidden/visible keys to initial/animate in ServicesSection and about page to align with shared fadeIn convention
-- [Phase 05]: Used fill mode with absolute-positioned parent container for hero and nav thumbnails in next/image migration
-- [Phase 05]: Used fill mode for PortfolioDetail mobile hero inside AspectRatio — container is relative-positioned, so fill works directly
-- [Phase 05]: Preserved onLoad/onError callbacks in PortfolioCard when migrating to next/image — Image component supports both directly
-- [Phase 06]: Import Project type from lib/data/projects.ts (not hooks/useProjects.ts) since Phase 4 migrated the interface to the data file
-- [Phase 06]: Added use client to SelectedWorks.tsx — uses forwardRef and framer-motion which require client context
-- [Phase 06]: Copied lib/data/projects.ts from main repo into worktree to resolve missing dependency from parallel plan 06-02
-- [Phase 06]: Added 'use client' to SelectedWorks.tsx — was missing before Server Component conversion exposed the gap
-- [Phase 07]: Use misnamed mmsp_thumb_1.webp for No Corre (no_corre_s02) — file exists with that name in the directory, used as-is per plan
+- [v1.3 Roadmap]: Grouped all copy work (backup + rewrite) in Phase 8 so copy is finalized before SEO metadata references it
+- [v1.3 Roadmap]: Put UI-01 (footer touch targets) with Phase 9 technical SEO since both involve small targeted fixes
+- [v1.3 Roadmap]: SEO content pages (category archives, FAQ) grouped with features (reel, testimonials, CV) in Phase 10 since all create new pages/sections
 
 ### Pending Todos
 
 - Minor: AboutPageClient.tsx hardcodes contact info instead of importing from lib/contact-info.ts (QUAL-03 regression from Phase 6 — address in a future quick fix)
-
-### Quick Tasks Completed
-
-| # | Description | Date | Commit |
-|---|-------------|------|--------|
-| — | Homepage hero image (real photo) | 2026-03-28 | 8d0060e |
-| — | Selected Works: hero images, featured flag, carousel, metadata display | 2026-03-28 | c75ab06 |
-| — | Added 9 new projects with images (details TBD), reordered all 28 by release date | 2026-03-28 | 33ee02d |
 
 ### Blockers/Concerns
 
@@ -96,6 +73,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-27T22:17:36.822Z
-Stopped at: Completed 07-01-PLAN.md
+Last session: 2026-03-28
+Stopped at: Roadmap created for v1.3 milestone
 Resume file: None
