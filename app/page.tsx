@@ -6,10 +6,14 @@ import CTASection from "@/components/home/CTASection";
 import HeroSection from "@/components/home/HeroSection";
 
 export const metadata: Metadata = {
-  // No title -- root layout default "Lorenzo Pardell | Sound Designer" applies
+  // No title -- root layout default applies
   openGraph: {
-    title: "Lorenzo Pardell | Sound Designer",
-    description: "Sound designer specializing in film, series, and documentaries based in Sao Paulo, Brazil.",
+    title: "Lorenzo Pardell | Sound Designer & Re-Recording Mixer | Sao Paulo",
+    description: "Re-recording mixer and sound designer with 30+ credits across film, series, and documentaries. Based in Sao Paulo, Brazil.",
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary",
     images: ["/og-image.png"],
   },
 };

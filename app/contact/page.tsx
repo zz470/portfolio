@@ -3,11 +3,15 @@ import { Button } from "@/components/ui/button";
 import { copy } from "@/lib/copy";
 
 export const metadata: Metadata = {
-  title: copy.contactMeta.title,
+  title: "Contact | Sound Designer Sao Paulo",
   description: copy.contactMeta.description,
   openGraph: {
-    title: copy.contactMeta.title,
+    title: "Contact | Sound Designer Sao Paulo | Lorenzo Pardell",
     description: copy.contactMeta.description,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary",
     images: ["/og-image.png"],
   },
 };

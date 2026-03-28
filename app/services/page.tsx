@@ -3,11 +3,15 @@ import ServicesPageClient from "@/components/services/ServicesPageClient";
 import { copy } from "@/lib/copy";
 
 export const metadata: Metadata = {
-  title: copy.servicesMeta.title,
+  title: "Sound Design & Mixing Expertise",
   description: copy.servicesMeta.description,
   openGraph: {
-    title: copy.servicesMeta.title,
+    title: "Sound Design & Mixing Expertise | Lorenzo Pardell",
     description: copy.servicesMeta.description,
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary",
     images: ["/og-image.png"],
   },
 };

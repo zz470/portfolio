@@ -81,9 +81,9 @@ export default function Footer() {
                     whileHover={{ x: 2 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Link 
+                    <Link
                       href={link.href}
-                      className="flex items-center text-sm text-gray-600 hover:text-orange-500 transition-colors group"
+                      className="flex items-center min-h-[44px] min-w-[44px] text-sm text-gray-600 hover:text-orange-500 transition-colors group"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
