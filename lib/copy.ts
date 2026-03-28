@@ -14,8 +14,9 @@
 
 export const copy = {
   hero: {
-    title: "Sound for film, series & documentary.",
-    highlightWords: ["productions.", "series.", "documentaries.", "commercials."],
+    title: "Shaping the sound of",
+    highlightText1: "the world's most ambitious",
+    highlightWords: ["filmmakers.", "brands.", "studios.", "agencies."],
     subtitle: "Re-recording mixer and sound designer with 30+ credits across Europe and the Americas.",
   },
 
