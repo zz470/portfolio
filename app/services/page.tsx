@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import ServicesPageClient from "@/components/services/ServicesPageClient";
+import { copy } from "@/lib/copy";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: "Professional sound design, re-recording mixing, audio editing, foley, field recording, and location sound services for film, TV, and documentaries.",
+  title: copy.servicesMeta.title,
+  description: copy.servicesMeta.description,
   openGraph: {
-    title: "Services | Lorenzo Pardell",
-    description: "Sound design, mixing, and audio post-production services for film and media.",
+    title: copy.servicesMeta.title,
+    description: copy.servicesMeta.description,
     images: ["/og-image.png"],
   },
 };

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { copy } from "@/lib/copy";
 
 /**
  * Animation variants for consistent motion effects throughout the page
@@ -83,126 +84,10 @@ const styles = {
   }
 };
 
-// Page content
-const pageContent = {
-  intro: {
-    title: "Services",
-    description: "Bringing a project to the finish line is complex. My role is to simplify that process - handling the details, adapting to changing needs, and delivering work that's on time, on spec, and aligned with your vision. Whether you're deep in post or still shaping the story, I offer sound solutions that support your team and elevate the final result."
-  },
-  mixing: {
-    title: "Re-Recording Mix Engineer",
-    description: "Sound is one of the final steps in post-production, and often one of the most time-sensitive. I take on the technical and creative responsibility of the mix so you can focus on the bigger picture. Making sure your project is delivered correctly, sounds great, and meets every spec, every time.",
-    benefitsTitle: "How This Benefits Your Project",
-    benefits: [
-      {
-        title: "Creative Clarity",
-        description: "The mix supports your story - not just technically, but emotionally - making sure the dialogue is clear, the music breathes, and the sound design lands."
-      },
-      {
-        title: "Deadline-Ready",
-        description: "With a thoughtful approach to revisions and time management, you can trust the mix will be ready when you need it, without the rush at the finish line."
-      },
-      {
-        title: "Format Flexibility",
-        description: "Whether it's stereo, surround, or immersive audio, mixes are delivered in the format your project needs - ready for broadcast, streaming, theatrical, or digital distribution."
-      },
-      {
-        title: "Spec Compliance",
-        description: "From loudness standards to channel layouts, stems, and file naming, every detail is covered to ensure your deliverables pass QC smoothly, without any last-minute issues."
-      }
-    ],
-    formats: [
-      {
-        name: "Dolby Atmos",
-        description: "Immersive three-dimensional sound experience",
-        color: "bg-orange-500",
-        icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <circle cx="12" cy="12" r="4"></circle>
-          </svg>
-        )
-      },
-      {
-        name: "5.1/7.1 Surround",
-        description: "Theatrical and broadcast standard",
-        color: "bg-orange-400",
-        icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 3a9 9 0 0 0-8.5 12"></path>
-            <path d="M12 3a9 9 0 0 1 8.5 12"></path>
-            <circle cx="12" cy="17" r="1"></circle>
-            <circle cx="8" cy="17" r="1"></circle>
-            <circle cx="16" cy="17" r="1"></circle>
-          </svg>
-        )
-      },
-      {
-        name: "Stereo 2.0",
-        description: "Optimized for streaming and digital",
-        color: "bg-orange-300",
-        icon: (
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect width="6" height="14" x="4" y="5" rx="2"></rect>
-            <rect width="6" height="14" x="14" y="5" rx="2"></rect>
-          </svg>
-        )
-      }
-    ]
-  },
-  soundDesign: {
-    title: "Sound Design",
-    description: "Sound is a powerful storytelling tool. It doesn't just fill space - it shapes how your audience experiences the story by creating unique sonic experiences that enhance your narrative, evoke emotional responses, and leave a lasting impression on your audience.",
-    features: [
-      {
-        title: "Narrative-Driven",
-        description: "Every sound is chosen and shaped to support the story, not distract from it - helping moments land with more weight and meaning."
-      },
-      {
-        title: "Emotional Impact",
-        description: "By manipulating textures, rhythms, and silence, sound builds tension and release, deepens immersion, and creates a dynamic emotional arc."
-      },
-      {
-        title: "World Building",
-        description: "Soundscapes enhance the narrative, and immerse the audience in the story. Each element is designed to support the scene and bring the world to life."
-      },
-      {
-        title: "Collaborative Process",
-        description: "Working closely with directors, editors, and producers to ensure every sound decision aligns with the vision. I'm open to feedback, and always in service of the final cut."
-      }
-    ]
-  },
-  additionalServices: {
-    title: "Additional Services",
-    description: "Every project has unique audio needs. These specialized services complement my core offerings to provide comprehensive sound solutions for your creative work.",
-    services: [
-    {
-      title: "Audio Editing & Restoration",
-      description: "Clear, pristine audio that enhances your message. I remove unwanted noise, clean up dialogue, and recover problematic recordings to ensure your content sounds professional and polished."
-    },
-    {
-      title: "Foley",
-      description: "Authentic sound effects that bring your visuals to life. Custom-created foley elements add realism and depth to every interaction on screen, creating a more immersive experience for your audience."
-    },
-    {
-      title: "Field Recording",
-      description: "Unique, high-quality audio captured from real environments. Professional equipment and techniques ensure you get authentic sounds that can't be found in standard libraries, giving your project a distinct edge."
-    },
-    {
-      title: "Location Sound",
-      description: "Flawless audio capture during your productions. Professional location sound ensures your creative vision isn't compromised by poor audio quality, saving you time and resources in post-production."
-    },
-    {
-      title: "Interactive Audio",
-      description: "Dynamic sound systems that respond to user actions. Adaptive soundscapes and responsive audio elements enhance engagement and create memorable experiences for your interactive media projects."
-    },
-    {
-      title: "Audio Branding",
-      description: "Distinctive sonic identities that strengthen brand recognition. Custom sound logos and audio branding packages help your audience connect with your brand on a deeper level, improving recall and loyalty."
-    }
-    ]
-  }
-};
+// Page content — sourced from lib/copy.ts, with UI-specific icon/color data merged for formats
+const pageContent = copy.servicesPage;
+
+
 
 // Reusable components
 /**
