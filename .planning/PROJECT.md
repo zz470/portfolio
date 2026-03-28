@@ -55,16 +55,6 @@ The portfolio is production-grade with real project images:
 
 None — planning next milestone
 
-## Current Milestone: v1.2 Real Project Images
-
-**Goal:** Replace all placeholder SVG images with real project photos across the portfolio.
-
-**Target features:**
-- Update `thumbnail_url` and `hero_url` in `lib/data/projects.ts` to point to real images
-- Use `_thumb_1` and `_hero_1` naming convention per project
-- Handle any projects with non-standard naming
-- Remove old placeholder SVGs once no longer referenced
-
 ### Out of Scope
 
 - CMS integration — content lives in code for now
@@ -92,6 +82,8 @@ None — planning next milestone
 | Hybrid RSC + client wrappers | Preserves all Framer Motion animations while enabling SSR for SEO | ✓ v1.1 |
 | Static OG image over dynamic | Simple and reliable; upgrade to per-project images when real images are available | ✓ v1.1 |
 | next/image fill mode with sizes | Consistent pattern across all components; proper responsive image optimization | ✓ v1.1 |
+| Use mixed image formats as-is | Let next/image handle optimization; avoid manual format conversion | ✓ v1.2 |
+| Use misnamed no_corre thumbs as-is | Files work correctly despite wrong naming from download | ✓ v1.2 |
 
 ## Known Issues
 
@@ -102,4 +94,4 @@ None — planning next milestone
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-27 after v1.2 Phase 7 completion*
+*Last updated: 2026-03-28 after v1.2 milestone completion*
