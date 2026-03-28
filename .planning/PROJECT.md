@@ -26,7 +26,7 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ## Current State
 
-**Shipped:** Phase 8 — Copy Backup & Rewrite (2026-03-28)
+**Shipped:** Phase 9 — Technical SEO & UI Fix (2026-03-28)
 
 The portfolio is production-grade with 28 projects, real images, and professional B2B copy:
 - 28 projects with real thumbnail and hero photos, descriptions, roles, and metadata
@@ -38,6 +38,10 @@ The portfolio is production-grade with 28 projects, real images, and professiona
 - Framer Motion animations preserved via client wrappers
 - All page copy centralized in lib/copy.ts with professional B2B voice
 - "Services" renamed to "Expertise" across navigation
+- JSON-LD structured data on homepage and all project pages
+- Keyword-rich titles, SEO meta descriptions, Twitter cards on every page
+- Per-project OG images from hero photos, bilingual keywords
+- Footer social links meet 44x44px touch target minimum
 
 ## Requirements
 
@@ -77,12 +81,13 @@ The portfolio is production-grade with 28 projects, real images, and professiona
 - ✓ Centralized copy in lib/copy.ts with typed constants — v1.3 (Phase 8)
 - ✓ "Services" renamed to "Expertise" across navigation and headings — v1.3 (Phase 8)
 
+- ✓ JSON-LD structured data (Person, ProfessionalService, CreativeWork) — v1.3 (Phase 9)
+- ✓ SEO page titles, meta descriptions, image alt text optimization — v1.3 (Phase 9)
+- ✓ Per-project OG images and Twitter card metadata — v1.3 (Phase 9)
+- ✓ Footer social link touch target fix (44x44px minimum) — v1.3 (Phase 9)
+- ✓ Bilingual keywords (English + Portuguese) for dual-market SEO — v1.3 (Phase 9)
+
 ### Active
-- JSON-LD structured data (Person, CreativeWork, LocalBusiness) — v1.3
-- SEO page titles, meta descriptions, image alt text optimization — v1.3
-- Per-project OG images and Twitter card metadata — v1.3
-- Dark mode fix across all components — v1.3
-- Footer social link touch target fix — v1.3
 - Reel page (create or fix broken hero link) — v1.3
 - Testimonials section — v1.3
 - CV/resume download — v1.3
@@ -130,4 +135,4 @@ The portfolio is production-grade with 28 projects, real images, and professiona
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-28 — Phase 8 complete (Copy Backup & Rewrite)*
+*Last updated: 2026-03-28 — Phase 9 complete (Technical SEO & UI Fix)*
