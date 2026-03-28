@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A production-ready personal portfolio website for Lorenzo Pardell, a sound professional (sound designer, mixer, boom operator, dialogue editor, re-recording mixer) working in film, TV series, documentaries, and advertisements. Built with Next.js 15 using Server Components for SEO, showcasing 19 projects across multiple categories with local TypeScript data. Fully indexed by search engines with Open Graph social sharing support.
+A production-ready personal portfolio website for Lorenzo Pardell, a sound professional (sound designer, mixer, boom operator, dialogue editor, re-recording mixer) working in film, TV series, documentaries, and advertisements. Built with Next.js 15 using Server Components for SEO, showcasing 28 projects across multiple categories with local TypeScript data. Fully indexed by search engines with Open Graph social sharing support.
 
 ## Core Value
 
@@ -53,6 +53,7 @@ The portfolio is production-grade with real project images:
 - ✓ Homepage hero image (real on-set photo) — v1.2
 - ✓ Selected Works uses hero images with featured project selection — v1.2
 - ✓ Auto-scrolling carousel for Selected Works when >3 featured projects — v1.2
+- ✓ 28 total projects with real images (9 new projects added, details TBD) — v1.2
 
 ### Active
 
@@ -68,7 +69,7 @@ None — planning next milestone
 ## Context
 
 - **Architecture**: Next.js 15 App Router, Server Components with client wrappers for Framer Motion animations, direct imports from `lib/data/projects.ts`
-- **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`). Projects support `featured` flag for homepage selection.
+- **Data**: 28 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`). Projects support `featured` flag for homepage selection. Ordered by release date (2026→2018).
 - **SEO**: Sitemap (24 routes), robots.txt, OG metadata per page, unique OG title/description per project
 - **Images**: Real project photos in `public/images/projects/{project_dir}/` — thumbnails and heroes for all 19 projects. All use next/image with fill mode
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion

@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2026-03-28)
 
 Phase: —
 Plan: —
-Status: Milestone v1.2 complete. Quick tasks done (hero image, Selected Works carousel).
+Status: Milestone v1.2 complete. Quick tasks done (hero image, Selected Works carousel, 9 new projects).
 Last activity: 2026-03-28
 
 ## Performance Metrics
@@ -88,6 +88,7 @@ Recent decisions affecting current work:
 |---|-------------|------|--------|
 | — | Homepage hero image (real photo) | 2026-03-28 | 8d0060e |
 | — | Selected Works: hero images, featured flag, carousel, metadata display | 2026-03-28 | c75ab06 |
+| — | Added 9 new projects with images (details TBD), reordered all 28 by release date | 2026-03-28 | 33ee02d |
 
 ### Blockers/Concerns
 
