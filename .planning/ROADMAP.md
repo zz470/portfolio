@@ -66,11 +66,11 @@ Plans:
   3. All images have descriptive alt text that includes project name and context (not "thumbnail" or "hero")
   4. Sharing any project URL on social media shows that project's hero image, title, and description (not a generic fallback)
   5. Footer social links are comfortably tappable on mobile without mis-taps (minimum 44x44px touch target)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 09-01: TBD
-- [ ] 09-02: TBD
+- [ ] 09-01-PLAN.md — JSON-LD structured data, page metadata optimization, Twitter cards, footer touch targets
+- [ ] 09-02-PLAN.md — Per-project OG images, CreativeWork JSON-LD, image alt text updates
 
 ### Phase 10: New Pages & Credibility Features
 **Goal**: The portfolio has dedicated landing pages for SEO discoverability and credibility features that build trust with potential clients
@@ -97,5 +97,5 @@ Phases execute in numeric order: 8 → 9 → 10
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 8. Copy Backup & Rewrite | v1.3 | 1/2 | In Progress|  |
-| 9. Technical SEO & UI Fix | v1.3 | 0/? | Not started | - |
+| 9. Technical SEO & UI Fix | v1.3 | 0/2 | Not started | - |
 | 10. New Pages & Credibility Features | v1.3 | 0/? | Not started | - |
