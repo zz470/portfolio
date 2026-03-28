@@ -78,13 +78,14 @@ export default function HeroSection({
             <h1 className="flex flex-col items-center gap-2 font-medium">
               <div>
                 <span className="text-white">{copy.hero.title} </span>
-              </div>
-              <div>
                 <span className="bg-gradient-to-r from-orange-400 to-amber-200 text-transparent bg-clip-text">
-                  {copy.hero.highlightText1}{" "}
+                  {copy.hero.highlightText1}
                 </span>
               </div>
               <div>
+                <span className="bg-gradient-to-r from-orange-400 to-amber-200 text-transparent bg-clip-text">
+                  {copy.hero.highlightText2}{" "}
+                </span>
                 <span className="relative text-white inline-block">
                   <AnimatedText />
                 </span>
