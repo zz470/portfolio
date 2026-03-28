@@ -8,14 +8,30 @@ A production-ready personal portfolio website for Lorenzo Pardell, a sound profe
 
 The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
 
+## Current Milestone: v1.3 Professional Polish & SEO
+
+**Goal:** Rewrite copy for professional audience, implement comprehensive SEO, fix dark mode, and add missing credibility features.
+
+**Target features:**
+- Backup original copy, then rewrite all page text (hero, CTA, services, about, contact, footer)
+- JSON-LD structured data (Person, CreativeWork, LocalBusiness)
+- SEO improvements (page titles, meta descriptions, alt text, per-project OG images, Twitter cards)
+- Fix dark mode across all components
+- Fix footer social link touch targets
+- Create /reel page (or fix broken link)
+- Add testimonials section
+- Implement CV/resume download
+- Category archive pages for SEO
+- FAQ section targeting search queries
+
 ## Current State
 
-**Shipped:** v1.2 Real Project Images (2026-03-27)
+**Shipped:** v1.2 Real Project Images (2026-03-28)
 
-The portfolio is production-grade with real project images:
-- All 19 projects display real thumbnail and hero photos
+The portfolio is production-grade with 28 projects and real images:
+- 28 projects with real thumbnail and hero photos, descriptions, roles, and metadata
 - All pages render as Server Components (SEO-indexable HTML)
-- Sitemap with 24 routes, robots.txt, Open Graph metadata on every page
+- Sitemap with 24+ routes, robots.txt, Open Graph metadata on every page
 - Branded 404 and error recovery pages
 - Clean codebase — no console.logs, no dead code, no deprecated APIs
 - All images optimized via next/image
@@ -57,7 +73,17 @@ The portfolio is production-grade with real project images:
 
 ### Active
 
-None — planning next milestone
+- Copy rewrite for all pages (backup originals first) — v1.3
+- JSON-LD structured data (Person, CreativeWork, LocalBusiness) — v1.3
+- SEO page titles, meta descriptions, image alt text optimization — v1.3
+- Per-project OG images and Twitter card metadata — v1.3
+- Dark mode fix across all components — v1.3
+- Footer social link touch target fix — v1.3
+- Reel page (create or fix broken hero link) — v1.3
+- Testimonials section — v1.3
+- CV/resume download — v1.3
+- Category archive pages for SEO — v1.3
+- FAQ section — v1.3
 
 ### Out of Scope
 
@@ -100,4 +126,4 @@ None — planning next milestone
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-28 after v1.2 milestone + quick tasks*
+*Last updated: 2026-03-28 — v1.3 milestone started*
