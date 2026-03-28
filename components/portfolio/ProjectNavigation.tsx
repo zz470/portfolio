@@ -49,7 +49,7 @@ export default function ProjectNavigation({
           <div className="relative w-full h-60 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-100 dark:bg-gray-800">
             <Image
               src={prevProject.thumbnail_url}
-              alt={prevProject.title}
+              alt={`${prevProject.title} — portfolio thumbnail`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
@@ -74,7 +74,7 @@ export default function ProjectNavigation({
           <div className="relative w-full h-60 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-100 dark:bg-gray-800">
             <Image
               src={nextProject.thumbnail_url}
-              alt={nextProject.title}
+              alt={`${nextProject.title} — portfolio thumbnail`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

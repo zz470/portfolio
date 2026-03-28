@@ -59,7 +59,7 @@ export default function HeroSection({
       <div className="absolute inset-0 z-0">
         <Image
           src={backgroundImageUrl}
-          alt="Hero background"
+          alt="Lorenzo Pardell — Re-Recording Mixer and Sound Designer based in Sao Paulo"
           fill
           priority
           className="object-cover"

@@ -59,7 +59,7 @@ export default function PortfolioCard({ project, index }: PortfolioCardProps) {
             {!imageError && (
               <Image
                 src={project.thumbnail_url}
-                alt={project.title}
+                alt={`${project.title} — sound by Lorenzo Pardell`}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className={`object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}

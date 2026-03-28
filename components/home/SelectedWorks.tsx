@@ -25,7 +25,7 @@ function ProjectCard({ project }: { project: Project }) {
         <div className="pb-[150%] relative">
           <Image
             src={project.hero_url || project.thumbnail_url}
-            alt={project.title}
+            alt={`${project.title} — sound by Lorenzo Pardell`}
             fill
             className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
           />

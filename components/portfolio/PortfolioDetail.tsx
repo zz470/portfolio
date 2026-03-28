@@ -66,7 +66,7 @@ export default function PortfolioDetail({ project, allProjects = [] }: Portfolio
                   <AspectRatio ratio={2/3}>
                     <Image
                       src={project.hero_url || project.thumbnail_url}
-                      alt={project.title}
+                      alt={`${project.title} — ${project.roles[0]} by Lorenzo Pardell`}
                       fill
                       sizes="(max-width: 1024px) 100vw, 40vw"
                       className="object-cover"
@@ -97,7 +97,7 @@ export default function PortfolioDetail({ project, allProjects = [] }: Portfolio
               <div className="w-full relative">
                 <Image
                   src={project.hero_url || project.thumbnail_url}
-                  alt={project.title}
+                  alt={`${project.title} — audio production by Lorenzo Pardell`}
                   fill
                   sizes="100vw"
                   className="object-cover"

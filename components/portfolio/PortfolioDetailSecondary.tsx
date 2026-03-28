@@ -38,7 +38,7 @@ export default function PortfolioDetailSecondary({ project, allProjects = [] }: 
             <div className="absolute inset-0 bg-gray-100 dark:bg-gray-800">
               <Image
                 src={project.hero_url || project.thumbnail_url}
-                alt={project.title}
+                alt={`${project.title} — ${project.roles[0]} by Lorenzo Pardell`}
                 fill
                 sizes="100vw"
                 priority
