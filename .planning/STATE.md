@@ -2,8 +2,8 @@
 gsd_state_version: 1.0
 milestone: v1.2
 milestone_name: Real Project Images
-status: verifying
-stopped_at: Completed 07-01-PLAN.md
+status: complete
+stopped_at: Milestone v1.2 complete + quick tasks
 last_updated: "2026-03-28T02:25:44.108Z"
 last_activity: 2026-03-28
 progress:
@@ -17,16 +17,16 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-27)
+See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Phase 07 — real-project-images
+**Current focus:** Planning next milestone
 
 ## Current Position
 
-Phase: 07
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: —
+Plan: —
+Status: Milestone v1.2 complete. Quick tasks done (hero image, Selected Works carousel).
 Last activity: 2026-03-28
 
 ## Performance Metrics
@@ -82,9 +82,16 @@ Recent decisions affecting current work:
 
 - Minor: AboutPageClient.tsx hardcodes contact info instead of importing from lib/contact-info.ts (QUAL-03 regression from Phase 6 — address in a future quick fix)
 
+### Quick Tasks Completed
+
+| # | Description | Date | Commit |
+|---|-------------|------|--------|
+| — | Homepage hero image (real photo) | 2026-03-28 | 8d0060e |
+| — | Selected Works: hero images, featured flag, carousel, metadata display | 2026-03-28 | c75ab06 |
+
 ### Blockers/Concerns
 
-- Image directories are present in public/images/projects/ (added as untracked files) — need to inspect actual filenames before updating projects.ts
+None.
 
 ## Session Continuity
 

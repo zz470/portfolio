@@ -50,6 +50,9 @@ The portfolio is production-grade with real project images:
 - ✓ Branded 404 page and error boundary — v1.1
 - ✓ Real thumbnail and hero images for all 19 projects — v1.2
 - ✓ Placeholder SVGs removed — v1.2
+- ✓ Homepage hero image (real on-set photo) — v1.2
+- ✓ Selected Works uses hero images with featured project selection — v1.2
+- ✓ Auto-scrolling carousel for Selected Works when >3 featured projects — v1.2
 
 ### Active
 
@@ -65,7 +68,7 @@ None — planning next milestone
 ## Context
 
 - **Architecture**: Next.js 15 App Router, Server Components with client wrappers for Framer Motion animations, direct imports from `lib/data/projects.ts`
-- **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`)
+- **Data**: 19 projects in typed TypeScript array with helper functions (`getProjectBySlug`, `getProjectsByCategory`, `getFeaturedProjects`). Projects support `featured` flag for homepage selection.
 - **SEO**: Sitemap (24 routes), robots.txt, OG metadata per page, unique OG title/description per project
 - **Images**: Real project photos in `public/images/projects/{project_dir}/` — thumbnails and heroes for all 19 projects. All use next/image with fill mode
 - **Tech stack**: Next.js 15.2.2, React 19, TypeScript, Tailwind CSS v4, shadcn/ui, Framer Motion
@@ -84,6 +87,8 @@ None — planning next milestone
 | next/image fill mode with sizes | Consistent pattern across all components; proper responsive image optimization | ✓ v1.1 |
 | Use mixed image formats as-is | Let next/image handle optimization; avoid manual format conversion | ✓ v1.2 |
 | Use misnamed no_corre thumbs as-is | Files work correctly despite wrong naming from download | ✓ v1.2 |
+| Featured flag on projects for homepage | Flexible selection without hardcoding IDs; latest 3 featured shown | ✓ v1.2 |
+| rAF-based carousel over CSS animation | Supports drag, horizontal scroll, and infinite wrap in both directions | ✓ v1.2 |
 
 ## Known Issues
 
@@ -94,4 +99,4 @@ None — planning next milestone
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-28 after v1.2 milestone completion*
+*Last updated: 2026-03-28 after v1.2 milestone + quick tasks*
