@@ -57,7 +57,7 @@ function Carousel({ projects }: { projects: Project[] }) {
   const innerRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
   const [scrollX, setScrollX] = useState(0);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
   const lastTimeRef = useRef<number>(0);
   const halfWidth = useRef(0);
 

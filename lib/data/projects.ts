@@ -17,9 +17,28 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // 2025 releases
+  // 2026 releases
   {
     id: 1,
+    title: "Escravos da Fé - Arautos do Evangelho",
+    slug: "escravos-da-fe",
+    description: "A série investiga denúncias de abusos e manipulação psicológica de ex-membros do grupo católico Arautos do Evangelho.",
+    thumbnail_url: "/images/projects/escravos_da_fe_arautos_do_evangelho/escravos_da_fe_arautos_do_evangelho_thumb_01.jpg",
+    video_url:
+      "https://www.youtube.com/watch?v=Va4Zkp0dtiY&t",
+    category: "Documentary",
+    roles: ["Sound Designer", "Re-recording Mixer"],
+    imdb_url: "https://www.imdb.com/title/tt40621741/",
+    production_company: "Endemol",
+    media_platform: "HBO",
+    release_date: 2026,
+    hero_url: "/images/projects/escravos_da_fe_arautos_do_evangelho/escravos_da_fe_arautos_do_evangelho_hero_01.jpg",
+    design_version: "primary",
+    featured: true,
+  },
+  // 2025 releases
+  {
+    id: 2,
     title: "Operação Transplante - Season 1",
     slug: "operacao-transplante",
     description:
@@ -36,10 +55,10 @@ export const projects: Project[] = [
     release_date: 2025,
     hero_url: "/images/projects/operacao_transplante_s01/operacao_transplante_hero_1.webp",
     design_version: "primary",
-    featured: true,
+    featured: false,
   },
   {
-    id: 2,
+    id: 3,
     title: "Minha Mãe Com Seu Pai - Season 1",
     slug: "minha-mae-com-seu-pai",
     description:
@@ -55,10 +74,10 @@ export const projects: Project[] = [
     release_date: 2025,
     hero_url: "/images/projects/minha_mae_com_seu_pai_s01/mmsp_hero.jpg",
     design_version: "primary",
-    featured: true,
+    featured: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "LOL: SE RIR JÁ ERA! - Season 4",
     slug: "lol-brasil-s4",
     description:
@@ -74,11 +93,64 @@ export const projects: Project[] = [
     release_date: 2025,
     hero_url: "/images/projects/lol_porta_dos_fundos_s04/lol_hero.jpg",
     design_version: "primary",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Mundo da Lua",
+    slug: "mundo-da-lua",
+    description: "",
+    thumbnail_url: "/images/projects/mundo_da_lua/mundo_da_lua_thumb_01.webp",
+    video_url: "",
+    category: "Series",
+    roles: [],
+    release_date: 2025,
+    hero_url: "/images/projects/mundo_da_lua/mundo_da_lua_hero_01.png",
+    design_version: "primary",
+  },
+  {
+    id: 6,
+    title: "Por Trás do Prato",
+    slug: "por-tras-do-prato",
+    description: "",
+    thumbnail_url: "/images/projects/por_tras_do_prato/por_tras_do_prato_thumb_1.jpg",
+    video_url: "",
+    category: "Series",
+    roles: [],
+    release_date: 2025,
+    hero_url: "/images/projects/por_tras_do_prato/por_tras_do_prato_hero_1.avif",
+    design_version: "primary",
+  },
+  {
+    id: 7,
+    title: "Primavera nos Dentes",
+    slug: "primavera-nos-dentes",
+    description: "",
+    thumbnail_url: "/images/projects/primavera_nos_dentes/primavera_nos_dentes_thumb_01.jpg",
+    video_url: "",
+    category: "Documentary",
+    roles: [],
+    release_date: 2025,
+    hero_url: "/images/projects/primavera_nos_dentes/primavera_nos_dentes_hero_01.jpg",
+    design_version: "primary",
     featured: true,
+  },
+  {
+    id: 8,
+    title: "Werk It",
+    slug: "werk-it",
+    description: "",
+    thumbnail_url: "/images/projects/werk_it/werk_it_thumb.jpg",
+    video_url: "",
+    category: "Series",
+    roles: [],
+    release_date: 2025,
+    hero_url: "/images/projects/werk_it/werk_it_hero.jpg",
+    design_version: "primary",
   },
   // 2024 releases
   {
-    id: 4,
+    id: 9,
     title: "No Corre - Season 2",
     slug: "no-corre",
     description:
@@ -96,7 +168,7 @@ export const projects: Project[] = [
     design_version: "primary",
   },
   {
-    id: 5,
+    id: 10,
     title: "Maniaco Do Parque - A História Nunca Contada",
     slug: "maniaco-do-parque",
     description:
@@ -115,7 +187,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 6,
+    id: 11,
     title: "Helipa - Um Autorretrato",
     slug: "helipa",
     description:
@@ -133,7 +205,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 7,
+    id: 12,
     title: "Luva de Pedreiro - O Rei Da Jogada",
     slug: "luva-de-pedreiro",
     description:
@@ -152,7 +224,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 8,
+    id: 13,
     title: "Dra. Darci - Season 4",
     slug: "dra-darci-4",
     description:
@@ -169,7 +241,7 @@ export const projects: Project[] = [
     design_version: "primary",
   },
   {
-    id: 9,
+    id: 14,
     title: "Quem Não Pode Se Sacode",
     slug: "quem-nao-pode-se-sacode",
     description:
@@ -177,7 +249,7 @@ export const projects: Project[] = [
     thumbnail_url: "/images/projects/quem_nao_pode_se_sacode/quem_nao_pode_se_sacode_thumb_1.jpg",
     video_url:
       "https://www.youtube.com/watch?v=ovX3u1IzcDE&ab_channel=CanalGNT",
-    category: "Reality",
+    category: "Podcast",
     roles: ["Dialogue Editor", "Re-recording Mixer"],
     production_company: "Formata",
     media_platform: "Globoplay - GNT",
@@ -186,7 +258,7 @@ export const projects: Project[] = [
     design_version: "primary",
   },
   {
-    id: 10,
+    id: 15,
     title: "Surreal Portugal",
     slug: "surreal-portugal",
     description:
@@ -202,9 +274,22 @@ export const projects: Project[] = [
     hero_url: "/images/projects/portugal_surreal/pt_surreal_hero.jpg",
     design_version: "primary",
   },
+  {
+    id: 16,
+    title: "Papo Cruzado",
+    slug: "papo-cruzado",
+    description: "",
+    thumbnail_url: "/images/projects/papo_cruzado/papo_cruzado_thumb_1.jpg",
+    video_url: "",
+    category: "Podcast",
+    roles: [],
+    release_date: 2024,
+    hero_url: "/images/projects/papo_cruzado/papo_cruzado_hero_1.jpg",
+    design_version: "primary",
+  },
   // 2023 releases
   {
-    id: 11,
+    id: 17,
     title: "Run For Europe",
     slug: "run-for-europe",
     description:
@@ -220,7 +305,7 @@ export const projects: Project[] = [
   },
   // 2022 releases
   {
-    id: 12,
+    id: 18,
     title: "48H Film Festival - O Segredo Dos Pássaros",
     slug: "o-segredo-dos-passaros",
     description:
@@ -237,7 +322,7 @@ export const projects: Project[] = [
     design_version: "primary",
   },
   {
-    id: 13,
+    id: 19,
     title: "Bimbo - Receitas da Tia Cátia",
     slug: "bimbo",
     description:
@@ -253,9 +338,48 @@ export const projects: Project[] = [
     hero_url: "/images/projects/bimbo/bimbo_hero.png",
     design_version: "secondary",
   },
+  {
+    id: 20,
+    title: "Jumo Health",
+    slug: "jumo-health",
+    description: "",
+    thumbnail_url: "/images/projects/jumo_health/jumo-health-astronauts_16x9.jpg",
+    video_url: "",
+    category: "Advertisement",
+    roles: [],
+    release_date: 2022,
+    hero_url: "/images/projects/jumo_health/jumo-health-rocket_16x9.jpg",
+    design_version: "tertiary",
+  },
+  {
+    id: 21,
+    title: "Natto Pharma",
+    slug: "natto-pharma",
+    description: "",
+    thumbnail_url: "/images/projects/natto_pharma/natto-pharma-heart_16x9.jpg",
+    video_url: "",
+    category: "Advertisement",
+    roles: [],
+    release_date: 2022,
+    hero_url: "/images/projects/natto_pharma/natto-pharma-woman_16x9.jpg",
+    design_version: "tertiary",
+  },
+  {
+    id: 22,
+    title: "UnoBravo",
+    slug: "unobravo",
+    description: "",
+    thumbnail_url: "/images/projects/unobravo/unobravo_thumb_1.jpg",
+    video_url: "",
+    category: "Advertisement",
+    roles: [],
+    release_date: 2022,
+    hero_url: "/images/projects/unobravo/unobravo_hero_1.jpg",
+    design_version: "secondary",
+  },
   // 2021 releases
   {
-    id: 14,
+    id: 23,
     title: "Gronda - José Avillez Masterclass",
     slug: "gronda-avillez",
     description:
@@ -272,7 +396,7 @@ export const projects: Project[] = [
     design_version: "primary",
   },
   {
-    id: 15,
+    id: 24,
     title: "Gronda - Henrique Sá Pessoa Masterclass",
     slug: "gronda-sa-pessoa",
     description:
@@ -289,7 +413,7 @@ export const projects: Project[] = [
     design_version: "primary",
   },
   {
-    id: 16,
+    id: 25,
     title: "G.O.T.S - From Field to Fashion",
     slug: "gots",
     description:
@@ -306,7 +430,7 @@ export const projects: Project[] = [
     design_version: "secondary",
   },
   {
-    id: 17,
+    id: 26,
     title: "Gnosis - Vitamin K2 & Women's Health",
     slug: "gnosis-vitamin-k2-womens-health",
     description:
@@ -323,7 +447,7 @@ export const projects: Project[] = [
   },
   // 2020 releases
   {
-    id: 18,
+    id: 27,
     title: "Ropes For Building Blocks",
     slug: "ropes-for-building-blocks",
     description: "",
@@ -339,7 +463,7 @@ export const projects: Project[] = [
   },
   // 2018 releases
   {
-    id: 19,
+    id: 28,
     title: "Piracanjuba - Dia Das Crianças",
     slug: "piracanjuba",
     description:
@@ -354,115 +478,6 @@ export const projects: Project[] = [
     release_date: 2018,
     hero_url: "/images/projects/piracanjuba/hero_piracanjuba.jpg",
     design_version: "secondary",
-  },
-  // New projects — details TBD
-  {
-    id: 20,
-    title: "Escravos da Fé - Arautos do Evangelho",
-    slug: "escravos-da-fe",
-    description: "",
-    thumbnail_url: "/images/projects/escravos_da_fe_arautos_do_evangelho/escravos_da_fe_arautos_do_evangelho_thumb_01.jpg",
-    video_url: "",
-    category: "Documentary",
-    roles: [],
-    hero_url: "/images/projects/escravos_da_fe_arautos_do_evangelho/escravos_da_fe_arautos_do_evangelho_hero_01.jpg",
-    design_version: "primary",
-  },
-  {
-    id: 21,
-    title: "Jumo Health",
-    slug: "jumo-health",
-    description: "",
-    thumbnail_url: "/images/projects/jumo_health/jumo-health-astronauts_16x9.jpg",
-    video_url: "",
-    category: "Advertisement",
-    roles: [],
-    hero_url: "/images/projects/jumo_health/jumo-health-rocket_16x9.jpg",
-    design_version: "tertiary",
-  },
-  {
-    id: 22,
-    title: "Mundo da Lua",
-    slug: "mundo-da-lua",
-    description: "",
-    thumbnail_url: "/images/projects/mundo_da_lua/mundo_da_lua_thumb_01.webp",
-    video_url: "",
-    category: "Series",
-    roles: [],
-    hero_url: "/images/projects/mundo_da_lua/mundo_da_lua_hero_01.png",
-    design_version: "primary",
-  },
-  {
-    id: 23,
-    title: "Natto Pharma",
-    slug: "natto-pharma",
-    description: "",
-    thumbnail_url: "/images/projects/natto_pharma/natto-pharma-heart_16x9.jpg",
-    video_url: "",
-    category: "Advertisement",
-    roles: [],
-    hero_url: "/images/projects/natto_pharma/natto-pharma-woman_16x9.jpg",
-    design_version: "tertiary",
-  },
-  {
-    id: 24,
-    title: "Papo Cruzado",
-    slug: "papo-cruzado",
-    description: "",
-    thumbnail_url: "/images/projects/papo_cruzado/papo_cruzado_thumb_1.jpg",
-    video_url: "",
-    category: "Series",
-    roles: [],
-    hero_url: "/images/projects/papo_cruzado/papo_cruzado_hero_1.jpg",
-    design_version: "primary",
-  },
-  {
-    id: 25,
-    title: "Por Trás do Prato",
-    slug: "por-tras-do-prato",
-    description: "",
-    thumbnail_url: "/images/projects/por_tras_do_prato/por_tras_do_prato_thumb_1.jpg",
-    video_url: "",
-    category: "Series",
-    roles: [],
-    hero_url: "/images/projects/por_tras_do_prato/por_tras_do_prato_hero_1.avif",
-    design_version: "primary",
-  },
-  {
-    id: 26,
-    title: "Primavera nos Dentes",
-    slug: "primavera-nos-dentes",
-    description: "",
-    thumbnail_url: "/images/projects/primavera_nos_dentes/primavera_nos_dentes_thumb_01.jpg",
-    video_url: "",
-    category: "Documentary",
-    roles: [],
-    hero_url: "/images/projects/primavera_nos_dentes/primavera_nos_dentes_hero_01.jpg",
-    design_version: "primary",
-  },
-  {
-    id: 27,
-    title: "UnoBravo",
-    slug: "unobravo",
-    description: "",
-    thumbnail_url: "/images/projects/unobravo/unobravo_thumb_1.jpg",
-    video_url: "",
-    category: "Advertisement",
-    roles: [],
-    hero_url: "/images/projects/unobravo/unobravo_hero_1.jpg",
-    design_version: "secondary",
-  },
-  {
-    id: 28,
-    title: "Werk It",
-    slug: "werk-it",
-    description: "",
-    thumbnail_url: "/images/projects/werk_it/werk_it_thumb.jpg",
-    video_url: "",
-    category: "Series",
-    roles: [],
-    hero_url: "/images/projects/werk_it/werk_it_hero.jpg",
-    design_version: "primary",
   },
 ];
 
