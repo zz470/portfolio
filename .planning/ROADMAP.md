@@ -70,7 +70,7 @@ Plans:
 
 Plans:
 - [x] 09-01-PLAN.md — JSON-LD structured data, page metadata optimization, Twitter cards, footer touch targets
-- [ ] 09-02-PLAN.md — Per-project OG images, CreativeWork JSON-LD, image alt text updates
+- [x] 09-02-PLAN.md — Per-project OG images, CreativeWork JSON-LD, image alt text updates
 
 ### Phase 10: New Pages & Credibility Features
 **Goal**: The portfolio has dedicated landing pages for SEO discoverability and credibility features that build trust with potential clients
