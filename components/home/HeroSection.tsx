@@ -53,7 +53,7 @@ export default function HeroSection({
   highlightText1 = "the world's",
   highlightText2 = "most creative",
   showWatchReelButton = false,
-  backgroundImageUrl = "/images/hero-placeholder.svg",
+  backgroundImageUrl = "/images/hero_image.jpg",
   className = "",
 }: HeroSectionProps) {
   return (
