@@ -54,7 +54,7 @@ See `.planning/milestones/v1.2-ROADMAP.md`
 
 Plans:
 - [x] 08-01-PLAN.md — Back up original copy + create centralized lib/copy.ts with rewritten professional text
-- [ ] 08-02-PLAN.md — Wire all components to import from lib/copy.ts + rename Services to Expertise
+- [x] 08-02-PLAN.md — Wire all components to import from lib/copy.ts + rename Services to Expertise
 
 ### Phase 9: Technical SEO & UI Fix
 **Goal**: Search engines fully understand site content through structured data and optimized metadata; social shares display rich project-specific previews
