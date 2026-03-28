@@ -86,7 +86,7 @@ const SelectedWorks = forwardRef<HTMLElement, SelectedWorksProps>(({
                   <div className="relative w-full overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-100 dark:bg-gray-800">
                     <div className="pb-[150%] relative">
                       <Image 
-                        src={project.thumbnail_url} 
+                        src={project.hero_url || project.thumbnail_url}
                         alt={project.title}
                         fill
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

@@ -13,6 +13,7 @@ export interface Project {
   release_date?: number;
   hero_url?: string;
   design_version?: string;
+  featured?: boolean;
 }
 
 export const projects: Project[] = [
@@ -35,6 +36,7 @@ export const projects: Project[] = [
     release_date: 2025,
     hero_url: "/images/projects/operacao_transplante_s01/operacao_transplante_hero_1.webp",
     design_version: "primary",
+    featured: true,
   },
   {
     id: 2,
@@ -53,6 +55,7 @@ export const projects: Project[] = [
     release_date: 2025,
     hero_url: "/images/projects/minha_mae_com_seu_pai_s01/mmsp_hero.jpg",
     design_version: "primary",
+    featured: true,
   },
   {
     id: 3,
@@ -71,6 +74,7 @@ export const projects: Project[] = [
     release_date: 2025,
     hero_url: "/images/projects/lol_porta_dos_fundos_s04/lol_hero.jpg",
     design_version: "primary",
+    featured: true,
   },
   // 2024 releases
   {
@@ -108,6 +112,7 @@ export const projects: Project[] = [
     release_date: 2024,
     hero_url: "/images/projects/maniaco_do_parque/maniaco_do_parque_hero.avif",
     design_version: "primary",
+    featured: true,
   },
   {
     id: 6,
@@ -143,6 +148,7 @@ export const projects: Project[] = [
     release_date: 2024,
     hero_url: "/images/projects/luva_de_pedreiro/luva_de_pedreiro_hero.jpg",
     design_version: "primary",
+    featured: true,
   },
   {
     id: 8,
@@ -359,7 +365,7 @@ export function getProjectsByCategory(category: string): Project[] {
 }
 
 export function getFeaturedProjects(count: number = 3): Project[] {
-  return projects.slice(0, count);
+  return sortProjectsByDate(projects.filter((p) => p.featured)).slice(0, count);
 }
 
 export function sortProjectsByDate(projectList: Project[]): Project[] {
