@@ -73,21 +73,20 @@ Plans:
 - [x] 09-02-PLAN.md — Per-project OG images, CreativeWork JSON-LD, image alt text updates
 
 ### Phase 10: New Pages & Credibility Features
-**Goal**: The portfolio has dedicated landing pages for SEO discoverability and credibility features that build trust with potential clients
+**Goal**: Category archive pages for SEO discoverability and FAQ section targeting sound design hiring queries; FEAT-01 confirmed (reel button hidden), FEAT-02/FEAT-03 deferred
 **Depends on**: Phase 9 (new pages should inherit the SEO patterns established in Phase 9)
 **Requirements**: SEO-07, SEO-08, FEAT-01, FEAT-02, FEAT-03
 **Success Criteria** (what must be TRUE):
-  1. Navigating to /portfolio/documentary (and other categories) shows a filtered portfolio page with category-specific title and meta description
-  2. FAQ section is visible on the site with answers to common sound design hiring questions, each answer indexable by search engines
-  3. /reel page loads and plays a showreel video (or hero link correctly navigates to a working reel destination)
-  4. Homepage displays at least 2 client testimonials with attribution (name, project, or company)
-  5. About page offers a downloadable CV/resume file (PDF or similar)
-**Plans**: TBD
-**UI hint**: yes
+  1. Navigating to /portfolio/category/documentary (and other categories) shows a filtered portfolio page with category-specific title and meta description
+  2. FAQ section is visible on the Expertise page with answers to common sound design hiring questions, each answer indexable by search engines
+  3. Reel button confirmed hidden (showWatchReelButton defaults to false) -- no broken link possible
+  4. FEAT-02 (testimonials) deferred -- user has no quotes ready
+  5. FEAT-03 (CV download) deferred -- user has no PDF ready
+**Plans:** 2 plans
 
 Plans:
-- [ ] 10-01: TBD
-- [ ] 10-02: TBD
+- [ ] 10-01-PLAN.md — Category archive pages at /portfolio/category/[category] with SEO metadata, JSON-LD, and sitemap
+- [ ] 10-02-PLAN.md — FAQ section on Expertise page with accordion UI, centralized copy, and FAQPage JSON-LD
 
 ## Progress
 
@@ -98,4 +97,4 @@ Phases execute in numeric order: 8 → 9 → 10
 |-------|-----------|----------------|--------|-----------|
 | 8. Copy Backup & Rewrite | v1.3 | 1/2 | In Progress|  |
 | 9. Technical SEO & UI Fix | v1.3 | 1/2 | In Progress|  |
-| 10. New Pages & Credibility Features | v1.3 | 0/? | Not started | - |
+| 10. New Pages & Credibility Features | v1.3 | 0/2 | Not started | - |
