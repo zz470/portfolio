@@ -175,7 +175,7 @@ export const projects: Project[] = [
     description:
       "Inspirado no livro \"Turista Aprendiz\", de Mário de Andrade, o curta visita diversos colecionadores, pesquisadores e vendedores de discos de vinil, CD e fitas K7 em cidades do interior da Bahia. A partir daí, Discoterra aborda a intimidade sociocultural da Bahia e as histórias cotidianas desses personagens que, de alguma maneira, se relacionam com o universo musical fonográfico.",
     thumbnail_url: "/images/projects/discoterra/discoterra_thumb_01.jpg",
-    video_url: "",
+    video_url: "https://www.instagram.com/reels/DWSXu3nkaHm/",
     category: "Documentary",
     roles: ["Dialogue Editor", "Sound Effects Editor", "Re-recording Mixer"],
     directors: ["Gustavo Aquino dos Reis", "Daniel Wierman", "Arnaldo Robles"],

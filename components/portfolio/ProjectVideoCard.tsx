@@ -13,10 +13,31 @@ export default function ProjectVideoCard({ project, className = "" }: ProjectVid
   const [videoError, setVideoError] = useState(false);
   const [iframeError, setIframeError] = useState(false);
   const hasValidVideoUrl = project.video_url && project.video_url.trim() !== "";
+  const isInstagram = hasValidVideoUrl && isInstagramUrl(project.video_url);
 
   // Don't render anything if there's no valid video URL
   if (!hasValidVideoUrl) {
     return null;
+  }
+
+  if (isInstagram) {
+    return (
+      <motion.div variants={fadeIn} className={className}>
+        <div className="space-y-3">
+          <h2 className="font-medium text-lg tracking-tight">Watch</h2>
+          <div className="max-w-md mx-auto rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800">
+            <iframe
+              src={getEmbedUrl(project.video_url)}
+              title={project.title}
+              className="w-full border-0"
+              height="520"
+              allowFullScreen
+              scrolling="no"
+            ></iframe>
+          </div>
+        </div>
+      </motion.div>
+    );
   }
 
   return (
@@ -61,8 +82,21 @@ export default function ProjectVideoCard({ project, className = "" }: ProjectVid
   );
 }
 
+function isInstagramUrl(url: string): boolean {
+  return url.includes('instagram.com/reel') || url.includes('instagram.com/reels') || url.includes('instagram.com/p/');
+}
+
 // Helper function to convert regular URLs to embed URLs
 function getEmbedUrl(url: string): string {
+  // Instagram Reel/Post
+  if (isInstagramUrl(url)) {
+    // Extract the reel/post path and convert to embed URL
+    const match = url.match(/instagram\.com\/(?:reel|reels|p)\/([^/?]+)/);
+    if (match) {
+      return `https://www.instagram.com/reel/${match[1]}/embed/`;
+    }
+  }
+
   // YouTube
   if (url.includes('youtube.com') || url.includes('youtu.be')) {
     let videoId = '';
