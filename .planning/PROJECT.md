@@ -26,7 +26,10 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ## Current State
 
-**Shipped:** Phase 9 — Technical SEO & UI Fix (2026-03-28)
+**Shipped:** Phase 10 — New Pages & Credibility Features (2026-03-28)
+- 7 category archive pages at /portfolio/category/[category] with SEO metadata, JSON-LD, and sitemap
+- FAQ section on Expertise page with accessible accordion and FAQPage JSON-LD
+- FEAT-01 confirmed (reel button hidden), FEAT-02/FEAT-03 deferred to future milestone
 
 The portfolio is production-grade with 28 projects, real images, and professional B2B copy:
 - 28 projects with real thumbnail and hero photos, descriptions, roles, and metadata
