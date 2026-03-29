@@ -37,10 +37,10 @@
 - [x] **FAQ-04**: /faq Server Component route with SEO metadata (title, description, OG, Twitter cards)
 - [x] **FAQ-05**: FAQPage JSON-LD structured data on /faq page
 - [x] **FAQ-06**: FAQPageClient with hero section, categorized accordions (type="single" collapsible), and bottom CTA
-- [ ] **FAQ-07**: Expertise page FAQ section replaced with 3-question teaser + "See all FAQs" link to /faq
-- [ ] **FAQ-08**: FAQPage JSON-LD removed from /services page (canonical FAQ is /faq only)
-- [ ] **FAQ-09**: FAQ link added to header navigation, footer navigation, and sitemap
-- [ ] **FAQ-10**: /faq route added to sitemap.ts
+- [x] **FAQ-07**: Expertise page FAQ section replaced with 3-question teaser + "See all FAQs" link to /faq
+- [x] **FAQ-08**: FAQPage JSON-LD removed from /services page (canonical FAQ is /faq only)
+- [x] **FAQ-09**: FAQ link added to header navigation, footer navigation, and sitemap
+- [x] **FAQ-10**: /faq route added to sitemap.ts
 
 ## Future Requirements (Deferred)
 
