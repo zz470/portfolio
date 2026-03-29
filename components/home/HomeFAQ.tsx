@@ -20,7 +20,7 @@ export default function HomeFAQ() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
           {/* Left column — title */}
           <motion.div
-            className="md:col-span-2"
+            className="md:col-span-1"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -54,7 +54,7 @@ export default function HomeFAQ() {
 
           {/* Right column — accordions */}
           <motion.div
-            className="md:col-span-1"
+            className="md:col-span-2"
             variants={fadeIn}
             initial="initial"
             animate="animate"
