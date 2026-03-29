@@ -18,7 +18,7 @@ export const copy = {
     highlightText1: "the world's",
     highlightText2: "most creative",
     highlightWords: ["filmmakers.", "brands.", "studios.", "agencies.", "productions.", "series.", "documentaries.", "commercials."],
-    subtitle: "Re-recording mixer and sound designer with 30+ credits across Europe and the Americas.",
+    subtitle: "Re-recording mixer and sound designer for HBO, Netflix, Globoplay, and beyond.",
   },
 
   cta: {
@@ -34,7 +34,7 @@ export const copy = {
   expertise: {
     sectionTitle: "Expertise",
     sectionSubtitle:
-      "Re-recording mix, sound design, and audio editing for film, series, documentaries, and commercials.",
+      "Working with me is straightforward, reliable, and collaborative. I handle the full audio post pipeline — from editorial through final delivery — so you can focus on production.",
     cards: [
       {
         title: "Re-Recording Mix",
@@ -44,12 +44,12 @@ export const copy = {
       {
         title: "Sound Design",
         description:
-          "Original soundscapes, Foley, and effects built to serve the edit. Each element designed to support the scene and hold up in the mix.",
+          "Bespoke soundscapes, Foley, and effects built to serve the edit. Every element is designed to support the scene and hold up in the final mix.",
       },
       {
         title: "Audio Editing",
         description:
-          "Dialogue editing, ADR supervision, noise reduction, and editorial cleanup. Tracks prepared to a standard that moves cleanly through mix.",
+          "Dialogue editing, ADR supervision, noise reduction, and editorial cleanup. Clean, sync-locked tracks delivered ready for the mix.",
       },
     ],
     learnMoreLabel: "Learn more",
@@ -280,6 +280,39 @@ export const copy = {
           "Send a message through the contact page or WhatsApp with your project type, timeline, and any technical requirements. I'll respond within 24 hours with availability and next steps.",
       },
     ],
+  },
+
+  homeFaq: {
+    sectionTitle: "Questions & Answers",
+    entries: [
+      {
+        question: "How do I kick off a new project?",
+        answer:
+          "Send me a message through the contact page or WhatsApp with your project type, rough timeline, and any technical requirements. I'll respond within 24 hours with availability and next steps. You don't need a locked picture to start the conversation.",
+      },
+      {
+        question: "What materials do you need?",
+        answer:
+          "The essentials are a reference picture (QuickTime or similar) and an AAF or OMF export from your editing software. Creative notes, references, or a brief are helpful but not required upfront — we can sort those out as we go.",
+      },
+      {
+        question: "How do reviews and deliveries work?",
+        answer:
+          "I share work-in-progress mixes for your review and incorporate feedback in real time via Source-Connect, Zoom, or asynchronous notes. Final delivery includes printmasters, stems (dialogue, music, effects), and alternate mixes — all formatted to your distributor's specs.",
+      },
+      {
+        question: "How long does a project take?",
+        answer:
+          "It depends on scope. A short-form commercial is typically a few days. A documentary or series episode runs one to two weeks for full audio post. I always confirm a specific delivery date before starting, and I build in revision time.",
+      },
+      {
+        question: "How much does it cost?",
+        answer:
+          "Every project is different, so I quote per project after reviewing your cut or a detailed brief. Pricing depends on runtime, format complexity, number of deliverables, and whether you need the full pipeline or specific stages. Send me your details and I'll get back to you with a quote.",
+      },
+    ],
+    linkText: "See all FAQs",
+    linkHref: "/faq",
   },
 
   faqTeaser: {

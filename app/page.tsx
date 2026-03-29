@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getFeaturedProjects } from "@/lib/data/projects";
 import SelectedWorks from "@/components/home/SelectedWorks";
 import ServicesSection from "@/components/home/ServicesSection";
+import HomeFAQ from "@/components/home/HomeFAQ";
 import CTASection from "@/components/home/CTASection";
 import HeroSection from "@/components/home/HeroSection";
 
@@ -35,6 +36,9 @@ export default function Home() {
         projects={featuredProjects}
         isLoading={false}
       />
+
+      {/* FAQ Section */}
+      <HomeFAQ />
 
       {/* CTA Section */}
       <CTASection />
