@@ -36,7 +36,7 @@ See `.planning/milestones/v1.2-ROADMAP.md`
 
 - [ ] **Phase 8: Copy Backup & Rewrite** - Back up original text, then rewrite all page copy for professional B2B audience
 - [ ] **Phase 9: Technical SEO & UI Fix** - Add JSON-LD structured data, optimize meta/titles/alt text, per-project OG images, Twitter cards, fix footer touch targets
-- [ ] **Phase 10: New Pages & Credibility Features** - Create category archive pages, FAQ section, reel page, testimonials, and CV download
+- [x] **Phase 10: New Pages & Credibility Features** - Create category archive pages, FAQ section, reel page, testimonials, and CV download (completed 2026-03-29)
 
 ## Phase Details
 
@@ -82,11 +82,11 @@ Plans:
   3. Reel button confirmed hidden (showWatchReelButton defaults to false) -- no broken link possible
   4. FEAT-02 (testimonials) deferred -- user has no quotes ready
   5. FEAT-03 (CV download) deferred -- user has no PDF ready
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 10-01-PLAN.md — Category archive pages at /portfolio/category/[category] with SEO metadata, JSON-LD, and sitemap
-- [ ] 10-02-PLAN.md — FAQ section on Expertise page with accordion UI, centralized copy, and FAQPage JSON-LD
+- [x] 10-01-PLAN.md — Category archive pages at /portfolio/category/[category] with SEO metadata, JSON-LD, and sitemap
+- [x] 10-02-PLAN.md — FAQ section on Expertise page with accordion UI, centralized copy, and FAQPage JSON-LD
 
 ## Progress
 
@@ -97,4 +97,4 @@ Phases execute in numeric order: 8 → 9 → 10
 |-------|-----------|----------------|--------|-----------|
 | 8. Copy Backup & Rewrite | v1.3 | 1/2 | In Progress|  |
 | 9. Technical SEO & UI Fix | v1.3 | 1/2 | In Progress|  |
-| 10. New Pages & Credibility Features | v1.3 | 0/2 | Not started | - |
+| 10. New Pages & Credibility Features | v1.3 | 2/2 | Complete   | 2026-03-29 |

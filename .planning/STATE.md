@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Professional Polish & SEO
-status: verifying
-stopped_at: Phase 10 context gathered
-last_updated: "2026-03-29T01:45:38.103Z"
-last_activity: 2026-03-28
+status: executing
+stopped_at: Completed 10-01-PLAN.md
+last_updated: "2026-03-29T02:10:42.135Z"
+last_activity: 2026-03-29
 progress:
   total_phases: 3
   completed_phases: 2
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 6
+  completed_plans: 5
   percent: 0
 ---
 
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Phase 09 — technical-seo-ui-fix
+**Current focus:** Phase 10 — new-pages-credibility-features
 
 ## Current Position
 
-Phase: 10
-Plan: Not started
-Status: Phase complete — ready for verification
-Last activity: 2026-03-28
+Phase: 10 (new-pages-credibility-features) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
+Last activity: 2026-03-29
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -56,6 +56,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 08-copy-backup-rewrite P02 | 8min | 2 tasks | 10 files |
 | Phase 09-technical-seo-ui-fix P01 | 8min | 2 tasks | 8 files |
 | Phase 09-technical-seo-ui-fix P02 | 3min | 2 tasks | 7 files |
+| Phase 10-new-pages-credibility-features P01 | 8min | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -74,6 +75,8 @@ Recent decisions affecting current work:
 - [Phase 09-technical-seo-ui-fix]: JSON-LD scripts placed in body of root Server Component layout before Header for static structured data injection
 - [Phase 09-technical-seo-ui-fix]: Per-project OG image uses hero_url with /og-image.png fallback — hero photos are the most visually compelling social preview for film/TV projects
 - [Phase 09-technical-seo-ui-fix]: JSON-LD script injected in ProjectPage Server Component, not ProjectSlugClient — Server Components are the correct place for static structured data to ensure it's in initial HTML
+- [Phase 10-new-pages-credibility-features]: Category route placed under /portfolio/category/ to avoid slug conflict with /portfolio/[slug]
+- [Phase 10-new-pages-credibility-features]: generateStaticParams uses getAllCategories() so new categories auto-appear at build time
 
 ### Pending Todos
 
@@ -85,6 +88,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-29T01:45:38.100Z
-Stopped at: Phase 10 context gathered
-Resume file: .planning/phases/10-new-pages-credibility-features/10-CONTEXT.md
+Last session: 2026-03-29T02:10:42.133Z
+Stopped at: Completed 10-01-PLAN.md
+Resume file: None
