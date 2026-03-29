@@ -19,7 +19,7 @@
 - [x] **SEO-05**: Per-project OG images using project hero photos instead of generic og-image.png
 - [x] **SEO-06**: Twitter card metadata added to all pages
 - [x] **SEO-07**: Category archive pages created (/portfolio/documentary, /portfolio/series, etc.)
-- [ ] **SEO-08**: FAQ section added targeting common search queries about sound design services
+- [x] **SEO-08**: FAQ section added targeting common search queries about sound design services
 
 ## UI Fixes
 
@@ -28,8 +28,8 @@
 ## Features
 
 - [x] **FEAT-01**: Reel page created at /reel (or broken hero link fixed)
-- [ ] **FEAT-02**: Testimonials section added to homepage with client quotes
-- [ ] **FEAT-03**: CV/resume download implemented on About page
+- [x] **FEAT-02**: Testimonials section added to homepage with client quotes
+- [x] **FEAT-03**: CV/resume download implemented on About page
 
 ## Future Requirements (Deferred)
 
