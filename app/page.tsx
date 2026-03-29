@@ -37,11 +37,11 @@ export default function Home() {
         isLoading={false}
       />
 
-      {/* FAQ Section */}
-      <HomeFAQ />
-
       {/* CTA Section */}
       <CTASection />
+
+      {/* FAQ Section */}
+      <HomeFAQ />
     </main>
   );
 }

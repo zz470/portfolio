@@ -12,43 +12,23 @@ import {
 } from "@/components/ui/accordion";
 
 export default function HomeFAQ() {
-  const { sectionTitle, entries, linkText, linkHref } = copy.homeFaq;
+  const { entries, linkText, linkHref } = copy.homeFaq;
 
   return (
     <section className="w-full py-20">
       <div className="max-w-screen-xl mx-auto px-6 md:px-10">
-        <motion.div
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            {sectionTitle}
-          </h2>
-          <div className="w-16 h-1 bg-orange-500 mx-auto"></div>
-        </motion.div>
-
-        <motion.div
-          className="max-w-3xl mx-auto"
-          variants={fadeIn}
-          initial="initial"
-          animate="animate"
-        >
-          <Accordion type="single" collapsible className="w-full">
-            {entries.map((entry, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left text-base font-medium text-gray-900 hover:text-orange-500">
-                  {entry.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-600 leading-relaxed">
-                  {entry.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-
-          <div className="text-center mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16">
+          {/* Left column — title */}
+          <motion.div
+            className="md:col-span-1"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Frequently Asked Questions
+            </h2>
+            <div className="w-16 h-1 bg-orange-500 mb-6"></div>
             <Link
               href={linkHref}
               className="text-orange-500 hover:text-orange-600 font-medium text-sm inline-flex items-center"
@@ -70,8 +50,29 @@ export default function HomeFAQ() {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </Link>
-          </div>
-        </motion.div>
+          </motion.div>
+
+          {/* Right column — accordions */}
+          <motion.div
+            className="md:col-span-2"
+            variants={fadeIn}
+            initial="initial"
+            animate="animate"
+          >
+            <Accordion type="single" collapsible className="w-full">
+              {entries.map((entry, index) => (
+                <AccordionItem key={index} value={`item-${index}`}>
+                  <AccordionTrigger className="text-left text-base font-medium text-gray-900 hover:text-orange-500">
+                    {entry.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600 leading-relaxed">
+                    {entry.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
