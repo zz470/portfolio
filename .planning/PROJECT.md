@@ -26,10 +26,11 @@ The portfolio must display Lorenzo's professional work with project details, rol
 
 ## Current State
 
-**Shipped:** Phase 10 — New Pages & Credibility Features (2026-03-28)
-- 7 category archive pages at /portfolio/category/[category] with SEO metadata, JSON-LD, and sitemap
-- FAQ section on Expertise page with accessible accordion and FAQPage JSON-LD
-- FEAT-01 confirmed (reel button hidden), FEAT-02/FEAT-03 deferred to future milestone
+**Shipped:** Phase 11 — Dedicated FAQ Page (2026-03-29)
+- Standalone /faq route with 23 categorized Q&As across 4 sections, hero, accordion, CTA
+- FAQPage JSON-LD migrated from /services to /faq (canonical FAQ page)
+- Expertise page FAQ replaced with 3-question teaser + "See all FAQs" link
+- FAQ added to header nav, footer nav, and sitemap
 
 The portfolio is production-grade with 28 projects, real images, and professional B2B copy:
 - 28 projects with real thumbnail and hero photos, descriptions, roles, and metadata
