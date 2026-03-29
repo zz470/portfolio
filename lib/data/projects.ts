@@ -167,6 +167,22 @@ export const projects: Project[] = [
     hero_url: "/images/projects/werk_it/werk_it_hero.jpg",
     design_version: "primary",
   },
+  {
+    id: 29,
+    title: "Discoterra",
+    slug: "discoterra",
+    description:
+      "Inspirado no livro \"Turista Aprendiz\", de Mário de Andrade, o curta visita diversos colecionadores, pesquisadores e vendedores de discos de vinil, CD e fitas K7 em cidades do interior da Bahia. A partir daí, Discoterra aborda a intimidade sociocultural da Bahia e as histórias cotidianas desses personagens que, de alguma maneira, se relacionam com o universo musical fonográfico.",
+    thumbnail_url: "/images/projects/discoterra/discoterra_thumb_01.jpg",
+    video_url: "",
+    category: "Documentary",
+    roles: ["Dialogue Editor", "Sound Effects Editor", "Re-recording Mixer"],
+    production_company: "",
+    media_platform: "",
+    release_date: 2025,
+    hero_url: "/images/projects/discoterra/discoterra_hero_01.jpg",
+    design_version: "primary",
+  },
   // 2024 releases
   {
     id: 9,
