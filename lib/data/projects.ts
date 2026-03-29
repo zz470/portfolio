@@ -536,3 +536,7 @@ export function sortProjectsByDate(projectList: Project[]): Project[] {
     return 0;
   });
 }
+
+export function getAllCategories(): string[] {
+  return [...new Set(projects.map((p) => p.category))];
+}

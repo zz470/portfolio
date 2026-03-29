@@ -57,6 +57,44 @@ export function buildLocalBusinessSchema() {
   };
 }
 
+export function buildCollectionSchema(categoryName: string, categoryProjects: Project[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${categoryName} Sound Design Portfolio - Lorenzo Pardell`,
+    description: `Portfolio of ${categoryName.toLowerCase()} projects with sound design and re-recording mix by Lorenzo Pardell.`,
+    url: `https://lorenzopardell.com/portfolio/category/${categoryName.toLowerCase()}`,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: categoryProjects.length,
+      itemListElement: categoryProjects.map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "CreativeWork",
+          name: p.title,
+          url: `https://lorenzopardell.com/portfolio/${p.slug}`,
+        },
+      })),
+    },
+  };
+}
+
+export function buildFAQSchema(entries: readonly { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": entries.map((entry) => ({
+      "@type": "Question",
+      "name": entry.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": entry.answer,
+      },
+    })),
+  };
+}
+
 export function buildCreativeWorkSchema(project: Project) {
   return {
     "@context": "https://schema.org",
