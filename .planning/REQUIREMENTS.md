@@ -27,12 +27,12 @@
 
 ## Features
 
-- [x] **FEAT-01**: Reel page created at /reel (or broken hero link fixed)
-- [x] **FEAT-02**: Testimonials section added to homepage with client quotes
-- [x] **FEAT-03**: CV/resume download implemented on About page
+- [x] **FEAT-01**: Reel button confirmed hidden (showWatchReelButton defaults to false, no /reel route needed)
 
 ## Future Requirements (Deferred)
 
+- [ ] **FEAT-02**: Testimonials section on homepage — deferred per D-10 (no client quotes ready)
+- [ ] **FEAT-03**: CV/resume download on About page — deferred per D-11 (no PDF ready)
 - Dark mode fix across all components — v1.4
 - Breadcrumb navigation on project detail pages
 - Keyboard navigation for carousel and category filters
@@ -72,6 +72,6 @@
 | SEO-07 | Phase 10 | — | pending |
 | SEO-08 | Phase 10 | — | pending |
 | UI-01 | Phase 9 | — | pending |
-| FEAT-01 | Phase 10 | — | pending |
-| FEAT-02 | Phase 10 | — | pending |
-| FEAT-03 | Phase 10 | — | pending |
+| FEAT-01 | Phase 10 | — | satisfied |
+| FEAT-02 | Phase 10 | — | deferred (D-10) |
+| FEAT-03 | Phase 10 | — | deferred (D-11) |
