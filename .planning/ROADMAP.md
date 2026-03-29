@@ -98,3 +98,20 @@ Phases execute in numeric order: 8 → 9 → 10
 | 8. Copy Backup & Rewrite | v1.3 | 1/2 | In Progress|  |
 | 9. Technical SEO & UI Fix | v1.3 | 1/2 | In Progress|  |
 | 10. New Pages & Credibility Features | v1.3 | 2/2 | Complete    | 2026-03-29 |
+
+### Phase 11: Dedicated FAQ Page Inspired by defactosound.com/faq
+
+**Goal:** Create a dedicated /faq route with 20+ categorized Q&As across 4 sections, expanded Defacto-level answers, full SEO treatment, and replace the Expertise page FAQ section with a teaser linking to the new page
+**Depends on:** Phase 10
+**Requirements**: FAQ-01, FAQ-02, FAQ-03, FAQ-04, FAQ-05, FAQ-06, FAQ-07, FAQ-08, FAQ-09, FAQ-10
+**Success Criteria** (what must be TRUE):
+  1. /faq page renders with hero, 4 categorized accordion sections (Getting Started, Audio Post Process, Technical, About Me), and bottom CTA
+  2. 20+ Q&As with detailed, SEO-rich answers mentioning specific tools, clients, and deliverables
+  3. FAQPage JSON-LD present on /faq only (removed from /services)
+  4. Expertise page shows a 3-question teaser with "See all FAQs" link to /faq
+  5. FAQ link appears in header nav, footer nav, and sitemap
+**Plans:** 2 plans
+
+Plans:
+- [ ] 11-01-PLAN.md — FAQ page content (20+ categorized Q&As in lib/copy.ts), /faq route, FAQPageClient component with hero/accordions/CTA
+- [ ] 11-02-PLAN.md — Integration: Expertise page teaser, JSON-LD migration, nav links, sitemap update
