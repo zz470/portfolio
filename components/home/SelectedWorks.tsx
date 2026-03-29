@@ -31,11 +31,11 @@ function ProjectCard({ project }: { project: Project }) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-end">
             <div className="p-6 w-full">
-              {project.category && (
+              {/* {project.category && (
                 <Badge className="mb-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs">
                   {project.category}
                 </Badge>
-              )}
+              )} */}
               <h4 className="text-white text-xl font-medium mb-3">{project.title}</h4>
               <p className="text-gray-200 text-sm mb-4 opacity-90">
                 {[project.media_platform, project.production_company || (project.directors?.length ? project.directors.join(", ") : null), project.release_date].filter(Boolean).join(" · ")}
