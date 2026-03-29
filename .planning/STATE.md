@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-03-29)
 Phase: —
 Plan: —
 Status: Between milestones (v1.3 shipped)
-Last activity: 2026-03-29
+Last activity: 2026-03-29 - Completed quick task 260329-n4c: add Discoterra project to portfolio
 
 Progress: Milestone v1.3 complete — ready for next milestone
 
@@ -45,3 +45,9 @@ Decisions are logged in PROJECT.md Key Decisions table.
 ### Blockers/Concerns
 
 None.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 260329-n4c | Add Discoterra project to portfolio | 2026-03-29 | f441fd2 | [260329-n4c-add-discoterra-project-to-portfolio](./quick/260329-n4c-add-discoterra-project-to-portfolio/) |
