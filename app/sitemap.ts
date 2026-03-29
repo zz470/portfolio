@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { projects } from "@/lib/data/projects";
+import { projects, getAllCategories } from "@/lib/data/projects";
 
 const baseUrl = "https://lorenzopardell.com";
 
@@ -44,5 +44,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...projectRoutes];
+  const categoryRoutes: MetadataRoute.Sitemap = getAllCategories().map((cat) => ({
+    url: `${baseUrl}/portfolio/category/${cat.toLowerCase()}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticRoutes, ...projectRoutes, ...categoryRoutes];
 }
