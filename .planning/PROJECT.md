@@ -8,43 +8,23 @@ A production-ready personal portfolio website for Lorenzo Pardell, a sound profe
 
 The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
 
-## Current Milestone: v1.3 Professional Polish & SEO
-
-**Goal:** Rewrite copy for professional audience, implement comprehensive SEO, fix dark mode, and add missing credibility features.
-
-**Target features:**
-- Backup original copy, then rewrite all page text (hero, CTA, services, about, contact, footer)
-- JSON-LD structured data (Person, CreativeWork, LocalBusiness)
-- SEO improvements (page titles, meta descriptions, alt text, per-project OG images, Twitter cards)
-- Fix dark mode across all components
-- Fix footer social link touch targets
-- Create /reel page (or fix broken link)
-- Add testimonials section
-- Implement CV/resume download
-- Category archive pages for SEO
-- FAQ section targeting search queries
-
 ## Current State
 
-**Shipped:** Phase 11 — Dedicated FAQ Page (2026-03-29)
-- Standalone /faq route with 23 categorized Q&As across 4 sections, hero, accordion, CTA
-- FAQPage JSON-LD migrated from /services to /faq (canonical FAQ page)
-- Expertise page FAQ replaced with 3-question teaser + "See all FAQs" link
-- FAQ added to header nav, footer nav, and sitemap
+**Shipped:** v1.3 Professional Polish & SEO (2026-03-29)
 
-The portfolio is production-grade with 28 projects, real images, and professional B2B copy:
+The portfolio is production-grade with 28 projects, real images, professional B2B copy, and comprehensive SEO:
 - 28 projects with real thumbnail and hero photos, descriptions, roles, and metadata
 - All pages render as Server Components (SEO-indexable HTML)
-- Sitemap with 24+ routes, robots.txt, Open Graph metadata on every page
+- All page copy centralized in `lib/copy.ts` with professional B2B voice; "Services" renamed to "Expertise"
+- JSON-LD structured data (Person, ProfessionalService, CreativeWork) on all pages
+- Keyword-rich titles, SEO meta descriptions, Twitter cards, per-project OG images, bilingual keywords
+- Category archive pages at `/portfolio/category/[category]` with SEO and sitemap
+- Dedicated `/faq` page with 23 categorized Q&As, accordion UI, FAQPage JSON-LD
+- Sitemap with 30+ routes, robots.txt, Open Graph metadata on every page
 - Branded 404 and error recovery pages
 - Clean codebase — no console.logs, no dead code, no deprecated APIs
 - All images optimized via next/image
 - Framer Motion animations preserved via client wrappers
-- All page copy centralized in lib/copy.ts with professional B2B voice
-- "Services" renamed to "Expertise" across navigation
-- JSON-LD structured data on homepage and all project pages
-- Keyword-rich titles, SEO meta descriptions, Twitter cards on every page
-- Per-project OG images from hero photos, bilingual keywords
 - Footer social links meet 44x44px touch target minimum
 
 ## Requirements
@@ -84,19 +64,21 @@ The portfolio is production-grade with 28 projects, real images, and professiona
 - ✓ Copy rewrite for all pages (backup originals first) — v1.3 (Phase 8)
 - ✓ Centralized copy in lib/copy.ts with typed constants — v1.3 (Phase 8)
 - ✓ "Services" renamed to "Expertise" across navigation and headings — v1.3 (Phase 8)
-
 - ✓ JSON-LD structured data (Person, ProfessionalService, CreativeWork) — v1.3 (Phase 9)
 - ✓ SEO page titles, meta descriptions, image alt text optimization — v1.3 (Phase 9)
 - ✓ Per-project OG images and Twitter card metadata — v1.3 (Phase 9)
 - ✓ Footer social link touch target fix (44x44px minimum) — v1.3 (Phase 9)
 - ✓ Bilingual keywords (English + Portuguese) for dual-market SEO — v1.3 (Phase 9)
+- ✓ Category archive pages for SEO discoverability — v1.3 (Phase 10)
+- ✓ FAQ section on Expertise page — v1.3 (Phase 10)
+- ✓ Reel button confirmed hidden (no broken link) — v1.3 (Phase 10)
+- ✓ Dedicated /faq page with 23 categorized Q&As — v1.3 (Phase 11)
+- ✓ FAQPage JSON-LD on canonical /faq page — v1.3 (Phase 11)
+- ✓ FAQ integrated into site navigation and sitemap — v1.3 (Phase 11)
 
 ### Active
-- Reel page (create or fix broken hero link) — v1.3
-- Testimonials section — v1.3
-- CV/resume download — v1.3
-- Category archive pages for SEO — v1.3
-- FAQ section — v1.3
+- Testimonials section — deferred (no client quotes available)
+- CV/resume download — deferred (no PDF available)
 
 ### Out of Scope
 
@@ -129,14 +111,21 @@ The portfolio is production-grade with 28 projects, real images, and professiona
 | Use misnamed no_corre thumbs as-is | Files work correctly despite wrong naming from download | ✓ v1.2 |
 | Featured flag on projects for homepage | Flexible selection without hardcoding IDs; latest 3 featured shown | ✓ v1.2 |
 | rAF-based carousel over CSS animation | Supports drag, horizontal scroll, and infinite wrap in both directions | ✓ v1.2 |
+| Centralized copy in lib/copy.ts | Single source of truth for all page text; typed constants for safe imports | ✓ v1.3 |
+| "Services" → "Expertise" rebrand | More professional B2B positioning for sound professional audience | ✓ v1.3 |
+| JSON-LD in Server Components | Structured data in initial HTML for reliable search engine indexing | ✓ v1.3 |
+| Per-project OG from hero photos | Hero photos are most visually compelling social preview for film/TV projects | ✓ v1.3 |
+| Category routes under /portfolio/category/ | Avoids slug conflict with /portfolio/[slug] dynamic route | ✓ v1.3 |
+| Canonical FAQ on /faq only | Single FAQPage JSON-LD signal to search engines; teaser on /services links to canonical | ✓ v1.3 |
 
 ## Known Issues
 
 - `AboutPageClient.tsx` hardcodes contact info instead of importing from `lib/contact-info.ts` (QUAL-03 minor regression from Phase 6)
+- Dark mode not fully tested across all components — deferred to future milestone
 
 ## Evolution
 
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-28 — Phase 9 complete (Technical SEO & UI Fix)*
+*Last updated: 2026-03-29 after v1.3 milestone*
