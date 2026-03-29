@@ -110,8 +110,8 @@ Phases execute in numeric order: 8 → 9 → 10
   3. FAQPage JSON-LD present on /faq only (removed from /services)
   4. Expertise page shows a 3-question teaser with "See all FAQs" link to /faq
   5. FAQ link appears in header nav, footer nav, and sitemap
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 
 Plans:
-- [ ] 11-01-PLAN.md — FAQ page content (20+ categorized Q&As in lib/copy.ts), /faq route, FAQPageClient component with hero/accordions/CTA
+- [x] 11-01-PLAN.md — FAQ page content (20+ categorized Q&As in lib/copy.ts), /faq route, FAQPageClient component with hero/accordions/CTA
 - [ ] 11-02-PLAN.md — Integration: Expertise page teaser, JSON-LD migration, nav links, sitemap update

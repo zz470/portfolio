@@ -31,12 +31,12 @@
 
 ## Dedicated FAQ Page (Phase 11)
 
-- [ ] **FAQ-01**: Categorized FAQ content with 4 groups (Getting Started, Audio Post Process, Technical, About Me) in lib/copy.ts
-- [ ] **FAQ-02**: 20+ total Q&As across all categories with Defacto-level detailed answers
-- [ ] **FAQ-03**: FAQ answers include specific tools, clients, and deliverables (Pro Tools, HBO, Netflix, 5.1, Dolby Atmos)
-- [ ] **FAQ-04**: /faq Server Component route with SEO metadata (title, description, OG, Twitter cards)
-- [ ] **FAQ-05**: FAQPage JSON-LD structured data on /faq page
-- [ ] **FAQ-06**: FAQPageClient with hero section, categorized accordions (type="single" collapsible), and bottom CTA
+- [x] **FAQ-01**: Categorized FAQ content with 4 groups (Getting Started, Audio Post Process, Technical, About Me) in lib/copy.ts
+- [x] **FAQ-02**: 20+ total Q&As across all categories with Defacto-level detailed answers
+- [x] **FAQ-03**: FAQ answers include specific tools, clients, and deliverables (Pro Tools, HBO, Netflix, 5.1, Dolby Atmos)
+- [x] **FAQ-04**: /faq Server Component route with SEO metadata (title, description, OG, Twitter cards)
+- [x] **FAQ-05**: FAQPage JSON-LD structured data on /faq page
+- [x] **FAQ-06**: FAQPageClient with hero section, categorized accordions (type="single" collapsible), and bottom CTA
 - [ ] **FAQ-07**: Expertise page FAQ section replaced with 3-question teaser + "See all FAQs" link to /faq
 - [ ] **FAQ-08**: FAQPage JSON-LD removed from /services page (canonical FAQ is /faq only)
 - [ ] **FAQ-09**: FAQ link added to header navigation, footer navigation, and sitemap

@@ -2,15 +2,15 @@
 gsd_state_version: 1.0
 milestone: v1.3
 milestone_name: Professional Polish & SEO
-status: verifying
-stopped_at: Completed 10-02-PLAN.md (FAQ section + FAQPage JSON-LD)
-last_updated: "2026-03-29T02:15:51.435Z"
+status: executing
+stopped_at: Completed 11-01-PLAN.md (dedicated FAQ page)
+last_updated: "2026-03-29T04:07:28.152Z"
 last_activity: 2026-03-29
 progress:
-  total_phases: 3
+  total_phases: 4
   completed_phases: 3
-  total_plans: 6
-  completed_plans: 6
+  total_plans: 8
+  completed_plans: 7
   percent: 0
 ---
 
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-28)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Phase 10 — new-pages-credibility-features
+**Current focus:** Phase 11 — dedicated-faq-page-inspired-by-defactosound-com-faq
 
 ## Current Position
 
-Phase: 10
-Plan: Not started
-Status: Phase complete — ready for verification
+Phase: 11 (dedicated-faq-page-inspired-by-defactosound-com-faq) — EXECUTING
+Plan: 2 of 2
+Status: Ready to execute
 Last activity: 2026-03-29
 
 Progress: [░░░░░░░░░░] 0%
@@ -58,6 +58,7 @@ Progress: [░░░░░░░░░░] 0%
 | Phase 09-technical-seo-ui-fix P02 | 3min | 2 tasks | 7 files |
 | Phase 10-new-pages-credibility-features P01 | 8min | 2 tasks | 5 files |
 | Phase 10-new-pages-credibility-features P02 | 12min | 1 tasks | 6 files |
+| Phase 11-dedicated-faq-page-inspired-by-defactosound-com-faq P01 | 3min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -80,6 +81,11 @@ Recent decisions affecting current work:
 - [Phase 10-new-pages-credibility-features]: generateStaticParams uses getAllCategories() so new categories auto-appear at build time
 - [Phase 10-new-pages-credibility-features]: FEAT-02 (testimonials) and FEAT-03 (CV download) deferred - no client quotes or PDF available
 - [Phase 10-new-pages-credibility-features]: FAQ accordion uses shadcn Accordion (Radix-based) for keyboard navigation and ARIA compliance
+- [Phase 11-dedicated-faq-page-inspired-by-defactosound-com-faq]: FAQPage JSON-LD moved to /faq only (removed from /services) — canonical FAQ page gets clean structured data signal
+
+### Roadmap Evolution
+
+- Phase 11 added: Dedicated FAQ page inspired by defactosound.com/faq
 
 ### Pending Todos
 
@@ -91,6 +97,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-29T02:11:01.408Z
-Stopped at: Completed 10-02-PLAN.md (FAQ section + FAQPage JSON-LD)
+Last session: 2026-03-29T04:07:28.149Z
+Stopped at: Completed 11-01-PLAN.md (dedicated FAQ page)
 Resume file: None
