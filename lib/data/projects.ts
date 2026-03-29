@@ -15,6 +15,7 @@ export interface Project {
   design_version?: string;
   featured?: boolean;
   filmfreeway_url?: string;
+  directors?: string[];
 }
 
 export const projects: Project[] = [
@@ -177,11 +178,12 @@ export const projects: Project[] = [
     video_url: "",
     category: "Documentary",
     roles: ["Dialogue Editor", "Sound Effects Editor", "Re-recording Mixer"],
-    production_company: "",
-    media_platform: "",
+    directors: ["Gustavo Aquino dos Reis", "Daniel Wierman", "Arnaldo Robles"],
+    media_platform: "Festival Circuit",
     release_date: 2025,
-    hero_url: "/images/projects/discoterra/discoterra_hero_01.jpg",
-    design_version: "primary",
+    hero_url: "/images/projects/discoterra/discoterra_thumb_01.jpg",
+    design_version: "secondary",
+    featured: true,
   },
   // 2024 releases
   {

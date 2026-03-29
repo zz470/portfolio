@@ -108,6 +108,12 @@ export function buildCreativeWorkSchema(project: Project) {
         name: project.production_company,
       },
     }),
+    ...(project.directors?.length && {
+      director: project.directors.map((name) => ({
+        "@type": "Person",
+        name,
+      })),
+    }),
     contributor: {
       "@type": "Role",
       contributor: {

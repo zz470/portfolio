@@ -32,12 +32,17 @@ export default function ProjectDetailsCard({ project, className = "" }: ProjectD
               </dd>
             </div>
             
-            {project.production_company && (
+            {project.production_company ? (
               <div>
                 <dt className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">Production Company</dt>
                 <dd className="font-medium">{project.production_company}</dd>
               </div>
-            )}
+            ) : project.directors && project.directors.length > 0 ? (
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">{project.directors.length === 1 ? 'Director' : 'Directors'}</dt>
+                <dd className="font-medium">{project.directors.join(', ')}</dd>
+              </div>
+            ) : null}
             
             {project.media_platform && (
               <div>
