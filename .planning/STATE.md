@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-03-29)
 Phase: —
 Plan: —
 Status: Between milestones (v1.3 shipped)
-Last activity: 2026-03-29 - Completed quick task 260329-n4c: add Discoterra project to portfolio
+Last activity: 2026-03-29 - Completed quick task 260329-o1m: homepage copy improvements from Defacto research
 
 Progress: Milestone v1.3 complete — ready for next milestone
 
@@ -51,3 +51,4 @@ None.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 260329-n4c | Add Discoterra project to portfolio | 2026-03-29 | f441fd2 | [260329-n4c-add-discoterra-project-to-portfolio](./quick/260329-n4c-add-discoterra-project-to-portfolio/) |
+| 260329-o1m | Homepage copy improvements from Defacto research | 2026-03-29 | 7342697 | [260329-o1m-homepage-copy-improvements-from-defactos](./quick/260329-o1m-homepage-copy-improvements-from-defactos/) |
