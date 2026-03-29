@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ServicesPageClient from "@/components/services/ServicesPageClient";
 import { copy } from "@/lib/copy";
+import { buildFAQSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Sound Design & Mixing Expertise",
@@ -17,5 +18,14 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
-  return <ServicesPageClient />;
+  const faqJsonLd = buildFAQSchema(copy.faq.entries);
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <ServicesPageClient />
+    </>
+  );
 }

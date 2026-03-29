@@ -238,4 +238,45 @@ export const copy = {
       ],
     },
   },
+
+  faq: {
+    sectionTitle: "Frequently Asked Questions",
+    entries: [
+      {
+        question: "What formats do you deliver the final mix in?",
+        answer:
+          "I deliver in stereo, 5.1, 7.1, and Dolby Atmos depending on project requirements. Each deliverable includes stems, printmasters, and alternate versions formatted to your distributor's or broadcaster's specs.",
+      },
+      {
+        question: "Do you work remotely or only on-location?",
+        answer:
+          "Both. I handle the majority of projects remotely from my studio in Sao Paulo, Brazil, with source-connect and real-time review sessions. I'm also available for on-location work worldwide when the project requires it.",
+      },
+      {
+        question: "What is your typical turnaround time?",
+        answer:
+          "Turnaround depends on project scope. A short-form commercial typically takes 2-3 days for sound design and mix. A feature film or series episode averages 1-2 weeks per episode for full audio post. I'll give you a specific timeline after reviewing your cut.",
+      },
+      {
+        question: "What types of projects do you work on?",
+        answer:
+          "Feature films, TV series, documentaries, reality shows, podcasts, advertisements, and animation. My 30+ credits span productions for HBO, Netflix, Globoplay, and international broadcasters across Europe and the Americas.",
+      },
+      {
+        question: "What does the audio post-production process look like?",
+        answer:
+          "It starts with dialogue editing and cleanup, then sound design and Foley, and finishes with the re-recording mix. I handle the full chain or individual stages depending on your needs. Throughout the process I work against your locked picture edit and deliver to your deadline.",
+      },
+      {
+        question: "Do you handle ADR and Foley?",
+        answer:
+          "Yes. I supervise ADR sessions, direct talent performance, and edit replacement dialogue to match picture. For Foley, I record and edit custom footsteps, cloth, and prop sounds synced to your edit.",
+      },
+      {
+        question: "How do I get started on a project with you?",
+        answer:
+          "Send a message through the contact page or WhatsApp with your project type, timeline, and any technical requirements. I'll respond within 24 hours with availability and next steps.",
+      },
+    ],
+  },
 } as const;

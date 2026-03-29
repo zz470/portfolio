@@ -3,6 +3,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { copy } from "@/lib/copy";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
 /**
  * Animation variants for consistent motion effects throughout the page
@@ -335,6 +341,33 @@ export default function ServicesPageClient() {
               />
             ))}
           </div>
+        </div>
+      </motion.div>
+
+      {/* FAQ Section */}
+      <motion.div
+        id="faq"
+        className={styles.sectionContainer}
+        variants={animations.slideUp}
+        initial="hidden"
+        animate="visible"
+        transition={{ delay: 0.3 }}
+      >
+        <div className={styles.sectionContent}>
+          <h2 className={styles.text.sectionTitle}>{copy.faq.sectionTitle}</h2>
+          <div className={styles.ui.orangeBar}></div>
+          <Accordion type="single" collapsible className="mt-6">
+            {copy.faq.entries.map((entry, index) => (
+              <AccordionItem key={index} value={`faq-${index}`}>
+                <AccordionTrigger className="text-left text-gray-800 font-medium text-base hover:text-orange-600">
+                  {entry.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-600 leading-relaxed">
+                  {entry.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </motion.div>
     </div>
