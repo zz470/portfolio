@@ -64,6 +64,7 @@ export const copy = {
       { name: "Expertise", path: "/services" },
       { name: "About", path: "/about" },
       { name: "Contact", path: "/contact" },
+      { name: "FAQ", path: "/faq" },
     ],
   },
 
@@ -73,6 +74,7 @@ export const copy = {
       { name: "Expertise", path: "/services" },
       { name: "About", path: "/about" },
       { name: "Contact", path: "/contact" },
+      { name: "FAQ", path: "/faq" },
     ],
   },
 
@@ -278,6 +280,12 @@ export const copy = {
           "Send a message through the contact page or WhatsApp with your project type, timeline, and any technical requirements. I'll respond within 24 hours with availability and next steps.",
       },
     ],
+  },
+
+  faqTeaser: {
+    sectionTitle: "Common Questions",
+    linkText: "See all FAQs",
+    linkHref: "/faq",
   },
 
   faqPage: {

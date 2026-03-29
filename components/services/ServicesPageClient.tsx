@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { copy } from "@/lib/copy";
 import {
@@ -344,7 +345,7 @@ export default function ServicesPageClient() {
         </div>
       </motion.div>
 
-      {/* FAQ Section */}
+      {/* FAQ Teaser Section */}
       <motion.div
         id="faq"
         className={styles.sectionContainer}
@@ -354,10 +355,10 @@ export default function ServicesPageClient() {
         transition={{ delay: 0.3 }}
       >
         <div className={styles.sectionContent}>
-          <h2 className={styles.text.sectionTitle}>{copy.faq.sectionTitle}</h2>
+          <h2 className={styles.text.sectionTitle}>{copy.faqTeaser.sectionTitle}</h2>
           <div className={styles.ui.orangeBar}></div>
           <Accordion type="single" collapsible className="mt-6">
-            {copy.faq.entries.map((entry, index) => (
+            {copy.faq.entries.slice(0, 3).map((entry, index) => (
               <AccordionItem key={index} value={`faq-${index}`}>
                 <AccordionTrigger className="text-left text-gray-800 font-medium text-base hover:text-orange-600">
                   {entry.question}
@@ -368,6 +369,13 @@ export default function ServicesPageClient() {
               </AccordionItem>
             ))}
           </Accordion>
+          <Link
+            href={copy.faqTeaser.linkHref}
+            className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium mt-4"
+          >
+            {copy.faqTeaser.linkText}
+            <span className="ml-1">→</span>
+          </Link>
         </div>
       </motion.div>
     </div>
