@@ -38,7 +38,7 @@ function ProjectCard({ project }: { project: Project }) {
               )} */}
               <h4 className="text-white text-xl font-medium mb-3 truncate">{project.title}</h4>
               <p className="text-gray-200 text-sm mb-4 opacity-90">
-                {[project.media_platform, project.production_company || (project.directors?.length ? project.directors.join(", ") : null), project.release_date].filter(Boolean).join(" · ")}
+                {[project.media_platform, project.production_company, project.release_date].filter(Boolean).join(" · ")}
               </p>
               <div className="flex items-center text-white text-sm font-medium group-hover:text-gray-200 transition-colors mt-1">
                 <span>View Project</span>
