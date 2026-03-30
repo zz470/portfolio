@@ -1,8 +1,8 @@
 ---
 gsd_state_version: 1.0
-milestone: null
-milestone_name: null
-status: idle
+milestone: "v2.0"
+milestone_name: "Bilingual Portfolio (EN + PT-BR)"
+status: defining_requirements
 stopped_at: null
 last_updated: "2026-03-30"
 last_activity: 2026-03-30
@@ -18,19 +18,17 @@ progress:
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-03-29)
+See: .planning/PROJECT.md (updated 2026-03-30)
 
 **Core value:** The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
-**Current focus:** Planning next milestone
+**Current focus:** Defining requirements for v2.0 Bilingual Portfolio
 
 ## Current Position
 
-Phase: —
+Phase: Not started (defining requirements)
 Plan: —
-Status: Between milestones (v1.3 shipped)
-Last activity: 2026-03-30 - Completed quick task 260330-lkb: fix AboutPageClient.tsx hardcoded contact info (QUAL-03 restored)
-
-Progress: Milestone v1.3 complete — ready for next milestone
+Status: Defining requirements
+Last activity: 2026-03-30 — Milestone v2.0 started
 
 ## Accumulated Context
 

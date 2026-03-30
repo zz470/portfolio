@@ -8,6 +8,21 @@ A production-ready personal portfolio website for Lorenzo Pardell, a sound profe
 
 The portfolio must display Lorenzo's professional work with project details, roles, and media links — reliably, without external database dependencies.
 
+## Current Milestone: v2.0 Bilingual Portfolio (EN + PT-BR)
+
+**Goal:** Make the entire portfolio bilingual with English and Brazilian Portuguese, with per-language SEO, auto-detection, and a language switcher.
+
+**Target features:**
+- Subfolder-based i18n routing (`/` for English, `/pt-br/*` for Portuguese)
+- Auto-detect browser language and redirect Brazilian visitors to PT-BR
+- Language switcher toggle in the header navigation
+- All site copy translated to PT-BR (pages, navigation, headings, FAQ)
+- All project descriptions and roles translated; titles stay untranslated
+- Existing PT-BR descriptions moved to correct locale file with English versions created
+- Per-language SEO: separate meta titles, descriptions, keywords, hreflang tags, OG metadata
+- Per-language JSON-LD structured data
+- Per-language sitemap entries
+
 ## Current State
 
 **Shipped:** v1.3 Professional Polish & SEO (2026-03-29)
@@ -77,8 +92,20 @@ The portfolio is production-grade with 28 projects, real images, professional B2
 - ✓ FAQ integrated into site navigation and sitemap — v1.3 (Phase 11)
 
 ### Active
-- Testimonials section — deferred (no client quotes available)
-- CV/resume download — deferred (no PDF available)
+
+- Subfolder-based i18n routing (EN default, /pt-br/* for Portuguese)
+- Browser language auto-detection with redirect for Brazilian visitors
+- Language switcher in header navigation
+- Full site copy translation to PT-BR (pages, nav, headings, FAQ)
+- Project descriptions and roles translated; titles untranslated
+- Existing PT-BR descriptions relocated with EN versions created
+- Per-language SEO (meta titles, descriptions, keywords, hreflang, OG)
+- Per-language JSON-LD structured data
+- Per-language sitemap entries
+
+#### Deferred
+- Testimonials section — no client quotes available
+- CV/resume download — no PDF available
 
 ### Out of Scope
 
@@ -128,4 +155,4 @@ The portfolio is production-grade with 28 projects, real images, professional B2
 This document evolves at phase transitions and milestone boundaries.
 
 ---
-*Last updated: 2026-03-29 after v1.3 milestone*
+*Last updated: 2026-03-30 after v2.0 milestone started*
