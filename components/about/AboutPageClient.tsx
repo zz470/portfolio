@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { getVisibleSocialLinks } from "@/lib/social-links";
 import { copy } from "@/lib/copy";
+import { contactInfo } from "@/lib/contact-info";
 
 // Animation variants - simplified for elegance
 const fadeIn = {
@@ -112,14 +113,14 @@ export default function AboutPageClient() {
           <div className="flex flex-col sm:flex-row justify-center gap-6 mb-8">
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Email me at</p>
-              <a href="mailto:lorenzopardell@gmail.com" className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
-                lorenzopardell@gmail.com
+              <a href={contactInfo.emailLink} className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
+                {contactInfo.email}
               </a>
             </div>
             <div>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Call me</p>
-              <a href="tel:+5511917619699" className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
-                +55 11 91761-9699
+              <a href={contactInfo.phoneLink} className="font-medium text-gray-800 dark:text-gray-200 hover:text-orange-500 transition-colors">
+                {contactInfo.phoneFormatted}
               </a>
             </div>
           </div>
