@@ -89,6 +89,7 @@ Recent decisions affecting current work:
 | — | Homepage hero image (real photo) | 2026-03-28 | 8d0060e |
 | — | Selected Works: hero images, featured flag, carousel, metadata display | 2026-03-28 | c75ab06 |
 | — | Added 9 new projects with images (details TBD), reordered all 28 by release date | 2026-03-28 | 33ee02d |
+| 260331-vm7 | Added Esse e o Bicho - Season 2 project (id 30, Sabia Educacional) | 2026-03-31 | c2f4b5a |
 
 ### Blockers/Concerns
 
@@ -96,6 +97,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-27T22:17:36.822Z
-Stopped at: Completed 07-01-PLAN.md
+Last session: 2026-04-01T01:49:18Z
+Stopped at: Completed quick-260331-vm7 (Add Esse e o Bicho project)
 Resume file: None
