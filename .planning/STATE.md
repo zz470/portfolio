@@ -4,8 +4,8 @@ milestone: v2.0
 milestone_name: Bilingual Portfolio (EN + PT-BR)
 status: planning
 stopped_at: Phase 12 context gathered (auto mode)
-last_updated: "2026-04-01T01:40:34.248Z"
-last_activity: 2026-03-31 -- Roadmap created for v2.0 Bilingual Portfolio
+last_updated: "2026-04-01T01:49:18Z"
+last_activity: 2026-03-31 -- Added Esse e o Bicho project
 progress:
   total_phases: 4
   completed_phases: 0
@@ -28,7 +28,7 @@ See: .planning/PROJECT.md (updated 2026-03-30)
 Phase: 12 of 15 (i18n Routing & Copy Infrastructure)
 Plan: Not started
 Status: Ready to plan
-Last activity: 2026-03-31 -- Roadmap created for v2.0 Bilingual Portfolio
+Last activity: 2026-03-31 -- Added Esse e o Bicho project
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -69,7 +69,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-04-01T01:40:34.245Z
+Last session: 2026-04-01T01:49:18Z
 Stopped at: Phase 12 context gathered (auto mode)
 Resume file: .planning/phases/12-i18n-routing-copy-infrastructure/12-CONTEXT.md
 
@@ -80,3 +80,4 @@ Resume file: .planning/phases/12-i18n-routing-copy-infrastructure/12-CONTEXT.md
 | 260329-n4c | Add Discoterra project to portfolio | 2026-03-29 | f441fd2 | [260329-n4c-add-discoterra-project-to-portfolio](./quick/260329-n4c-add-discoterra-project-to-portfolio/) |
 | 260329-o1m | Homepage copy improvements from Defacto research | 2026-03-29 | 7342697 | [260329-o1m-homepage-copy-improvements-from-defactos](./quick/260329-o1m-homepage-copy-improvements-from-defactos/) |
 | 260330-lkb | Fix AboutPageClient.tsx hardcoded contact info (QUAL-03) | 2026-03-30 | 9bcbcff | [260330-lkb-fix-aboutpageclient-tsx-hardcoded-contac](./quick/260330-lkb-fix-aboutpageclient-tsx-hardcoded-contac/) |
+| 260331-vm7 | Add Esse e o Bicho - Season 2 project to portfolio | 2026-03-31 | c2f4b5a | [260331-vm7-add-esse-o-bicho-project-to-portfolio](./quick/260331-vm7-add-esse-o-bicho-project-to-portfolio/) |

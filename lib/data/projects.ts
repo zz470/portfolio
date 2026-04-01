@@ -38,6 +38,21 @@ export const projects: Project[] = [
     design_version: "primary",
     featured: true,
   },
+  {
+    id: 30,
+    title: "Esse e o Bicho - Season 2",
+    slug: "esse-e-o-bicho",
+    description: "\"Esse e o Bicho!\" e uma iniciativa da Sabia Educacional que une audiovisual e educacao ambiental para aproximar as criancas da biodiversidade que esta ao nosso redor.\n\nPor meio de videos animados, materiais educativos e atividades nas escolas, o projeto desperta a curiosidade cientifica, incentiva o cuidado com a natureza e convida criancas e educadores a refletirem sobre nossa relacao com o meio ambiente.",
+    thumbnail_url: "/images/projects/esse_e_o_bicho_s02/03196.png",
+    video_url: "https://esseeobicho.com.br/#sobre-o-projeto",
+    category: "Series",
+    roles: ["Dialogue Editor", "Sound Effects Editor", "Sound Designer", "Re-recording Mixer"],
+    production_company: "Sabia Educacional",
+    media_platform: "YouTube",
+    release_date: 2026,
+    hero_url: "/images/projects/esse_e_o_bicho_s02/03196.png",
+    design_version: "primary",
+  },
   // 2025 releases
   {
     id: 2,
