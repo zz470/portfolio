@@ -5,6 +5,7 @@ import { copy } from "@/lib/copy";
 export const metadata: Metadata = {
   title: "About | Re-Recording Mixer & Sound Designer",
   description: copy.aboutMeta.description,
+  alternates: { canonical: "/about" },
   openGraph: {
     title: "About | Re-Recording Mixer & Sound Designer | Lorenzo Pardell",
     description: copy.aboutMeta.description,

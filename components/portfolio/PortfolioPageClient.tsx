@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useMemo } from "react";
-import { projects } from "@/lib/data/projects";
+import { projects, sortProjectsByDate } from "@/lib/data/projects";
 import PortfolioGrid from "@/components/portfolio/PortfolioGrid";
 import CategoryFilter from "@/components/portfolio/CategoryFilter";
 import { motion } from "framer-motion";
@@ -9,21 +9,18 @@ import { motion } from "framer-motion";
 export default function PortfolioPageClient() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Extract unique categories from projects
   const categories = useMemo(() => {
-    // Get unique categories and sort them alphabetically
-    const uniqueCategories = Array.from(
-      new Set(projects.map(project => project.category))
-    ).filter(Boolean).sort();
-
-    return uniqueCategories;
+    return Array.from(new Set(projects.map((project) => project.category)))
+      .filter(Boolean)
+      .sort();
   }, []);
 
-  // Filter projects based on the selected category
   const filteredProjects = useMemo(() => {
-    if (selectedCategory === null) return projects;
-
-    return projects.filter(project => project.category === selectedCategory);
+    const source =
+      selectedCategory === null
+        ? projects
+        : projects.filter((project) => project.category === selectedCategory);
+    return sortProjectsByDate(source);
   }, [selectedCategory]);
 
   return (

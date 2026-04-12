@@ -8,6 +8,7 @@ import HeroSection from "@/components/home/HeroSection";
 
 export const metadata: Metadata = {
   // No title -- root layout default applies
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Lorenzo Pardell | Sound Designer & Re-Recording Mixer | Sao Paulo",
     description: "Re-recording mixer and sound designer with 30+ credits across film, series, and documentaries. Based in Sao Paulo, Brazil.",

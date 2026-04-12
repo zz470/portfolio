@@ -2,7 +2,6 @@ import { type Project } from "@/lib/data/projects";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/animations";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { useState } from "react";
 
 interface ProjectVideoCardProps {
   project: Project;
@@ -10,30 +9,25 @@ interface ProjectVideoCardProps {
 }
 
 export default function ProjectVideoCard({ project, className = "" }: ProjectVideoCardProps) {
-  const [videoError, setVideoError] = useState(false);
-  const [iframeError, setIframeError] = useState(false);
-  const hasValidVideoUrl = project.video_url && project.video_url.trim() !== "";
-  const isInstagram = hasValidVideoUrl && isInstagramUrl(project.video_url);
+  const url = project.video_url?.trim();
+  if (!url) return null;
 
-  // Don't render anything if there's no valid video URL
-  if (!hasValidVideoUrl) {
-    return null;
-  }
+  const embedUrl = getEmbedUrl(url);
 
-  if (isInstagram) {
+  if (isInstagramUrl(url)) {
     return (
       <motion.div variants={fadeIn} className={className}>
         <div className="space-y-3">
           <h2 className="font-medium text-lg tracking-tight">Watch</h2>
           <div className="max-w-md mx-auto rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800">
             <iframe
-              src={getEmbedUrl(project.video_url)}
+              src={embedUrl}
               title={project.title}
               className="w-full border-0"
               height="520"
               allowFullScreen
-              scrolling="no"
-            ></iframe>
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
       </motion.div>
@@ -44,38 +38,18 @@ export default function ProjectVideoCard({ project, className = "" }: ProjectVid
     <motion.div variants={fadeIn} className={className}>
       <div className="space-y-3">
         <h2 className="font-medium text-lg tracking-tight">Watch</h2>
-        <AspectRatio ratio={16 / 9} className="bg-muted rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800">
-          {!videoError ? (
-            <video
-              src={project.video_url}
-              controls
-              className="w-full h-full object-cover"
-              onError={() => setVideoError(true)}
-              preload="metadata"
-              poster={project.thumbnail_url}
-            >
-              Your browser does not support the video tag.
-              <a href={project.video_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300">
-                Click here to watch the video
-              </a>
-            </video>
-          ) : !iframeError ? (
-            <iframe
-              src={getEmbedUrl(project.video_url)}
-              title={project.title}
-              className="w-full h-full"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              onError={() => setIframeError(true)}
-            ></iframe>
-          ) : (
-            <div className="flex items-center justify-center h-full bg-gray-100 dark:bg-gray-800 rounded-xl">
-              <a href={project.video_url} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300">
-                Click here to watch the video
-              </a>
-            </div>
-          )}
+        <AspectRatio
+          ratio={16 / 9}
+          className="bg-muted rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800"
+        >
+          <iframe
+            src={embedUrl}
+            title={project.title}
+            className="w-full h-full"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
         </AspectRatio>
       </div>
     </motion.div>
@@ -83,37 +57,45 @@ export default function ProjectVideoCard({ project, className = "" }: ProjectVid
 }
 
 function isInstagramUrl(url: string): boolean {
-  return url.includes('instagram.com/reel') || url.includes('instagram.com/reels') || url.includes('instagram.com/p/');
+  return /instagram\.com\/(reel|reels|p)\//.test(url);
 }
 
-// Helper function to convert regular URLs to embed URLs
 function getEmbedUrl(url: string): string {
-  // Instagram Reel/Post
   if (isInstagramUrl(url)) {
-    // Extract the reel/post path and convert to embed URL
     const match = url.match(/instagram\.com\/(?:reel|reels|p)\/([^/?]+)/);
-    if (match) {
-      return `https://www.instagram.com/reel/${match[1]}/embed/`;
-    }
+    if (match) return `https://www.instagram.com/reel/${match[1]}/embed/`;
+    return url;
   }
 
-  // YouTube
-  if (url.includes('youtube.com') || url.includes('youtu.be')) {
-    let videoId = '';
-    if (url.includes('youtube.com/watch')) {
-      videoId = new URL(url).searchParams.get('v') || '';
-    } else if (url.includes('youtu.be/')) {
-      videoId = url.split('youtu.be/')[1].split('?')[0];
-    }
-    return `https://www.youtube.com/embed/${videoId}`;
+  if (url.includes("youtube.com") || url.includes("youtu.be")) {
+    const videoId = extractYouTubeId(url);
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
   }
 
-  // Vimeo
-  if (url.includes('vimeo.com')) {
-    const vimeoId = url.split('vimeo.com/')[1].split('?')[0];
-    return `https://player.vimeo.com/video/${vimeoId}`;
+  if (url.includes("vimeo.com")) {
+    const vimeoId = url.split("vimeo.com/")[1]?.split("?")[0];
+    return vimeoId ? `https://player.vimeo.com/video/${vimeoId}` : url;
   }
 
-  // Return original URL if not YouTube or Vimeo
   return url;
+}
+
+function extractYouTubeId(url: string): string | null {
+  if (url.includes("youtube.com/watch")) {
+    try {
+      return new URL(url).searchParams.get("v");
+    } catch {
+      return null;
+    }
+  }
+  if (url.includes("youtu.be/")) {
+    return url.split("youtu.be/")[1]?.split(/[?#]/)[0] || null;
+  }
+  if (url.includes("youtube.com/shorts/")) {
+    return url.split("/shorts/")[1]?.split(/[?#]/)[0] || null;
+  }
+  if (url.includes("youtube.com/embed/")) {
+    return url.split("/embed/")[1]?.split(/[?#]/)[0] || null;
+  }
+  return null;
 }

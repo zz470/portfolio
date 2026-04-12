@@ -12,7 +12,7 @@ export interface Project {
   media_platform?: string;
   release_date?: number;
   hero_url?: string;
-  design_version?: string;
+  design_version?: "primary" | "secondary" | "tertiary";
   featured?: boolean;
   filmfreeway_url?: string;
   directors?: string[];

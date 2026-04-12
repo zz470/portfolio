@@ -68,9 +68,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  alternates: {
-    canonical: "https://lorenzopardell.com",
-  },
   openGraph: {
     siteName: "Lorenzo Pardell",
     title: "Lorenzo Pardell | Sound Designer & Re-Recording Mixer | Sao Paulo",

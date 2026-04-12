@@ -6,6 +6,7 @@ import { buildFAQSchema } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: copy.faqPage.meta.title,
   description: copy.faqPage.meta.description,
+  alternates: { canonical: "/faq" },
   openGraph: {
     title: `${copy.faqPage.meta.title} | Lorenzo Pardell`,
     description: copy.faqPage.meta.description,

@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${matchedCategory} Sound Design & Mixing Projects`,
     description,
+    alternates: { canonical: `/portfolio/category/${matchedCategory.toLowerCase()}` },
     openGraph: {
       title: `${matchedCategory} Sound Design & Mixing Projects | Lorenzo Pardell`,
       description,
